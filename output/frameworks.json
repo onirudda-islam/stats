@@ -1,0 +1,116 @@
+{
+  "generated_at": "2026-03-02T04:51:25.909711+00:00",
+  "aggregated": {
+    "Flask": 2,
+    "Express": 2,
+    "HuggingFace": 1,
+    "NumPy": 1,
+    "Pandas": 1,
+    "gRPC": 1,
+    "FastAPI": 1,
+    "SQLAlchemy": 1,
+    "Prisma": 1,
+    "React": 1
+  },
+  "per_repo": [
+    {
+      "repo": "Flutter-Task-10.06.23",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "backendDevelopment",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "ivacB",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "10x_Ai_Engineer",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "aibrix",
+      "frameworks": [
+        "FastAPI",
+        "Flask",
+        "HuggingFace",
+        "NumPy",
+        "Pandas",
+        "gRPC"
+      ],
+      "infra": [
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "bets-fire",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "docs",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "flask-api",
+      "frameworks": [
+        "Flask",
+        "SQLAlchemy"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "live-streamig",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "onirudda-islam",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "prism",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "silicornya-backend",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "stats",
+      "frameworks": [],
+      "infra": [
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "Trial-candiate-Zadd",
+      "frameworks": [
+        "Express",
+        "Prisma",
+        "React"
+      ],
+      "infra": [
+        "Docker",
+        "PostgreSQL",
+        "Redis"
+      ]
+    },
+    {
+      "repo": "trivial-bubble-server",
+      "frameworks": [
+        "Express"
+      ],
+      "infra": []
+    }
+  ]
+}

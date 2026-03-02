@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-02T04:51:20.779511+00:00",
-  "total_bytes": 4227423,
+  "generated_at": "2026-03-02T04:51:25.910002+00:00",
+  "repo_count": 16,
   "languages": [
     {
       "name": "TypeScript",
@@ -100,5 +100,23 @@
       "color": "#6E7681",
       "category": "Languages"
     }
+  ],
+  "frameworks": [
+    "Express",
+    "FastAPI",
+    "Flask",
+    "HuggingFace",
+    "NumPy",
+    "Pandas",
+    "Prisma",
+    "React",
+    "SQLAlchemy",
+    "gRPC"
+  ],
+  "infra": [
+    "Docker",
+    "GitHub Actions",
+    "PostgreSQL",
+    "Redis"
   ]
 }
