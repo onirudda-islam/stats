@@ -697,21 +697,6 @@ with open(f"{OUTPUT}/infra.json", "w") as f:
         "aggregated": dict(sorted(all_infra.items(), key=lambda x: x[1], reverse=True)),
     }, f, indent=2)
 
-# Merged stack summary
-stack = {
-    "generated_at":   datetime.now(timezone.utc).isoformat(),
-    "repo_count":     len(repos),
-    "languages":      lang_output,
-    "frameworks":     sorted(all_frameworks.keys()),
-    "infra":          sorted(all_infra.keys()),
-    "commit_stats":   commit_stats,
-}
-with open(f"{OUTPUT}/stack.json", "w") as f:
-    json.dump(stack, f, indent=2)
-
-print(f"\n      Frameworks detected : {sorted(all_frameworks.keys())}")
-print(f"      Infra detected      : {sorted(all_infra.keys())}")
-
 # ── Fetch real commit stats via GraphQL (includes private contributions) ──────────
 print("\n[3.5/4] Fetching contribution stats via GraphQL...")
 commit_stats = {"total_commits": 0, "total_prs": 0, "total_issues": 0,
@@ -798,6 +783,21 @@ diagnostic = {
 with open(f"{OUTPUT}/diagnostic.json", "w") as f:
     json.dump(diagnostic, f, indent=2)
 print(f"      Wrote output/diagnostic.json  ({len(repos)} repos listed)")
+
+# Merged stack summary
+stack = {
+    "generated_at":   datetime.now(timezone.utc).isoformat(),
+    "repo_count":     len(repos),
+    "languages":      lang_output,
+    "frameworks":     sorted(all_frameworks.keys()),
+    "infra":          sorted(all_infra.keys()),
+    "commit_stats":   commit_stats,
+}
+with open(f"{OUTPUT}/stack.json", "w") as f:
+    json.dump(stack, f, indent=2)
+
+print(f"\n      Frameworks detected : {sorted(all_frameworks.keys())}")
+print(f"      Infra detected      : {sorted(all_infra.keys())}")
 
 # ── SVG generation ────────────────────────────────────────────────────────────
 print("\n[4/4] Generating stack.svg...")
