@@ -1,67 +1,67 @@
 {
-  "generated_at": "2026-03-02T04:51:20.779511+00:00",
-  "total_bytes": 4227423,
+  "generated_at": "2026-03-02T05:10:13.372930+00:00",
+  "total_bytes": 4405892,
   "languages": [
     {
       "name": "TypeScript",
       "bytes": 1106093,
-      "percentage": 26.16,
+      "percentage": 25.1,
       "color": "#3178C6",
       "category": "Languages"
     },
     {
       "name": "Jupyter Notebook",
       "bytes": 1055739,
-      "percentage": 24.97,
+      "percentage": 23.96,
       "color": "#DA5B0B",
+      "category": "Languages"
+    },
+    {
+      "name": "Python",
+      "bytes": 689096,
+      "percentage": 15.64,
+      "color": "#3776AB",
       "category": "Languages"
     },
     {
       "name": "Go",
       "bytes": 668994,
-      "percentage": 15.83,
+      "percentage": 15.18,
       "color": "#00ADD8",
       "category": "Languages"
     },
     {
-      "name": "Python",
-      "bytes": 587869,
-      "percentage": 13.91,
-      "color": "#3776AB",
-      "category": "Languages"
-    },
-    {
       "name": "JavaScript",
-      "bytes": 411157,
-      "percentage": 9.73,
+      "bytes": 488330,
+      "percentage": 11.08,
       "color": "#F7DF1E",
       "category": "Languages"
     },
     {
       "name": "HTML",
       "bytes": 287855,
-      "percentage": 6.81,
+      "percentage": 6.53,
       "color": "#6E7681",
       "category": "Languages"
     },
     {
       "name": "Makefile",
       "bytes": 34349,
-      "percentage": 0.81,
+      "percentage": 0.78,
       "color": "#6E7681",
       "category": "Languages"
     },
     {
       "name": "Shell",
-      "bytes": 31598,
-      "percentage": 0.75,
+      "bytes": 31667,
+      "percentage": 0.72,
       "color": "#89E051",
       "category": "Languages"
     },
     {
       "name": "MDX",
       "bytes": 30293,
-      "percentage": 0.72,
+      "percentage": 0.69,
       "color": "#6E7681",
       "category": "Languages"
     },
@@ -75,7 +75,7 @@
     {
       "name": "Dockerfile",
       "bytes": 3658,
-      "percentage": 0.09,
+      "percentage": 0.08,
       "color": "#6E7681",
       "category": "Languages"
     },

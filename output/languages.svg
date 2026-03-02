@@ -30,20 +30,20 @@
 <text x="28" y="66" class="subtitle">Dynamically scanned across all repositories · Updated 2026-03-02</text>
 <text x="28" y="108" class="section-label">LANGUAGES</text>
 <g clip-path="url(#bar-clip)">
-<rect x="28" y="120" width="210" height="12" fill="#3178C6"><title>TypeScript: 26.2%</title></rect>
-<rect x="238" y="120" width="201" height="12" fill="#DA5B0B"><title>Jupyter Notebook: 25.0%</title></rect>
-<rect x="439" y="120" width="127" height="12" fill="#00ADD8"><title>Go: 15.8%</title></rect>
-<rect x="566" y="120" width="112" height="12" fill="#3776AB"><title>Python: 13.9%</title></rect>
-<rect x="678" y="120" width="78" height="12" fill="#F7DF1E"><title>JavaScript: 9.7%</title></rect>
-<rect x="756" y="120" width="55" height="12" fill="#6E7681"><title>HTML: 6.8%</title></rect>
-<rect x="811" y="120" width="7" height="12" fill="#6E7681"><title>Makefile: 0.8%</title></rect>
-<rect x="818" y="120" width="6" height="12" fill="#89E051"><title>Shell: 0.7%</title></rect>
-<rect x="824" y="120" width="6" height="12" fill="#6E7681"><title>MDX: 0.7%</title></rect>
-<rect x="830" y="120" width="2" height="12" fill="#6E7681"><title>CSS: 0.1%</title></rect>
-<rect x="832" y="120" width="2" height="12" fill="#6E7681"><title>Dockerfile: 0.1%</title></rect>
-<rect x="834" y="120" width="2" height="12" fill="#363636"><title>Solidity: 0.1%</title></rect>
-<rect x="836" y="120" width="2" height="12" fill="#6E7681"><title>PLpgSQL: 0.0%</title></rect>
-<rect x="838" y="120" width="2" height="12" fill="#6E7681"><title>Mako: 0.0%</title></rect>
+<rect x="28" y="120" width="202" height="12" fill="#3178C6"><title>TypeScript: 25.1%</title></rect>
+<rect x="230" y="120" width="193" height="12" fill="#DA5B0B"><title>Jupyter Notebook: 24.0%</title></rect>
+<rect x="423" y="120" width="126" height="12" fill="#3776AB"><title>Python: 15.6%</title></rect>
+<rect x="549" y="120" width="122" height="12" fill="#00ADD8"><title>Go: 15.2%</title></rect>
+<rect x="671" y="120" width="89" height="12" fill="#F7DF1E"><title>JavaScript: 11.1%</title></rect>
+<rect x="760" y="120" width="53" height="12" fill="#6E7681"><title>HTML: 6.5%</title></rect>
+<rect x="813" y="120" width="6" height="12" fill="#6E7681"><title>Makefile: 0.8%</title></rect>
+<rect x="819" y="120" width="6" height="12" fill="#89E051"><title>Shell: 0.7%</title></rect>
+<rect x="825" y="120" width="6" height="12" fill="#6E7681"><title>MDX: 0.7%</title></rect>
+<rect x="831" y="120" width="2" height="12" fill="#6E7681"><title>CSS: 0.1%</title></rect>
+<rect x="833" y="120" width="2" height="12" fill="#6E7681"><title>Dockerfile: 0.1%</title></rect>
+<rect x="835" y="120" width="2" height="12" fill="#363636"><title>Solidity: 0.1%</title></rect>
+<rect x="837" y="120" width="2" height="12" fill="#6E7681"><title>PLpgSQL: 0.0%</title></rect>
+<rect x="839" y="120" width="2" height="12" fill="#6E7681"><title>Mako: 0.0%</title></rect>
 </g>
 <g>
   <rect x="28" y="142" width="94" height="26" rx="5"
@@ -58,16 +58,16 @@
   <text x="150" y="159" class="tag-text">Jupyter Notebook</text>
 </g>
 <g>
-  <rect x="275" y="142" width="36" height="26" rx="5"
-        fill="#00ADD822" stroke="#00ADD866" stroke-width="1"/>
-  <circle cx="286" cy="155" r="4" fill="#00ADD8"/>
-  <text x="295" y="159" class="tag-text">Go</text>
+  <rect x="275" y="142" width="65" height="26" rx="5"
+        fill="#3776AB22" stroke="#3776AB66" stroke-width="1"/>
+  <circle cx="286" cy="155" r="4" fill="#3776AB"/>
+  <text x="295" y="159" class="tag-text">Python</text>
 </g>
 <g>
-  <rect x="319" y="142" width="65" height="26" rx="5"
-        fill="#3776AB22" stroke="#3776AB66" stroke-width="1"/>
-  <circle cx="330" cy="155" r="4" fill="#3776AB"/>
-  <text x="339" y="159" class="tag-text">Python</text>
+  <rect x="348" y="142" width="36" height="26" rx="5"
+        fill="#00ADD822" stroke="#00ADD866" stroke-width="1"/>
+  <circle cx="359" cy="155" r="4" fill="#00ADD8"/>
+  <text x="368" y="159" class="tag-text">Go</text>
 </g>
 <g>
   <rect x="392" y="142" width="94" height="26" rx="5"

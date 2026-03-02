@@ -1,0 +1,102 @@
+{
+  "generated_at": "2026-03-02T05:10:20.906552+00:00",
+  "total_repos": 16,
+  "repos": [
+    {
+      "full_name": "johirulislamnishat/Flutter-Task-10.06.23",
+      "private": false,
+      "owner": "johirulislamnishat",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "mohibur-moni/backendDevelopment",
+      "private": false,
+      "owner": "mohibur-moni",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "nodenick/ivacB",
+      "private": false,
+      "owner": "nodenick",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "onirudda-islam/10x_Ai_Engineer",
+      "private": true,
+      "owner": "onirudda-islam",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "onirudda-islam/aibrix",
+      "private": false,
+      "owner": "onirudda-islam",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "onirudda-islam/bets-fire",
+      "private": true,
+      "owner": "onirudda-islam",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "onirudda-islam/docs",
+      "private": false,
+      "owner": "onirudda-islam",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "onirudda-islam/flask-api",
+      "private": true,
+      "owner": "onirudda-islam",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "onirudda-islam/flask-api--context-kind-staging",
+      "private": true,
+      "owner": "onirudda-islam",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "onirudda-islam/live-streamig",
+      "private": true,
+      "owner": "onirudda-islam",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "onirudda-islam/onirudda-islam",
+      "private": false,
+      "owner": "onirudda-islam",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "onirudda-islam/prism",
+      "private": true,
+      "owner": "onirudda-islam",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "onirudda-islam/silicornya-backend",
+      "private": true,
+      "owner": "onirudda-islam",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "onirudda-islam/stats",
+      "private": false,
+      "owner": "onirudda-islam",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "onirudda-islam/Trial-candiate-Zadd",
+      "private": true,
+      "owner": "onirudda-islam",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "onirudda-islam/trivial-bubble-server",
+      "private": false,
+      "owner": "onirudda-islam",
+      "default_branch": "main"
+    }
+  ]
+}
