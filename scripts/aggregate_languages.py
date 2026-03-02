@@ -250,16 +250,42 @@ def gh_get(path, params=None):
 
 
 def fetch_all_repos():
-    repos, page = [], 1
-    while True:
-        batch = gh_get(
-            "/user/repos", {"per_page": 100, "page": page, "type": "all"})
-        if not batch:
-            break
-        repos.extend(batch)
-        if len(batch) < 100:
-            break
-        page += 1
+    """
+    Fetch ALL repos the token can see:
+      - Personal repos via /user/repos?type=all
+      - Every org the user belongs to via /user/orgs -> /orgs/:org/repos
+    Deduplicates by repo ID.
+
+    NOTE: For org repos to be visible, the PAT must have been granted access
+    to the org (org owner may need to approve it under Settings > Third-party access).
+    """
+    seen_ids = set()
+    repos = []
+
+    def _drain(endpoint, params):
+        page = 1
+        while True:
+            batch = gh_get(endpoint, {**params, "per_page": 100, "page": page})
+            if not batch:
+                break
+            for r in batch:
+                if r["id"] not in seen_ids:
+                    repos.append(r)
+                    seen_ids.add(r["id"])
+            if len(batch) < 100:
+                break
+            page += 1
+
+    # 1. Personal repos (public + private)
+    _drain("/user/repos", {"type": "all"})
+
+    # 2. Every org the token can see
+    orgs = gh_get("/user/orgs", {"per_page": 100}) or []
+    for org in orgs:
+        login = org["login"]
+        print(f"      + scanning org: {login}")
+        _drain(f"/orgs/{login}/repos", {"type": "all"})
+
     return repos
 
 
@@ -594,10 +620,14 @@ print("\n[2/4] Aggregating language bytes...")
 lang_totals = defaultdict(int)
 for repo in repos:
     rname = repo["name"]
-    langs = fetch_repo_languages(USERNAME, rname)
+    owner = repo["owner"]["login"]   # use actual owner — handles org repos
+    langs = fetch_repo_languages(owner, rname)
     for lang, bytes_ in langs.items():
         lang_totals[lang] += bytes_
-    print(f"      ✓ {rname}: {list(langs.keys())}")
+    if langs:
+        print(f"      ✓ {owner}/{rname}: {list(langs.keys())}")
+    else:
+        print(f"      - {owner}/{rname}: (empty/inaccessible)")
 
 # Build sorted language list with metadata
 sorted_langs = sorted(lang_totals.items(), key=lambda x: x[1], reverse=True)
@@ -669,17 +699,105 @@ with open(f"{OUTPUT}/infra.json", "w") as f:
 
 # Merged stack summary
 stack = {
-    "generated_at":  datetime.now(timezone.utc).isoformat(),
-    "repo_count":    len(repos),
-    "languages":     lang_output,
-    "frameworks":    sorted(all_frameworks.keys()),
-    "infra":         sorted(all_infra.keys()),
+    "generated_at":   datetime.now(timezone.utc).isoformat(),
+    "repo_count":     len(repos),
+    "languages":      lang_output,
+    "frameworks":     sorted(all_frameworks.keys()),
+    "infra":          sorted(all_infra.keys()),
+    "commit_stats":   commit_stats,
 }
 with open(f"{OUTPUT}/stack.json", "w") as f:
     json.dump(stack, f, indent=2)
 
 print(f"\n      Frameworks detected : {sorted(all_frameworks.keys())}")
 print(f"      Infra detected      : {sorted(all_infra.keys())}")
+
+# ── Fetch real commit stats via GraphQL (includes private contributions) ──────────
+print("\n[3.5/4] Fetching contribution stats via GraphQL...")
+commit_stats = {"total_commits": 0, "total_prs": 0, "total_issues": 0,
+                "contrib_years": [], "error": None}
+try:
+    # GraphQL query: contributionsCollection gives private+public counts
+    # when authenticated with a token that has repo scope
+    gql_query = """
+    {
+      user(login: "%s") {
+        contributionsCollection {
+          totalCommitContributions
+          totalPullRequestContributions
+          totalIssueContributions
+          contributionCalendar {
+            totalContributions
+            weeks {
+              contributionDays {
+                contributionCount
+                date
+              }
+            }
+          }
+        }
+        repositories(first: 1, orderBy: {field: PUSHED_AT, direction: DESC}) {
+          totalCount
+        }
+      }
+    }
+    """ % USERNAME
+
+    gql_resp = requests.post(
+        "https://api.github.com/graphql",
+        headers={**HEADERS, "Content-Type": "application/json"},
+        json={"query": gql_query},
+        timeout=30,
+    )
+    gql_data = gql_resp.json()
+    if "errors" in gql_data:
+        commit_stats["error"] = str(gql_data["errors"])
+        print(f"      GraphQL error: {gql_data['errors']}")
+    else:
+        cc = gql_data["data"]["user"]["contributionsCollection"]
+        calendar = cc["contributionCalendar"]
+        commit_stats["total_commits"] = cc["totalCommitContributions"]
+        commit_stats["total_prs"] = cc["totalPullRequestContributions"]
+        commit_stats["total_issues"] = cc["totalIssueContributions"]
+        commit_stats["calendar_total"] = calendar["totalContributions"]
+        # Build daily breakdown for streak calculation
+        days = []
+        for week in calendar["weeks"]:
+            for day in week["contributionDays"]:
+                days.append(
+                    {"date": day["date"], "count": day["contributionCount"]})
+        commit_stats["contribution_days"] = days
+        print(f"      Commits (this year): {commit_stats['total_commits']}")
+        print(f"      PRs:                {commit_stats['total_prs']}")
+        print(f"      Calendar total:     {commit_stats['calendar_total']}")
+except Exception as e:
+    commit_stats["error"] = str(e)
+    print(f"      GraphQL fetch failed: {e}")
+
+with open(f"{OUTPUT}/commit_stats.json", "w") as f:
+    json.dump({
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        **commit_stats
+    }, f, indent=2)
+print("      Wrote output/commit_stats.json")
+
+# ── Diagnostic: list ALL repos found and which were accessible ─────────────────
+diagnostic = {
+    "generated_at":  datetime.now(timezone.utc).isoformat(),
+    "total_repos":   len(repos),
+    "repos": [
+        {
+            "full_name":    r["full_name"],
+            "private":      r["private"],
+            "owner":        r["owner"]["login"],
+            "default_branch": r.get("default_branch"),
+        }
+        for r in repos
+    ],
+}
+with open(f"{OUTPUT}/diagnostic.json", "w") as f:
+    json.dump(diagnostic, f, indent=2)
+print(f"      Wrote output/diagnostic.json  ({len(repos)} repos listed)")
 
 # ── SVG generation ────────────────────────────────────────────────────────────
 print("\n[4/4] Generating stack.svg...")
