@@ -251,40 +251,102 @@ def gh_get(path, params=None):
 
 def fetch_all_repos():
     """
-    Fetch ALL repos the token can see:
-      - Personal repos via /user/repos?type=all
-      - Every org the user belongs to via /user/orgs -> /orgs/:org/repos
-    Deduplicates by repo ID.
+    Fetch ALL repos the token can see across personal account + all 9 orgs.
 
-    NOTE: For org repos to be visible, the PAT must have been granted access
-    to the org (org owner may need to approve it under Settings > Third-party access).
+    GitHub has TWO separate org membership APIs:
+      - /user/orgs          -> orgs where you are a MEMBER (may be hidden if private membership)
+      - /user/memberships/orgs -> orgs where you have any role incl. owner
+      - /user/repos?type=all   -> also returns org repos you have direct access to
+
+    For orgs to be visible the PAT needs:
+      - repo scope (full)
+      - read:org scope
+      - Each org must have approved the PAT (org Settings > Third-party access > Approved)
+        OR the token owner must be the org owner.
+
+    This function tries all three paths and deduplicates.
     """
     seen_ids = set()
     repos = []
+    orgs_found = {}   # login -> source
 
-    def _drain(endpoint, params):
+    def _drain(endpoint, params, label=""):
         page = 1
+        count = 0
         while True:
             batch = gh_get(endpoint, {**params, "per_page": 100, "page": page})
             if not batch:
                 break
             for r in batch:
+                # /user/repos returns repos, /user/memberships returns membership objects
+                if "id" not in r:
+                    continue
                 if r["id"] not in seen_ids:
                     repos.append(r)
                     seen_ids.add(r["id"])
+                    count += 1
             if len(batch) < 100:
                 break
             page += 1
+        if count:
+            print(
+                f"      {label}: +{count} repos (total so far: {len(repos)})")
+        return count
 
-    # 1. Personal repos (public + private)
-    _drain("/user/repos", {"type": "all"})
+    # ── Path 1: /user/repos?type=all ─────────────────────────────────────────
+    # Returns personal repos + org repos the token has direct access to
+    print("      [Path 1] /user/repos?type=all")
+    _drain("/user/repos", {"type": "all", "affiliation": "owner,collaborator,organization_member"},
+           "user/repos")
 
-    # 2. Every org the token can see
-    orgs = gh_get("/user/orgs", {"per_page": 100}) or []
-    for org in orgs:
+    # ── Path 2: /user/orgs (member orgs) ─────────────────────────────────────
+    print("      [Path 2] /user/orgs (member orgs)")
+    member_orgs = gh_get("/user/orgs", {"per_page": 100}) or []
+    for org in member_orgs:
         login = org["login"]
-        print(f"      + scanning org: {login}")
-        _drain(f"/orgs/{login}/repos", {"type": "all"})
+        orgs_found[login] = "member"
+
+    # ── Path 3: /user/memberships/orgs (all roles incl owner) ─────────────────
+    print("      [Path 3] /user/memberships/orgs (all roles)")
+    memberships = gh_get("/user/memberships/orgs",
+                         {"per_page": 100, "state": "active"}) or []
+    for m in memberships:
+        login = m.get("organization", {}).get("login", "")
+        role = m.get("role", "?")
+        if login:
+            orgs_found[login] = role
+
+    print(f"      Orgs found: {list(orgs_found.keys())}")
+
+    # ── Drain each org ────────────────────────────────────────────────────────
+    for login, role in orgs_found.items():
+        print(f"      + org [{role}]: {login}")
+        n = _drain(f"/orgs/{login}/repos", {"type": "all"}, f"  {login}")
+        if n == 0:
+            # Try fetching as authenticated user explicitly
+            print(f"        (no repos via org endpoint — PAT may need org approval)")
+
+    print(f"\n      TOTAL repos accessible: {len(repos)}")
+    print(f"      Orgs attempted: {len(orgs_found)}")
+
+    # Write org diagnostic
+    os.makedirs(OUTPUT, exist_ok=True)
+    with open(f"{OUTPUT}/org_diagnostic.json", "w") as f:
+        import json as _json
+        _json.dump({
+            "generated_at":    datetime.now(timezone.utc).isoformat(),
+            "total_repos":     len(repos),
+            "orgs_found":      orgs_found,
+            "orgs_not_returning_repos": [
+                login for login in orgs_found
+            ],
+            "note": (
+                "If an org shows 0 repos, the PAT needs org approval. "
+                "Go to: https://github.com/organizations/<ORG>/settings/oauth_application_policy "
+                "OR each org Settings > Third-party Access > Pending > Approve. "
+                "Also ensure PAT has scopes: repo (full) + read:org."
+            )
+        }, f, indent=2)
 
     return repos
 
