@@ -1,18 +1,27 @@
 {
-  "generated_at": "2026-03-02T05:33:57.486316+00:00",
+  "generated_at": "2026-03-02T05:58:26.643741+00:00",
   "aggregated": {
-    "Docker": 39,
+    "Docker": 44,
     "GitHub Actions": 33,
+    "Solidity": 16,
     "PostgreSQL": 13,
+    "Redis": 10,
     "AWS": 10,
-    "Redis": 9,
+    "Terraform": 6,
     "Vercel": 6,
+    "Grafana": 3,
     "MongoDB": 2,
+    "Nginx": 2,
     "Prometheus": 2,
-    "Grafana": 2,
     "Firebase": 2,
     "GCP": 2,
+    "GraphQL": 1,
     "CircleCI": 1,
-    "CDK": 1
+    "OpenTelemetry": 1,
+    "Protocol Buffers": 1,
+    "Helm": 1,
+    "CDK": 1,
+    "MySQL": 1,
+    "MariaDB": 1
   }
 }

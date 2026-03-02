@@ -1,36 +1,58 @@
 {
-  "generated_at": "2026-03-02T05:33:57.485068+00:00",
+  "generated_at": "2026-03-02T05:58:26.642294+00:00",
   "aggregated": {
     "React": 62,
-    "Express": 23,
+    "Express": 22,
     "Next.js": 22,
-    "Django": 12,
+    "Solidity": 16,
+    "Django": 15,
+    "PostgreSQL": 9,
+    "Redis": 8,
     "Prisma": 6,
     "SQLAlchemy": 4,
     "Flask": 4,
     "Celery": 4,
     "gRPC": 3,
+    "MongoDB": 2,
+    "Nginx": 2,
+    "Grafana": 2,
+    "Prometheus": 2,
     "FastAPI": 2,
+    "Terraform": 2,
     "Pydantic": 2,
     "Vue.js": 2,
     "GraphQL": 1,
+    "OpenTelemetry": 1,
+    "Protocol Buffers": 1,
+    "HuggingFace": 1,
     "NumPy": 1,
     "Pandas": 1,
-    "HuggingFace": 1,
-    "Tokio": 1
+    "Tokio": 1,
+    "MySQL": 1,
+    "MariaDB": 1
   },
   "per_repo": [
     {
       "repo": "Accornya-website",
       "frameworks": [
         "Express",
+        "MongoDB",
         "Next.js",
-        "React"
+        "Nginx",
+        "React",
+        "Redis"
       ],
       "infra": [
         "Docker",
         "MongoDB",
-        "Redis"
+        "Nginx",
+        "Redis",
+        "Terraform"
+      ],
+      "compose_images": [
+        "mongo",
+        "nginx",
+        "redis"
       ]
     },
     {
@@ -38,212 +60,301 @@
       "frameworks": [
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "mastermind_tour",
       "frameworks": [
+        "Django",
         "Express",
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "silicornya-backend",
-      "frameworks": [],
-      "infra": []
+      "frameworks": [
+        "Django"
+      ],
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "audiobook",
-      "frameworks": [],
-      "infra": []
+      "frameworks": [
+        "Solidity"
+      ],
+      "infra": [
+        "Solidity"
+      ],
+      "compose_images": []
     },
     {
       "repo": "blog",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "bubble-auth",
       "frameworks": [
         "Express"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "bubble-contracts",
-      "frameworks": [],
-      "infra": []
+      "frameworks": [
+        "Solidity"
+      ],
+      "infra": [
+        "Solidity"
+      ],
+      "compose_images": []
     },
     {
       "repo": "bubble-core",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "bubble-fs",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "bubble-id",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "bubble-sdk",
       "frameworks": [
-        "Express"
+        "Express",
+        "Solidity"
       ],
-      "infra": []
+      "infra": [
+        "Solidity"
+      ],
+      "compose_images": []
     },
     {
       "repo": "bubble-token",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "bubble-tools",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "chainlink-integration",
-      "frameworks": [],
-      "infra": []
+      "frameworks": [
+        "Solidity"
+      ],
+      "infra": [
+        "Solidity"
+      ],
+      "compose_images": []
     },
     {
       "repo": "community",
       "frameworks": [
-        "React"
+        "React",
+        "Solidity"
       ],
-      "infra": []
+      "infra": [
+        "Solidity"
+      ],
+      "compose_images": []
     },
     {
       "repo": "dapp-template",
       "frameworks": [
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "HushBubble",
       "frameworks": [
-        "React"
+        "React",
+        "Solidity"
       ],
-      "infra": []
+      "infra": [
+        "Solidity"
+      ],
+      "compose_images": []
     },
     {
       "repo": "hushbubble.old",
       "frameworks": [
-        "React"
+        "React",
+        "Solidity"
       ],
-      "infra": []
+      "infra": [
+        "Solidity"
+      ],
+      "compose_images": []
     },
     {
       "repo": "restful-server",
       "frameworks": [
         "Express"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "scraper",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "seedling",
       "frameworks": [
         "GraphQL",
-        "React"
+        "React",
+        "Solidity"
       ],
-      "infra": []
+      "infra": [
+        "GraphQL",
+        "Solidity"
+      ],
+      "compose_images": []
     },
     {
       "repo": "test-servers",
       "frameworks": [
         "Express"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "todolist",
       "frameworks": [
-        "React"
+        "React",
+        "Solidity"
       ],
-      "infra": []
+      "infra": [
+        "Solidity"
+      ],
+      "compose_images": []
     },
     {
       "repo": "TokenTraxx-demo",
       "frameworks": [
-        "React"
+        "React",
+        "Solidity"
       ],
-      "infra": []
+      "infra": [
+        "Solidity"
+      ],
+      "compose_images": []
     },
     {
       "repo": "trivial-bubble-server",
       "frameworks": [
         "Express"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "vaultbox",
       "frameworks": [
-        "React"
+        "React",
+        "Solidity"
       ],
-      "infra": []
+      "infra": [
+        "Solidity"
+      ],
+      "compose_images": []
     },
     {
       "repo": "website",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "workshops",
       "frameworks": [
-        "React"
+        "React",
+        "Solidity"
       ],
-      "infra": []
+      "infra": [
+        "Solidity"
+      ],
+      "compose_images": []
     },
     {
       "repo": "zenbox",
       "frameworks": [
-        "React"
+        "React",
+        "Solidity"
       ],
-      "infra": []
+      "infra": [
+        "Solidity"
+      ],
+      "compose_images": []
     },
     {
       "repo": "zenbox-community-admin",
       "frameworks": [
-        "React"
+        "React",
+        "Solidity"
       ],
-      "infra": []
+      "infra": [
+        "Solidity"
+      ],
+      "compose_images": []
     },
     {
       "repo": "zenbox-landing-page",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "zendrop-001",
       "frameworks": [
-        "React"
+        "React",
+        "Solidity"
       ],
-      "infra": []
+      "infra": [
+        "Solidity"
+      ],
+      "compose_images": []
     },
     {
       "repo": "demo-repository",
       "frameworks": [],
       "infra": [
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "edtec-backend",
       "frameworks": [
         "Flask",
+        "Grafana",
+        "PostgreSQL",
+        "Prometheus",
+        "Redis",
         "SQLAlchemy"
       ],
       "infra": [
@@ -254,6 +365,12 @@
         "PostgreSQL",
         "Prometheus",
         "Redis"
+      ],
+      "compose_images": [
+        "grafana/grafana",
+        "postgres",
+        "prom/prometheus",
+        "redis"
       ]
     },
     {
@@ -265,25 +382,40 @@
         "CircleCI",
         "GitHub Actions",
         "Vercel"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "edtec-monitoring",
-      "frameworks": [],
+      "frameworks": [
+        "Grafana",
+        "OpenTelemetry",
+        "Prometheus"
+      ],
       "infra": [
         "Docker",
         "Grafana",
+        "OpenTelemetry",
         "Prometheus"
+      ],
+      "compose_images": [
+        "grafana/grafana",
+        "grafana/loki",
+        "grafana/tempo",
+        "otel/opentelemetry-collector-contrib",
+        "prom/prometheus"
       ]
     },
     {
       "repo": "mememates",
       "frameworks": [
-        "Express"
+        "Protocol Buffers"
       ],
       "infra": [
-        "Firebase"
-      ]
+        "Firebase",
+        "Protocol Buffers"
+      ],
+      "compose_images": []
     },
     {
       "repo": "bazigar-website",
@@ -291,12 +423,14 @@
         "Next.js",
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "Flutter-Task-10.06.23",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "lastnewsbd-main-website",
@@ -306,21 +440,24 @@
       ],
       "infra": [
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "meveriq-backend",
       "frameworks": [
         "Express"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "meveriq-frontend",
       "frameworks": [
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "silicornya",
@@ -330,27 +467,32 @@
       ],
       "infra": [
         "Docker"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "quick_cash",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "backendDevelopment",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "ivacB",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "10x_Ai_Engineer",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "aibrix",
@@ -363,18 +505,26 @@
         "gRPC"
       ],
       "infra": [
-        "GitHub Actions"
-      ]
+        "Docker",
+        "GitHub Actions",
+        "Terraform"
+      ],
+      "compose_images": []
     },
     {
       "repo": "bets-fire",
       "frameworks": [],
-      "infra": []
+      "infra": [
+        "Grafana",
+        "Terraform"
+      ],
+      "compose_images": []
     },
     {
       "repo": "docs",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "flask-api",
@@ -382,46 +532,64 @@
         "Flask",
         "SQLAlchemy"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "live-streamig",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "onirudda-islam",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "prism",
-      "frameworks": [],
-      "infra": []
+      "frameworks": [
+        "Solidity"
+      ],
+      "infra": [
+        "Solidity"
+      ],
+      "compose_images": []
     },
     {
       "repo": "silicornya-backend",
-      "frameworks": [],
-      "infra": []
+      "frameworks": [
+        "Django"
+      ],
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "stats",
       "frameworks": [],
       "infra": [
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "Trial-candiate-Zadd",
       "frameworks": [
         "Express",
+        "PostgreSQL",
         "Prisma",
-        "React"
+        "React",
+        "Redis"
       ],
       "infra": [
         "Docker",
         "PostgreSQL",
         "Redis"
+      ],
+      "compose_images": [
+        "postgres",
+        "redis"
       ]
     },
     {
@@ -429,19 +597,26 @@
       "frameworks": [
         "Express"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "Trial-candiate-Zadd",
       "frameworks": [
         "Express",
+        "PostgreSQL",
         "Prisma",
-        "React"
+        "React",
+        "Redis"
       ],
       "infra": [
         "Docker",
         "PostgreSQL",
         "Redis"
+      ],
+      "compose_images": [
+        "postgres",
+        "redis"
       ]
     },
     {
@@ -450,26 +625,30 @@
       "infra": [
         "Firebase",
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "learning",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "demo-repository",
       "frameworks": [],
       "infra": [
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "rjango",
       "frameworks": [
         "Tokio"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "Arcedeon",
@@ -477,42 +656,63 @@
         "Next.js",
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "audio-mobile-app",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "bazigaar",
       "frameworks": [
-        "Django"
-      ],
-      "infra": [
-        "AWS",
+        "Django",
         "PostgreSQL"
-      ]
-    },
-    {
-      "repo": "bazigaar-backend-farhan",
-      "frameworks": [
-        "Django"
-      ],
-      "infra": [
-        "AWS",
-        "PostgreSQL"
-      ]
-    },
-    {
-      "repo": "bazigaar-test",
-      "frameworks": [
-        "Django"
       ],
       "infra": [
         "AWS",
         "Docker",
         "PostgreSQL"
+      ],
+      "compose_images": [
+        "postgres"
+      ]
+    },
+    {
+      "repo": "bazigaar-backend-farhan",
+      "frameworks": [
+        "Django",
+        "PostgreSQL",
+        "Redis",
+        "Terraform"
+      ],
+      "infra": [
+        "AWS",
+        "Docker",
+        "PostgreSQL",
+        "Redis",
+        "Terraform"
+      ],
+      "compose_images": [
+        "postgres",
+        "redis"
+      ]
+    },
+    {
+      "repo": "bazigaar-test",
+      "frameworks": [
+        "Django",
+        "PostgreSQL"
+      ],
+      "infra": [
+        "AWS",
+        "Docker",
+        "PostgreSQL"
+      ],
+      "compose_images": [
+        "postgres"
       ]
     },
     {
@@ -523,12 +723,14 @@
       "infra": [
         "AWS",
         "PostgreSQL"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "bazigaar_mobile",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "bazigaar_web",
@@ -537,20 +739,31 @@
       ],
       "infra": [
         "Docker"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "betfire-backend",
       "frameworks": [
         "Celery",
         "Flask",
+        "PostgreSQL",
         "Pydantic",
-        "SQLAlchemy"
+        "Redis",
+        "SQLAlchemy",
+        "Terraform"
       ],
       "infra": [
         "AWS",
+        "Docker",
+        "Helm",
         "PostgreSQL",
-        "Redis"
+        "Redis",
+        "Terraform"
+      ],
+      "compose_images": [
+        "postgres",
+        "redis"
       ]
     },
     {
@@ -559,29 +772,34 @@
         "Next.js",
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "betsfire_user",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "binnexa",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "bitgain-frontend",
       "frameworks": [
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "bitgain_mobile",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "Brighton_Academy_Campaign",
@@ -592,12 +810,14 @@
       "infra": [
         "Docker",
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "chat-app-web-node-next",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "crm",
@@ -607,26 +827,30 @@
       "infra": [
         "CDK",
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "crm-quick-cash",
       "frameworks": [
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "dashboard",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "demo-repository",
       "frameworks": [],
       "infra": [
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "django-websocket",
@@ -636,12 +860,14 @@
       "infra": [
         "Docker",
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "Ecommerce_Project",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "election-news-website",
@@ -651,26 +877,30 @@
       ],
       "infra": [
         "Docker"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "erp",
       "frameworks": [],
       "infra": [
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "fine-tuning",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "Initial-dashboard-with-react-tailwind",
       "frameworks": [
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "initial-express-config",
@@ -678,64 +908,78 @@
         "Express",
         "Prisma"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "ivac",
       "frameworks": [
         "Express",
+        "MongoDB",
         "React"
       ],
       "infra": [
         "Docker",
-        "MongoDB"
+        "MongoDB",
+        "Terraform"
+      ],
+      "compose_images": [
+        "mongo"
       ]
     },
     {
       "repo": "job-task",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "ludo-node-server",
       "frameworks": [
         "Express"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "map",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "map-android",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "MapViewer",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "mlm_maverik_backend",
       "frameworks": [
         "Express"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "mr-expert-socket",
       "frameworks": [
         "Django"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "mr_expert",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "mr_expert_backend",
@@ -745,7 +989,8 @@
       "infra": [
         "Docker",
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "mr_expert_dashboard",
@@ -755,12 +1000,14 @@
       "infra": [
         "Docker",
         "Vercel"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "mr_expert_mobile",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "mr_expert_web",
@@ -768,7 +1015,8 @@
         "Next.js",
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "mytel-admin",
@@ -778,7 +1026,8 @@
       "infra": [
         "Docker",
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "mytel-agent",
@@ -789,13 +1038,15 @@
         "Docker",
         "GitHub Actions",
         "Vercel"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "mytel-backend",
       "frameworks": [
         "Celery",
         "Django",
+        "PostgreSQL",
         "gRPC"
       ],
       "infra": [
@@ -805,6 +1056,9 @@
         "GitHub Actions",
         "PostgreSQL",
         "Redis"
+      ],
+      "compose_images": [
+        "postgres"
       ]
     },
     {
@@ -816,12 +1070,14 @@
       "infra": [
         "Docker",
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "mytel_mobile",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "news_server",
@@ -830,7 +1086,8 @@
       ],
       "infra": [
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "online-news",
@@ -838,7 +1095,8 @@
         "Next.js",
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "online-news-cms",
@@ -848,26 +1106,41 @@
       "infra": [
         "GitHub Actions",
         "Vercel"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "online-news-react",
       "frameworks": [
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "python-commissions",
       "frameworks": [
         "Celery",
         "FastAPI",
+        "MySQL",
+        "Nginx",
         "Pydantic",
+        "Redis",
         "SQLAlchemy"
       ],
       "infra": [
         "Docker",
+        "MySQL",
+        "Nginx",
         "Redis"
+      ],
+      "compose_images": [
+        "commission",
+        "mysql",
+        "nginx",
+        "phpmyadmin",
+        "redis",
+        "user-backend-express"
       ]
     },
     {
@@ -876,7 +1149,8 @@
         "Next.js",
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "quick_cash_backend",
@@ -886,19 +1160,22 @@
       "infra": [
         "Docker",
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "quick_cash_mobile",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "quick_cash_web",
       "frameworks": [
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "sadhinpay-admin",
@@ -908,12 +1185,14 @@
       "infra": [
         "Docker",
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "sadhinpay-socket",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "sadhinpay-web",
@@ -923,7 +1202,8 @@
       "infra": [
         "Docker",
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "sadhinpay_agent",
@@ -934,13 +1214,15 @@
         "Docker",
         "GitHub Actions",
         "Vercel"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "sadhinpay_backend",
       "frameworks": [
         "Celery",
         "Django",
+        "PostgreSQL",
         "gRPC"
       ],
       "infra": [
@@ -950,12 +1232,16 @@
         "GitHub Actions",
         "PostgreSQL",
         "Redis"
+      ],
+      "compose_images": [
+        "postgres"
       ]
     },
     {
       "repo": "sadhinpay_mobile",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "sadhinpay_website",
@@ -966,7 +1252,8 @@
       "infra": [
         "Docker",
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "school-management-admin",
@@ -976,7 +1263,8 @@
       "infra": [
         "Docker",
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "school-management-backend",
@@ -987,7 +1275,8 @@
       "infra": [
         "Docker",
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "school-management-web",
@@ -997,7 +1286,8 @@
       ],
       "infra": [
         "Docker"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "school-mx-st",
@@ -1007,7 +1297,8 @@
       "infra": [
         "Docker",
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "schooling",
@@ -1017,7 +1308,8 @@
       "infra": [
         "Docker",
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "schooling-account",
@@ -1028,7 +1320,8 @@
         "Docker",
         "GitHub Actions",
         "PostgreSQL"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "school_admission_campaign_cms",
@@ -1038,7 +1331,8 @@
       ],
       "infra": [
         "Docker"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "School_Admission_Campain",
@@ -1049,19 +1343,22 @@
       "infra": [
         "Docker",
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "SErp",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "SFrapee",
       "frameworks": [
         "Vue.js"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "Shahid_Model_Campaign",
@@ -1072,20 +1369,31 @@
       "infra": [
         "Docker",
         "GitHub Actions"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "shooling_mobile",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "Shr",
       "frameworks": [
+        "MariaDB",
+        "Redis",
         "Vue.js"
       ],
       "infra": [
+        "Docker",
+        "MariaDB",
         "Redis"
+      ],
+      "compose_images": [
+        "frappe/bench",
+        "mariadb",
+        "redis"
       ]
     },
     {
@@ -1096,7 +1404,8 @@
       ],
       "infra": [
         "Docker"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "silicornya-website",
@@ -1106,7 +1415,8 @@
       ],
       "infra": [
         "Docker"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "silicornya_backend",
@@ -1116,14 +1426,16 @@
       "infra": [
         "AWS",
         "PostgreSQL"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "silicornya_dashboard",
       "frameworks": [
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "silicornya_new_website",
@@ -1131,38 +1443,44 @@
         "Next.js",
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "silicornya_server",
       "frameworks": [
         "Express"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "sms-admin",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "sms-backend",
       "frameworks": [
         "Django"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "ubazaar-admin",
       "frameworks": [
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "ubazar_backend",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "ubazar_frontend",
@@ -1170,7 +1488,8 @@
         "Next.js",
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "user-info",
@@ -1181,7 +1500,8 @@
         "AWS",
         "Docker",
         "PostgreSQL"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "user-info-admin",
@@ -1190,7 +1510,8 @@
       ],
       "infra": [
         "Vercel"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "visa-admin-panel",
@@ -1199,7 +1520,8 @@
         "Prisma",
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "voter-info-backend",
@@ -1207,31 +1529,36 @@
         "Express",
         "Prisma"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "voters_info",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "web_scrap",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "zetmine",
       "frameworks": [
         "React"
       ],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "zetmine-admin",
       "frameworks": [],
       "infra": [
         "Docker"
-      ]
+      ],
+      "compose_images": []
     },
     {
       "repo": "zetmine-wallet",
@@ -1240,17 +1567,22 @@
       ],
       "infra": [
         "Docker"
+      ],
+      "compose_images": [
+        "maveriq_usdt_wallet"
       ]
     },
     {
       "repo": "zetmin_mobile",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     },
     {
       "repo": "paralegal",
       "frameworks": [],
-      "infra": []
+      "infra": [],
+      "compose_images": []
     }
   ]
 }
