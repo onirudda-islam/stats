@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="130" viewBox="0 0 800 130">
+  <style>text { font-family: 'Segoe UI', sans-serif; }</style>
+  <rect width="800" height="130" rx="6" fill="#0d1117"/>
+  <g transform="translate(0,0)" rx="6" style="overflow:hidden">
+    <rect x="0" y="0" width="318" height="20" fill="#3178C6"><title>TypeScript: 39.8%</title></rect><rect x="318" y="0" width="192" height="20" fill="#00ADD8"><title>Go: 24.0%</title></rect><rect x="510" y="0" width="161" height="20" fill="#3776AB"><title>Python: 20.2%</title></rect><rect x="671" y="0" width="118" height="20" fill="#F7DF1E"><title>JavaScript: 14.8%</title></rect><rect x="789" y="0" width="9" height="20" fill="#6E7681"><title>MDX: 1.1%</title></rect><rect x="798" y="0" width="1" height="20" fill="#6E7681"><title>Solidity: 0.1%</title></rect><rect x="799" y="0" width="1" height="20" fill="#6E7681"><title>PLpgSQL: 0.0%</title></rect><rect x="800" y="0" width="1" height="20" fill="#6E7681"><title>Mako: 0.0%</title></rect>
+  </g>
+  <g transform="translate(0,36)">
+    <rect x="0" y="6" width="12" height="12" rx="2" fill="#3178C6"/><text x="18" y="16" font-size="12" fill="#c9d1d9">TypeScript 39.8%</text><rect x="270" y="6" width="12" height="12" rx="2" fill="#00ADD8"/><text x="288" y="16" font-size="12" fill="#c9d1d9">Go 24.0%</text><rect x="540" y="6" width="12" height="12" rx="2" fill="#3776AB"/><text x="558" y="16" font-size="12" fill="#c9d1d9">Python 20.2%</text><rect x="0" y="34" width="12" height="12" rx="2" fill="#F7DF1E"/><text x="18" y="44" font-size="12" fill="#c9d1d9">JavaScript 14.8%</text><rect x="270" y="34" width="12" height="12" rx="2" fill="#6E7681"/><text x="288" y="44" font-size="12" fill="#c9d1d9">MDX 1.1%</text><rect x="540" y="34" width="12" height="12" rx="2" fill="#6E7681"/><text x="558" y="44" font-size="12" fill="#c9d1d9">Solidity 0.1%</text><rect x="0" y="62" width="12" height="12" rx="2" fill="#6E7681"/><text x="18" y="72" font-size="12" fill="#c9d1d9">PLpgSQL 0.0%</text><rect x="270" y="62" width="12" height="12" rx="2" fill="#6E7681"/><text x="288" y="72" font-size="12" fill="#c9d1d9">Mako 0.0%</text>
+  </g>
+</svg>

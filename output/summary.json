@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-03-02T04:28:56.088412+00:00",
+  "repo_count": 16,
+  "top_languages": [
+    {
+      "name": "TypeScript",
+      "bytes": 1106093,
+      "percentage": 39.76,
+      "color": "#3178C6"
+    },
+    {
+      "name": "Go",
+      "bytes": 668994,
+      "percentage": 24.05,
+      "color": "#00ADD8"
+    },
+    {
+      "name": "Python",
+      "bytes": 560681,
+      "percentage": 20.15,
+      "color": "#3776AB"
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 411157,
+      "percentage": 14.78,
+      "color": "#F7DF1E"
+    },
+    {
+      "name": "MDX",
+      "bytes": 30293,
+      "percentage": 1.09,
+      "color": "#6E7681"
+    },
+    {
+      "name": "Solidity",
+      "bytes": 2662,
+      "percentage": 0.1,
+      "color": "#6E7681"
+    },
+    {
+      "name": "PLpgSQL",
+      "bytes": 1002,
+      "percentage": 0.04,
+      "color": "#6E7681"
+    },
+    {
+      "name": "Mako",
+      "bytes": 988,
+      "percentage": 0.04,
+      "color": "#6E7681"
+    }
+  ]
+}
