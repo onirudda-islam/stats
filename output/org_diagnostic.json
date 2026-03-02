@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-03-02T05:31:44.217830+00:00",
+  "total_repos": 172,
+  "orgs_found": {
+    "Bubble-Protocol": "member",
+    "Silicornya": "admin",
+    "smeedubd": "admin",
+    "Rdjango": "admin",
+    "Edtec-ai": "admin",
+    "SYNOVA-WHISPER": "member",
+    "Accornya-inc": "admin"
+  },
+  "orgs_not_returning_repos": [
+    "Bubble-Protocol",
+    "Silicornya",
+    "smeedubd",
+    "Rdjango",
+    "Edtec-ai",
+    "SYNOVA-WHISPER",
+    "Accornya-inc"
+  ],
+  "note": "If an org shows 0 repos, the PAT needs org approval. Go to: https://github.com/organizations/<ORG>/settings/oauth_application_policy OR each org Settings > Third-party Access > Pending > Approve. Also ensure PAT has scopes: repo (full) + read:org."
+}

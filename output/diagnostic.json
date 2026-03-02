@@ -1,11 +1,275 @@
 {
-  "generated_at": "2026-03-02T05:10:20.906552+00:00",
-  "total_repos": 16,
+  "generated_at": "2026-03-02T05:33:57.821397+00:00",
+  "total_repos": 172,
   "repos": [
+    {
+      "full_name": "Accornya-inc/Accornya-website",
+      "private": true,
+      "owner": "Accornya-inc",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "arif-khan-shanto/Baazigar_admin",
+      "private": true,
+      "owner": "arif-khan-shanto",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "arif-khan-shanto/mastermind_tour",
+      "private": true,
+      "owner": "arif-khan-shanto",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "arif-khan-shanto/silicornya-backend",
+      "private": true,
+      "owner": "arif-khan-shanto",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/audiobook",
+      "private": false,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/blog",
+      "private": false,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/bubble-auth",
+      "private": true,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/bubble-contracts",
+      "private": false,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/bubble-core",
+      "private": true,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/bubble-fs",
+      "private": true,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/bubble-id",
+      "private": true,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/bubble-sdk",
+      "private": false,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/bubble-token",
+      "private": true,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/bubble-tools",
+      "private": false,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/chainlink-integration",
+      "private": false,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/community",
+      "private": false,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/dapp-template",
+      "private": false,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/HushBubble",
+      "private": false,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/hushbubble.old",
+      "private": true,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/restful-server",
+      "private": true,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/scraper",
+      "private": true,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/seedling",
+      "private": false,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/test-servers",
+      "private": false,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/todolist",
+      "private": false,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/TokenTraxx-demo",
+      "private": true,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/trivial-bubble-server",
+      "private": false,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/vaultbox",
+      "private": false,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/website",
+      "private": false,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/workshops",
+      "private": false,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/zenbox",
+      "private": true,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/zenbox-community-admin",
+      "private": true,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/zenbox-landing-page",
+      "private": false,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Bubble-Protocol/zendrop-001",
+      "private": true,
+      "owner": "Bubble-Protocol",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Edtec-ai/demo-repository",
+      "private": true,
+      "owner": "Edtec-ai",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Edtec-ai/edtec-backend",
+      "private": true,
+      "owner": "Edtec-ai",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Edtec-ai/edtec-frontend",
+      "private": true,
+      "owner": "Edtec-ai",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Edtec-ai/edtec-monitoring",
+      "private": true,
+      "owner": "Edtec-ai",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "FlicLabs/mememates",
+      "private": true,
+      "owner": "FlicLabs",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "johirulislamnishat/bazigar-website",
+      "private": true,
+      "owner": "johirulislamnishat",
+      "default_branch": "main"
+    },
     {
       "full_name": "johirulislamnishat/Flutter-Task-10.06.23",
       "private": false,
       "owner": "johirulislamnishat",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "johirulislamnishat/lastnewsbd-main-website",
+      "private": true,
+      "owner": "johirulislamnishat",
+      "default_branch": "news_web_one"
+    },
+    {
+      "full_name": "johirulislamnishat/meveriq-backend",
+      "private": true,
+      "owner": "johirulislamnishat",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "johirulislamnishat/meveriq-frontend",
+      "private": true,
+      "owner": "johirulislamnishat",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "johirulislamnishat/silicornya",
+      "private": true,
+      "owner": "johirulislamnishat",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "jubayerhossain625/quick_cash",
+      "private": true,
+      "owner": "jubayerhossain625",
       "default_branch": "main"
     },
     {
@@ -96,6 +360,678 @@
       "full_name": "onirudda-islam/trivial-bubble-server",
       "private": false,
       "owner": "onirudda-islam",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "pervizismail/Trial-candiate-Zadd",
+      "private": true,
+      "owner": "pervizismail",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Planterrs/Mememates",
+      "private": true,
+      "owner": "Planterrs",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "raihanbdxr/learning",
+      "private": true,
+      "owner": "raihanbdxr",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Rdjango/demo-repository",
+      "private": true,
+      "owner": "Rdjango",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Rdjango/rjango",
+      "private": true,
+      "owner": "Rdjango",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/Arcedeon",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/audio-mobile-app",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/bazigaar",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/bazigaar-backend-farhan",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/bazigaar-test",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/bazigaar_backend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/bazigaar_mobile",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/bazigaar_web",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/betfire-backend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/betsfire-frontend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/betsfire_user",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/binnexa",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/bitgain-frontend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/bitgain_mobile",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/Brighton_Academy_Campaign",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/chat-app-web-node-next",
+      "private": false,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/crm",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/crm-quick-cash",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/dashboard",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/demo-repository",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/discussion",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/django-websocket",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/Ecommerce_Project",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/election-news-website",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "news-website-design"
+    },
+    {
+      "full_name": "Silicornya/erp",
+      "private": false,
+      "owner": "Silicornya",
+      "default_branch": "develop"
+    },
+    {
+      "full_name": "Silicornya/fine-tuning",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/Initial-dashboard-with-react-tailwind",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/initial-express-config",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/ivac",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/job-task",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/live_streaming_backend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/live_streaming_mobile",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/ludo-node-server",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/map",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/map-android",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/MapViewer",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/mastermind_backend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/mastermind_frontend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/mlm_maverik_admin",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/mlm_maverik_backend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/mlm_maverik_frontend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/mlm_maverik_mobile",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/mr-expert-socket",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/mr_expert",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/mr_expert_backend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/mr_expert_dashboard",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/mr_expert_mobile",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/mr_expert_web",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/mytel-admin",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/mytel-agent",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/mytel-backend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/mytel-website",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/mytel_mobile",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/news_server",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/online-news",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/online-news-backend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/online-news-cms",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "deploy"
+    },
+    {
+      "full_name": "Silicornya/online-news-react",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/python-commissions",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/quick-cash-website",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/quick_cash_backend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/quick_cash_mobile",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/quick_cash_web",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/sadhinpay-admin",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/sadhinpay-socket",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/sadhinpay-web",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/sadhinpay_agent",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/sadhinpay_backend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/sadhinpay_mobile",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/sadhinpay_website",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/school-management-admin",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/school-management-backend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/school-management-web",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/school-mx-st",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/schooling",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/schooling-account",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/school_admission_campaign_cms",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/School_Admission_Campain",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/SErp",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/SFrapee",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/Shahid_Model_Campaign",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/shooling_mobile",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/Shr",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/silicornya",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/silicornya-website",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/silicornya_backend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/silicornya_dashboard",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/silicornya_new_website",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/silicornya_server",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/silicornya_web",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/sms-admin",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/sms-backend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/ubazaar-admin",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/ubazar_backend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/ubazar_frontend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/user-info",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/user-info-admin",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/visa-admin-panel",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/voter-info-backend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/voter-info-frontend",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/voters_info",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/web_scrap",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/zetmine",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/zetmine-admin",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/zetmine-wallet",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/zetmin_mobile",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "SYNOVA-WHISPER/paralegal",
+      "private": true,
+      "owner": "SYNOVA-WHISPER",
       "default_branch": "main"
     }
   ]

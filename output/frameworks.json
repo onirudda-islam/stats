@@ -1,20 +1,339 @@
 {
-  "generated_at": "2026-03-02T05:10:20.477426+00:00",
+  "generated_at": "2026-03-02T05:33:57.485068+00:00",
   "aggregated": {
-    "Flask": 2,
-    "Express": 2,
+    "React": 62,
+    "Express": 23,
+    "Next.js": 22,
+    "Django": 12,
+    "Prisma": 6,
+    "SQLAlchemy": 4,
+    "Flask": 4,
+    "Celery": 4,
+    "gRPC": 3,
+    "FastAPI": 2,
+    "Pydantic": 2,
+    "Vue.js": 2,
+    "GraphQL": 1,
+    "NumPy": 1,
     "Pandas": 1,
     "HuggingFace": 1,
-    "gRPC": 1,
-    "FastAPI": 1,
-    "NumPy": 1,
-    "SQLAlchemy": 1,
-    "Prisma": 1,
-    "React": 1
+    "Tokio": 1
   },
   "per_repo": [
     {
+      "repo": "Accornya-website",
+      "frameworks": [
+        "Express",
+        "Next.js",
+        "React"
+      ],
+      "infra": [
+        "Docker",
+        "MongoDB",
+        "Redis"
+      ]
+    },
+    {
+      "repo": "Baazigar_admin",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "mastermind_tour",
+      "frameworks": [
+        "Express",
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "silicornya-backend",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "audiobook",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "blog",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "bubble-auth",
+      "frameworks": [
+        "Express"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "bubble-contracts",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "bubble-core",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "bubble-fs",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "bubble-id",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "bubble-sdk",
+      "frameworks": [
+        "Express"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "bubble-token",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "bubble-tools",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "chainlink-integration",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "community",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "dapp-template",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "HushBubble",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "hushbubble.old",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "restful-server",
+      "frameworks": [
+        "Express"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "scraper",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "seedling",
+      "frameworks": [
+        "GraphQL",
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "test-servers",
+      "frameworks": [
+        "Express"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "todolist",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "TokenTraxx-demo",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "trivial-bubble-server",
+      "frameworks": [
+        "Express"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "vaultbox",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "website",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "workshops",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "zenbox",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "zenbox-community-admin",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "zenbox-landing-page",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "zendrop-001",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "demo-repository",
+      "frameworks": [],
+      "infra": [
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "edtec-backend",
+      "frameworks": [
+        "Flask",
+        "SQLAlchemy"
+      ],
+      "infra": [
+        "AWS",
+        "Docker",
+        "GitHub Actions",
+        "Grafana",
+        "PostgreSQL",
+        "Prometheus",
+        "Redis"
+      ]
+    },
+    {
+      "repo": "edtec-frontend",
+      "frameworks": [
+        "React"
+      ],
+      "infra": [
+        "CircleCI",
+        "GitHub Actions",
+        "Vercel"
+      ]
+    },
+    {
+      "repo": "edtec-monitoring",
+      "frameworks": [],
+      "infra": [
+        "Docker",
+        "Grafana",
+        "Prometheus"
+      ]
+    },
+    {
+      "repo": "mememates",
+      "frameworks": [
+        "Express"
+      ],
+      "infra": [
+        "Firebase"
+      ]
+    },
+    {
+      "repo": "bazigar-website",
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "infra": []
+    },
+    {
       "repo": "Flutter-Task-10.06.23",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "lastnewsbd-main-website",
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "infra": [
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "meveriq-backend",
+      "frameworks": [
+        "Express"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "meveriq-frontend",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "silicornya",
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "infra": [
+        "Docker"
+      ]
+    },
+    {
+      "repo": "quick_cash",
       "frameworks": [],
       "infra": []
     },
@@ -110,6 +429,827 @@
       "frameworks": [
         "Express"
       ],
+      "infra": []
+    },
+    {
+      "repo": "Trial-candiate-Zadd",
+      "frameworks": [
+        "Express",
+        "Prisma",
+        "React"
+      ],
+      "infra": [
+        "Docker",
+        "PostgreSQL",
+        "Redis"
+      ]
+    },
+    {
+      "repo": "Mememates",
+      "frameworks": [],
+      "infra": [
+        "Firebase",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "learning",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "demo-repository",
+      "frameworks": [],
+      "infra": [
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "rjango",
+      "frameworks": [
+        "Tokio"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "Arcedeon",
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "audio-mobile-app",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "bazigaar",
+      "frameworks": [
+        "Django"
+      ],
+      "infra": [
+        "AWS",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "repo": "bazigaar-backend-farhan",
+      "frameworks": [
+        "Django"
+      ],
+      "infra": [
+        "AWS",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "repo": "bazigaar-test",
+      "frameworks": [
+        "Django"
+      ],
+      "infra": [
+        "AWS",
+        "Docker",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "repo": "bazigaar_backend",
+      "frameworks": [
+        "Django"
+      ],
+      "infra": [
+        "AWS",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "repo": "bazigaar_mobile",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "bazigaar_web",
+      "frameworks": [
+        "React"
+      ],
+      "infra": [
+        "Docker"
+      ]
+    },
+    {
+      "repo": "betfire-backend",
+      "frameworks": [
+        "Celery",
+        "Flask",
+        "Pydantic",
+        "SQLAlchemy"
+      ],
+      "infra": [
+        "AWS",
+        "PostgreSQL",
+        "Redis"
+      ]
+    },
+    {
+      "repo": "betsfire-frontend",
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "betsfire_user",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "binnexa",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "bitgain-frontend",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "bitgain_mobile",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "Brighton_Academy_Campaign",
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "infra": [
+        "Docker",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "chat-app-web-node-next",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "crm",
+      "frameworks": [
+        "React"
+      ],
+      "infra": [
+        "CDK",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "crm-quick-cash",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "dashboard",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "demo-repository",
+      "frameworks": [],
+      "infra": [
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "django-websocket",
+      "frameworks": [
+        "Django"
+      ],
+      "infra": [
+        "Docker",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "Ecommerce_Project",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "election-news-website",
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "infra": [
+        "Docker"
+      ]
+    },
+    {
+      "repo": "erp",
+      "frameworks": [],
+      "infra": [
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "fine-tuning",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "Initial-dashboard-with-react-tailwind",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "initial-express-config",
+      "frameworks": [
+        "Express",
+        "Prisma"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "ivac",
+      "frameworks": [
+        "Express",
+        "React"
+      ],
+      "infra": [
+        "Docker",
+        "MongoDB"
+      ]
+    },
+    {
+      "repo": "job-task",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "ludo-node-server",
+      "frameworks": [
+        "Express"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "map",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "map-android",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "MapViewer",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "mlm_maverik_backend",
+      "frameworks": [
+        "Express"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "mr-expert-socket",
+      "frameworks": [
+        "Django"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "mr_expert",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "mr_expert_backend",
+      "frameworks": [
+        "Express"
+      ],
+      "infra": [
+        "Docker",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "mr_expert_dashboard",
+      "frameworks": [
+        "React"
+      ],
+      "infra": [
+        "Docker",
+        "Vercel"
+      ]
+    },
+    {
+      "repo": "mr_expert_mobile",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "mr_expert_web",
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "mytel-admin",
+      "frameworks": [
+        "React"
+      ],
+      "infra": [
+        "Docker",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "mytel-agent",
+      "frameworks": [
+        "React"
+      ],
+      "infra": [
+        "Docker",
+        "GitHub Actions",
+        "Vercel"
+      ]
+    },
+    {
+      "repo": "mytel-backend",
+      "frameworks": [
+        "Celery",
+        "Django",
+        "gRPC"
+      ],
+      "infra": [
+        "AWS",
+        "Docker",
+        "GCP",
+        "GitHub Actions",
+        "PostgreSQL",
+        "Redis"
+      ]
+    },
+    {
+      "repo": "mytel-website",
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "infra": [
+        "Docker",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "mytel_mobile",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "news_server",
+      "frameworks": [
+        "Express"
+      ],
+      "infra": [
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "online-news",
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "online-news-cms",
+      "frameworks": [
+        "React"
+      ],
+      "infra": [
+        "GitHub Actions",
+        "Vercel"
+      ]
+    },
+    {
+      "repo": "online-news-react",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "python-commissions",
+      "frameworks": [
+        "Celery",
+        "FastAPI",
+        "Pydantic",
+        "SQLAlchemy"
+      ],
+      "infra": [
+        "Docker",
+        "Redis"
+      ]
+    },
+    {
+      "repo": "quick-cash-website",
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "quick_cash_backend",
+      "frameworks": [
+        "Express"
+      ],
+      "infra": [
+        "Docker",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "quick_cash_mobile",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "quick_cash_web",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "sadhinpay-admin",
+      "frameworks": [
+        "React"
+      ],
+      "infra": [
+        "Docker",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "sadhinpay-socket",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "sadhinpay-web",
+      "frameworks": [
+        "React"
+      ],
+      "infra": [
+        "Docker",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "sadhinpay_agent",
+      "frameworks": [
+        "React"
+      ],
+      "infra": [
+        "Docker",
+        "GitHub Actions",
+        "Vercel"
+      ]
+    },
+    {
+      "repo": "sadhinpay_backend",
+      "frameworks": [
+        "Celery",
+        "Django",
+        "gRPC"
+      ],
+      "infra": [
+        "AWS",
+        "Docker",
+        "GCP",
+        "GitHub Actions",
+        "PostgreSQL",
+        "Redis"
+      ]
+    },
+    {
+      "repo": "sadhinpay_mobile",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "sadhinpay_website",
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "infra": [
+        "Docker",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "school-management-admin",
+      "frameworks": [
+        "React"
+      ],
+      "infra": [
+        "Docker",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "school-management-backend",
+      "frameworks": [
+        "Express",
+        "Prisma"
+      ],
+      "infra": [
+        "Docker",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "school-management-web",
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "infra": [
+        "Docker"
+      ]
+    },
+    {
+      "repo": "school-mx-st",
+      "frameworks": [
+        "React"
+      ],
+      "infra": [
+        "Docker",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "schooling",
+      "frameworks": [
+        "React"
+      ],
+      "infra": [
+        "Docker",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "schooling-account",
+      "frameworks": [
+        "Django"
+      ],
+      "infra": [
+        "Docker",
+        "GitHub Actions",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "repo": "school_admission_campaign_cms",
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "infra": [
+        "Docker"
+      ]
+    },
+    {
+      "repo": "School_Admission_Campain",
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "infra": [
+        "Docker",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "SErp",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "SFrapee",
+      "frameworks": [
+        "Vue.js"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "Shahid_Model_Campaign",
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "infra": [
+        "Docker",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "repo": "shooling_mobile",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "Shr",
+      "frameworks": [
+        "Vue.js"
+      ],
+      "infra": [
+        "Redis"
+      ]
+    },
+    {
+      "repo": "silicornya",
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "infra": [
+        "Docker"
+      ]
+    },
+    {
+      "repo": "silicornya-website",
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "infra": [
+        "Docker"
+      ]
+    },
+    {
+      "repo": "silicornya_backend",
+      "frameworks": [
+        "Django"
+      ],
+      "infra": [
+        "AWS",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "repo": "silicornya_dashboard",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "silicornya_new_website",
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "silicornya_server",
+      "frameworks": [
+        "Express"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "sms-admin",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "sms-backend",
+      "frameworks": [
+        "Django"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "ubazaar-admin",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "ubazar_backend",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "ubazar_frontend",
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "user-info",
+      "frameworks": [
+        "Django"
+      ],
+      "infra": [
+        "AWS",
+        "Docker",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "repo": "user-info-admin",
+      "frameworks": [
+        "React"
+      ],
+      "infra": [
+        "Vercel"
+      ]
+    },
+    {
+      "repo": "visa-admin-panel",
+      "frameworks": [
+        "Next.js",
+        "Prisma",
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "voter-info-backend",
+      "frameworks": [
+        "Express",
+        "Prisma"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "voters_info",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "web_scrap",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "zetmine",
+      "frameworks": [
+        "React"
+      ],
+      "infra": []
+    },
+    {
+      "repo": "zetmine-admin",
+      "frameworks": [],
+      "infra": [
+        "Docker"
+      ]
+    },
+    {
+      "repo": "zetmine-wallet",
+      "frameworks": [
+        "Express"
+      ],
+      "infra": [
+        "Docker"
+      ]
+    },
+    {
+      "repo": "zetmin_mobile",
+      "frameworks": [],
+      "infra": []
+    },
+    {
+      "repo": "paralegal",
+      "frameworks": [],
       "infra": []
     }
   ]
