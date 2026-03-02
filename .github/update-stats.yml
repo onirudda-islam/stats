@@ -1,0 +1,39 @@
+name: Update Language Stats
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'   # Every Sunday at midnight UTC
+  workflow_dispatch:        # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout stats repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run language aggregator
+        env:
+          GH_TOKEN: ${{ secrets.STATS_GH_TOKEN }}
+          GH_USERNAME: onirudda-islam
+        run: python scripts/aggregate_languages.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/
+          git diff --cached --quiet || git commit -m "chore: update language stats [$(date -u '+%Y-%m-%d')]"
+          git push
