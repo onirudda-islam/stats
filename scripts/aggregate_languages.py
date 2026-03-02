@@ -15,6 +15,7 @@ Outputs:
   output/stack.svg         — beautiful dark-theme SVG card for profile README
 """
 
+import re as _re
 import os
 import json
 import math
@@ -165,13 +166,27 @@ INFRA_RULES = [
         ["k8s/", "kubernetes/", "helm/"],
         [("docker-compose.yml", "kubernetes"), (".github/workflows", "kubectl")]),
     ("Helm",          "#0F1689", "Containers",
-        ["Chart.yaml", "helm/Chart.yaml"], []),
+        ["Chart.yaml", "Chart.yml", "helm/", "charts/", "helm/Chart.yaml",
+         "helmfile.yaml", "helmfile.yml", "deploy/helm/", "k8s/helm/"],
+        [(".github/workflows", "helm"),
+         ("Makefile", "helm install"),
+         ("Makefile", "helm upgrade"),
+         ("README.md", "helm install"),
+         ("README.md", "helm upgrade"),
+         ("README.md", "helm chart")]),
     ("Podman",        "#892CA0", "Containers",
         ["Containerfile"], []),
     # ── IaC ───────────────────────────────────────────────────────────────────
     ("Terraform",     "#7B42BC", "IaC",
-        ["main.tf", "terraform/", "infra/main.tf"],
-        [(".github/workflows", "terraform")]),
+        # Detect any .tf file, common dirs, and README mentions
+        ["main.tf", "variables.tf", "outputs.tf", "provider.tf", "backend.tf",
+         "versions.tf", "terraform.tf", "terraform/", "infra/", "infrastructure/",
+         "iac/", "terragrunt.hcl"],
+        [(".github/workflows", "terraform"),
+         (".github/workflows", "hashicorp/setup-terraform"),
+         ("Makefile", "terraform"),
+         ("README.md", "terraform"),
+         ("README.md", "helm")]),
     ("Pulumi",        "#8A3391", "IaC",
         ["Pulumi.yaml", "Pulumi.yml"], []),
     ("Ansible",       "#EE0000", "IaC",
@@ -227,8 +242,14 @@ INFRA_RULES = [
     ("Prometheus",    "#E6522C", "Observability",
         ["prometheus.yml", "prometheus/"],
         [("docker-compose.yml", "prom/prometheus")]),
-    ("Grafana",       "#F46800", "Observability",
-        [], [("docker-compose.yml", "grafana/grafana")]),
+    ("Grafana",        "#F46800", "Observability",
+        ["grafana/", "dashboards/", "grafana.ini", "grafana.yaml"],
+        [("docker-compose.yml", "grafana"),
+         ("docker-compose.yaml", "grafana"),
+         ("docker-compose.yml", "grafana/grafana"),
+         ("k8s/", "grafana"), ("helm/", "grafana"),
+         ("main.tf", "grafana"),
+         ("README.md", "grafana")]),
     ("OpenTelemetry", "#425CC7", "Observability",
         [], [("requirements.txt", "opentelemetry"), ("package.json", '"@opentelemetry"')]),
 ]
@@ -378,72 +399,284 @@ def fetch_file_content(owner, repo, path):
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # Detection logic
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# ─────────────────────────────────────────────────────────────────────────────
+# DETECTION ENGINE
+# Three complementary passes:
+#   1. Extension glob  — *.tf, *.proto, *.graphql, *.sol, *.wasm, *.pkr.hcl
+#   2. Docker Compose  — parse image: fields; most reliable infra signal
+#   3. Rule-based      — filename signals + file content signals
+# ─────────────────────────────────────────────────────────────────────────────
+
+
+# Pass 1 — file extension → tool
+EXTENSION_SIGNALS = {
+    ".tf":      "Terraform",
+    ".tfvars":  "Terraform",
+    ".pkr.hcl": "Packer",
+    ".proto":   "Protocol Buffers",
+    ".graphql": "GraphQL",
+    ".gql":     "GraphQL",
+    ".wasm":    "WebAssembly",
+    ".sol":     "Solidity",
+}
+
+# Pass 2 — Docker Compose image substring → tool name
+# Scans every image: line in every docker-compose*.yml/yaml in the repo.
+# Order matters: more specific strings come before shorter substrings.
+COMPOSE_IMAGE_SIGNALS = [
+    # ── Databases — relational ────────────────────────────────────────────────
+    ("postgres",            "PostgreSQL"),
+    ("mysql",               "MySQL"),
+    ("mariadb",             "MariaDB"),
+    ("cockroachdb",         "CockroachDB"),
+    ("cockroach",           "CockroachDB"),
+    ("mssql",               "SQL Server"),
+    ("mcr.microsoft.com/mssql", "SQL Server"),
+    # ── Databases — NoSQL ────────────────────────────────────────────────────
+    ("mongo",               "MongoDB"),
+    ("redis",               "Redis"),
+    ("cassandra",           "Cassandra"),
+    ("scylladb",            "Cassandra"),
+    ("scylla",              "Cassandra"),
+    ("neo4j",               "Neo4j"),
+    ("influxdb",            "InfluxDB"),
+    ("timescaledb",         "TimescaleDB"),
+    ("couchdb",             "CouchDB"),
+    ("couchbase",           "Couchbase"),
+    ("rethinkdb",           "RethinkDB"),
+    ("arangodb",            "ArangoDB"),
+    ("dynamodb",            "DynamoDB"),
+    # ── Databases — analytical / columnar ────────────────────────────────────
+    ("yandex/clickhouse",   "ClickHouse"),
+    ("clickhouse",          "ClickHouse"),
+    ("druid",               "Apache Druid"),
+    ("trino",               "Presto / Trino"),
+    ("prestodb",            "Presto / Trino"),
+    ("presto",              "Presto / Trino"),
+    ("apache/hive",         "Apache Hive"),
+    # ── Vector DBs ───────────────────────────────────────────────────────────
+    ("qdrant",              "Qdrant"),
+    ("weaviate",            "Weaviate"),
+    ("milvus",              "Milvus"),
+    ("chroma",              "Chroma"),
+    ("semitechnologies",    "Weaviate"),
+    # ── Messaging / Streaming ─────────────────────────────────────────────────
+    ("confluentinc/cp-kafka", "Kafka"),
+    ("bitnami/kafka",       "Kafka"),
+    ("apache/kafka",        "Kafka"),
+    ("kafka",               "Kafka"),
+    # zookeeper almost always = kafka stack
+    ("zookeeper",           "Kafka"),
+    ("rabbitmq",            "RabbitMQ"),
+    ("nats",                "NATS"),
+    ("emqx",                "MQTT"),
+    ("eclipse-mosquitto",   "MQTT"),
+    ("activemq",            "Apache ActiveMQ"),
+    ("apache/activemq",     "Apache ActiveMQ"),
+    ("apache/pulsar",       "Apache Pulsar"),
+    ("pulsar",              "Apache Pulsar"),
+    ("redpanda",            "Redpanda"),
+    ("vectorized/redpanda", "Redpanda"),
+    # ── Search ───────────────────────────────────────────────────────────────
+    ("elasticsearch",       "Elasticsearch"),
+    ("kibana",              "Elasticsearch"),  # kibana always = ES stack
+    ("opensearchproject",   "OpenSearch"),
+    ("opensearch",          "OpenSearch"),
+    ("typesense",           "Typesense"),
+    ("getmeili/meilisearch", "MeiliSearch"),
+    ("meilisearch",         "MeiliSearch"),
+    ("solr",                "Solr"),
+    # ── Data / ML Infra ───────────────────────────────────────────────────────
+    ("apache/spark",        "Apache Spark"),
+    ("bitnami/spark",       "Apache Spark"),
+    ("apache/flink",        "Apache Flink"),
+    ("flink",               "Apache Flink"),
+    ("apache/airflow",      "Apache Airflow"),
+    ("airflow",             "Apache Airflow"),
+    ("apache/beam",         "Apache Beam"),
+    ("mlflow",              "MLflow"),
+    ("metabase",            "Metabase"),
+    ("apache/superset",     "Superset"),
+    ("superset",            "Superset"),
+    ("jupyter",             "Jupyter"),
+    ("dbt",                 "dbt"),
+    # ── Observability ─────────────────────────────────────────────────────────
+    ("prom/prometheus",     "Prometheus"),
+    ("prometheus",          "Prometheus"),
+    ("grafana/grafana",     "Grafana"),
+    ("grafana",             "Grafana"),
+    ("grafana/loki",        "Loki"),
+    ("loki",                "Loki"),
+    ("grafana/tempo",       "Tempo"),
+    ("jaegertracing",       "Jaeger"),
+    ("jaeger",              "Jaeger"),
+    ("openzipkin/zipkin",   "Zipkin"),
+    ("zipkin",              "Zipkin"),
+    ("otel/opentelemetry",  "OpenTelemetry"),
+    ("opentelemetry",       "OpenTelemetry"),
+    ("datadog/agent",       "Datadog"),
+    ("datadog",             "Datadog"),
+    ("newrelic",            "New Relic"),
+    ("sentry",              "Sentry"),
+    ("victoriametrics",     "VictoriaMetrics"),
+    # ── Networking / Proxy ────────────────────────────────────────────────────
+    ("nginx",               "Nginx"),
+    ("traefik",             "Traefik"),
+    ("haproxy",             "HAProxy"),
+    ("envoyproxy",          "Envoy"),
+    ("caddy",               "Caddy"),
+    ("kong",                "Kong"),
+    ("nginx-proxy",         "Nginx"),
+    # ── Security ──────────────────────────────────────────────────────────────
+    ("hashicorp/vault",     "Vault"),
+    ("vault",               "Vault"),
+    ("keycloak",            "Keycloak"),
+    ("dex",                 "Dex (OIDC)"),
+    ("authelia",            "Authelia"),
+    # ── Storage ───────────────────────────────────────────────────────────────
+    ("minio",               "MinIO"),
+    ("minio/minio",         "MinIO"),
+    ("etcd",                "etcd"),
+    ("consul",              "Consul"),
+    # ── Registry / CI ────────────────────────────────────────────────────────
+    ("registry",            "Docker Registry"),
+    ("gitea",               "Gitea"),
+    ("gitlab",              "GitLab CI"),
+    ("drone",               "Drone CI"),
+    # ── Cloud emulators ───────────────────────────────────────────────────────
+    ("localstack",          "AWS (LocalStack)"),
+    ("azurite",             "Azure (Azurite)"),
+]
+
+
+def parse_compose_images(compose_text):
+    """
+    Extract all image names from docker-compose file text.
+    Handles:
+      image: postgres:15
+      image: "bitnami/kafka:latest"
+      image: ${REGISTRY:-docker.io}/myapp:${TAG}
+    Returns list of lowercase image strings (tag stripped).
+    """
+    images = []
+    pattern = _re.compile(
+        r"^\s*image\s*:\s*['\"]?([^'\"#\n]+)['\"]?", _re.MULTILINE)
+    for m in pattern.finditer(compose_text):
+        raw = m.group(1).strip()
+        # Resolve ${VAR:-default} → keep default
+        raw = _re.sub(r"\$\{[^}]*:-([^}]+)\}", r"\1", raw)
+        # Strip unresolved ${VAR}
+        raw = _re.sub(r"\$\{[^}]+\}", "", raw).strip()
+        # Strip tag (:version) — keep org/image part
+        image = raw.split(":")[0].lower().strip()
+        if image:
+            images.append(image)
+    return images
+
+
+def detect_from_compose(compose_text):
+    """
+    Parse a docker-compose file and return (set_of_tools, list_of_images).
+    """
+    detected = set()
+    images = parse_compose_images(compose_text)
+    for image in images:
+        for (signal, tool) in COMPOSE_IMAGE_SIGNALS:
+            if signal in image:
+                detected.add(tool)
+                break   # first match wins per image
+    return detected, images
+
+
+def build_file_cache(owner, repo, file_paths, rules):
+    """
+    Fetch files needed for all three detection passes:
+      - ALL docker-compose*.yml/yaml  (compose pass)
+      - README.md                     (readme content signals)
+      - Files in rule content_signals (rule pass)
+    Cap at 50 API calls per repo.
+    """
+    needed = set()
+
+    # Always fetch README
+    for p in file_paths:
+        pl = p.lower()
+        if pl in {"readme.md", "readme", "readme.rst", "readme.txt"} or pl.endswith("/readme.md"):
+            needed.add(p)
+
+    # All docker-compose variants (docker-compose.yml, docker-compose.prod.yaml, etc.)
+    for p in file_paths:
+        fname = p.lower().split("/")[-1]
+        if fname.startswith("docker-compose") and fname.endswith((".yml", ".yaml")):
+            needed.add(p)
+
+    # Rule content_signals
+    for rule in rules:
+        for (target_file, _) in rule[4]:
+            tf_l = target_file.lower()
+            for p in file_paths:
+                if p.lower() == tf_l or p.lower().endswith("/" + tf_l):
+                    needed.add(p)
+
+    needed = list(needed)[:50]
+    cache = {}
+    for path in needed:
+        text = fetch_file_content(owner, repo, path)
+        if text:
+            cache[path] = text
+    return cache
 
 
 def detect_from_rules(rules, file_paths, file_cache):
     """
-    file_paths   — set of all paths in the repo
-    file_cache   — dict of {path: content} for already-fetched files
-    Returns set of detected display names.
+    Full detection pipeline — three passes.
+    Returns (detected_set, compose_images_log).
     """
     detected = set()
-    paths_lower = {p.lower() for p in file_paths}
+    images_found = []
 
+    # ── Pass 1: Extension glob ──────────────────────────────────────────────
+    for path in file_paths:
+        pl = path.lower()
+        for ext, tool in EXTENSION_SIGNALS.items():
+            if pl.endswith(ext):
+                detected.add(tool)
+
+    # ── Pass 2: Docker Compose image parsing ────────────────────────────────
+    for path, text in file_cache.items():
+        fname = path.lower().split("/")[-1]
+        if fname.startswith("docker-compose") and fname.endswith((".yml", ".yaml")):
+            found, images = detect_from_compose(text)
+            detected.update(found)
+            images_found.extend(images)
+
+    # ── Pass 3: Rule-based (filename + content signals) ─────────────────────
+    paths_lower = {p.lower() for p in file_paths}
     for (name, colour, category, file_signals, content_signals) in rules:
-        # Check filename signals
+        if name in detected:
+            continue
         for sig in file_signals:
             sig_l = sig.lower().rstrip("/")
-            # Match exact file OR directory prefix
-            if any(p == sig_l or p.startswith(sig_l + "/") for p in paths_lower):
+            if any(p == sig_l or p.startswith(sig_l + "/") or p.endswith("/" + sig_l)
+                   for p in paths_lower):
                 detected.add(name)
                 break
         if name in detected:
             continue
-        # Check content signals
         for (target_file, substring) in content_signals:
             tf_l = target_file.lower()
-            # Find matching files
-            matches = [p for p in file_paths if p.lower() == tf_l
-                       or p.lower().endswith("/" + tf_l)]
+            matches = [p for p in file_paths
+                       if p.lower() == tf_l or p.lower().endswith("/" + tf_l)]
             for match in matches:
                 if match not in file_cache:
-                    continue  # will be populated below
+                    continue
                 if substring.lower() in file_cache[match].lower():
                     detected.add(name)
                     break
             if name in detected:
                 break
 
-    return detected
-
-
-def build_file_cache(owner, repo, file_paths, rules):
-    """Fetch only the files referenced in content_signals."""
-    needed = set()
-    for rule in rules:
-        for (target_file, _) in rule[4]:  # content_signals at index 4
-            tf_l = target_file.lower()
-            for p in file_paths:
-                if p.lower() == tf_l or p.lower().endswith("/" + tf_l):
-                    needed.add(p)
-    cache = {}
-    for path in needed:
-        content = fetch_file_content(owner, repo, path)
-        if content:
-            cache[path] = content
-    return cache
-
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# SVG generation — beautiful dark card
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-
-def build_tag(name, colour):
-    """Pill-shaped tag SVG snippet (returns width, svg_fragment)."""
-    char_w = 7.5
-    padding = 20
-    w = int(len(name) * char_w + padding * 2)
-    return w, colour, name
+    return detected, images_found
 
 
 def generate_stack_svg(languages, frameworks, infra, generated_at):
@@ -486,17 +719,37 @@ def generate_stack_svg(languages, frameworks, infra, generated_at):
 
     # ── Language bar ────────────────────────────────────────────────────────
     total_bytes = sum(l["bytes"] for l in languages) or 1
-    top_langs = languages[:15]
+    # ── Languages: bar uses top 20 by bytes; legend shows ALL ──────────────
+    # Exclude pure markup/config/build artefacts from the legend
+    LANG_EXCLUDE_LEGEND = {
+        "HTML", "CSS", "Makefile", "CMake", "Dockerfile", "Batchfile",
+        "Smarty", "Jinja", "Less", "Handlebars", "PureBasic", "GLSL",
+        "Mako", "HCL", "Shell", "Objective-C",
+    }
+    # All languages sorted by bytes, excluding noise
+    all_langs_clean = [l for l in languages if l["name"]
+                       not in LANG_EXCLUDE_LEGEND]
+
+    # Bar: top 20 by bytes (includes noise langs for proportional accuracy)
+    BAR_TOP_N = 20
+    bar_langs = languages[:BAR_TOP_N]
+    total_bar = sum(l["bytes"] for l in bar_langs)
+    other_bytes = total_bytes - total_bar
 
     BAR_W = W - 2 * PAD
     BAR_H = 12
     bar_segs = []
     x = 0
-    for lang in top_langs:
+    for lang in bar_langs:
         pct = lang["bytes"] / total_bytes
         segw = max(2, round(pct * BAR_W))
         bar_segs.append((lang["name"], lang["color"], x, segw, pct))
         x += segw
+    # "Other" segment for remaining bytes
+    if other_bytes > 0:
+        pct = other_bytes / total_bytes
+        segw = max(2, BAR_W - x)
+        bar_segs.append(("Other", "#6E7681", x, segw, pct))
 
     # ── Framework tags ──────────────────────────────────────────────────────
     fw_meta = {r[0]: (r[1], r[2]) for r in FRAMEWORK_RULES}
@@ -510,8 +763,10 @@ def generate_stack_svg(languages, frameworks, infra, generated_at):
                  for name in sorted(infra)]
     inf_rows = layout_tags(inf_items)
 
-    # ── Language legend rows ─────────────────────────────────────────────────
-    lang_legend_items = [(l["name"], l["color"]) for l in top_langs]
+    # ── Language legend: ALL clean languages sorted by bytes ─────────────────
+    # Include repo_count as subtitle in tag label
+    lang_legend_items = [
+        (f'{l["name"]} · {l["repo_count"]}r', l["color"]) for l in all_langs_clean]
     lang_rows = layout_tags(lang_legend_items)
 
     # ── Height calculation ───────────────────────────────────────────────────
@@ -680,12 +935,14 @@ print(f"      Found {len(repos)} repos")
 # ── Language aggregation ──────────────────────────────────────────────────────
 print("\n[2/4] Aggregating language bytes...")
 lang_totals = defaultdict(int)
+lang_repo_counts = defaultdict(int)
 for repo in repos:
     rname = repo["name"]
     owner = repo["owner"]["login"]   # use actual owner — handles org repos
     langs = fetch_repo_languages(owner, rname)
     for lang, bytes_ in langs.items():
         lang_totals[lang] += bytes_
+        lang_repo_counts[lang] += 1
     if langs:
         print(f"      ✓ {owner}/{rname}: {list(langs.keys())}")
     else:
@@ -704,6 +961,7 @@ for name, bytes_ in sorted_langs:
         "percentage": round(bytes_ / total_bytes * 100, 2),
         "color":      meta[0],
         "category":   meta[1],
+        "repo_count": lang_repo_counts[name],
     })
 
 with open(f"{OUTPUT}/languages.json", "w") as f:
@@ -733,17 +991,23 @@ for repo in repos:
     all_rules = FRAMEWORK_RULES + INFRA_RULES
     file_cache = build_file_cache(owner, rname, file_paths, all_rules)
 
-    fw_detected = detect_from_rules(FRAMEWORK_RULES, file_paths, file_cache)
-    inf_detected = detect_from_rules(INFRA_RULES,     file_paths, file_cache)
+    fw_detected,  _ = detect_from_rules(
+        FRAMEWORK_RULES, file_paths, file_cache)
+    inf_detected, compose_imgs = detect_from_rules(
+        INFRA_RULES,     file_paths, file_cache)
 
     for name in fw_detected:
         all_frameworks[name] += 1
     for name in inf_detected:
         all_infra[name] += 1
 
-    print(f"fw={sorted(fw_detected)} infra={sorted(inf_detected)}")
+    if compose_imgs:
+        print(f"      compose images: {sorted(set(compose_imgs))}")
+    print(f"      fw={sorted(fw_detected)}")
+    print(f"      infra={sorted(inf_detected)}")
     repo_details.append({"repo": rname, "frameworks": sorted(fw_detected),
-                         "infra": sorted(inf_detected)})
+                         "infra": sorted(inf_detected),
+                         "compose_images": sorted(set(compose_imgs))})
 
 # Persist
 with open(f"{OUTPUT}/frameworks.json", "w") as f:
@@ -1254,9 +1518,12 @@ INFRA_RULES = [
         ["docker-compose.yml", "docker-compose.yaml",
          "docker-compose.override.yml"], []),
     ("Kubernetes",     "#326CE5", "Containers",
-        ["k8s/", "kubernetes/", "manifests/", "deploy/k8s/"],
+        ["k8s/", "kubernetes/", "manifests/", "deploy/", "deploy/k8s/",
+         "k8s.yaml", "k8s.yml", "deployment.yaml", "deployment.yml",
+         "service.yaml", "service.yml", "ingress.yaml", "ingress.yml"],
         [(".github/workflows", "kubectl"), (".github/workflows", "kubernetes"),
-         ("Makefile", "kubectl"), ("docker-compose.yml", "kubernetes")]),
+         ("Makefile", "kubectl"), ("docker-compose.yml", "kubernetes"),
+         ("README.md", "kubernetes"), ("README.md", "kubectl")]),
     ("Helm",           "#0F1689", "Containers",
         ["Chart.yaml", "helm/Chart.yaml", "charts/"], []),
     ("Kustomize",      "#326CE5", "Containers",
@@ -1398,9 +1665,16 @@ INFRA_RULES = [
              ("package.json", '"redis"'), ("package.json", '"ioredis"'),
              ("go.mod", "go-redis"), ("Cargo.toml", "redis")]),
     ("Cassandra",      "#1287B1", "Databases",
-        [], [("docker-compose.yml", "cassandra"),
-             ("requirements.txt", "cassandra-driver"),
-             ("package.json", '"cassandra-driver"')]),
+        ["cassandra/", "cassandra.yaml", "cassandra.yml"],
+        [("docker-compose.yml", "cassandra"), ("docker-compose.yaml", "cassandra"),
+         ("requirements.txt", "cassandra-driver"),
+         ("requirements.txt", "acsylla"),
+         ("package.json", '"cassandra-driver"'),
+         ("go.mod", "gocql"),
+         ("Cargo.toml", "cassandra-rs"),
+         ("main.tf", "aws_msk"),
+         ("README.md", "cassandra"),
+         ("k8s/", "cassandra"), ("helm/", "cassandra")]),
     ("DynamoDB",       "#FF9900", "Databases",
         [], [("requirements.txt", "boto3"),
              ("package.json", '"@aws-sdk/client-dynamodb"'),
@@ -1431,13 +1705,14 @@ INFRA_RULES = [
     # MESSAGING / STREAMING
     # =========================================================================
     ("Kafka",          "#231F20", "Messaging",
-        ["kafka/"],
+        ["kafka/", "kafka.yml", "kafka.yaml"],
         [("docker-compose.yml", "kafka"), ("docker-compose.yaml", "kafka"),
          ("docker-compose.yml", "confluent"), ("docker-compose.yml", "zookeeper"),
+         ("docker-compose.yaml", "zookeeper"),
          ("requirements.txt", "kafka-python"), ("requirements.txt", "confluent-kafka"),
          ("package.json", '"kafkajs"'), ("package.json", '"@confluentinc"'),
          ("go.mod", "kafka-go"), ("go.mod", "confluent-kafka-go"),
-         ("Cargo.toml", "rdkafka")]),
+         ("Cargo.toml", "rdkafka"), ("README.md", "kafka")]),
     ("RabbitMQ",       "#FF6600", "Messaging",
         [], [("docker-compose.yml", "rabbitmq"), ("docker-compose.yaml", "rabbitmq"),
              ("requirements.txt", "pika"), ("requirements.txt", "aio-pika"),
@@ -1458,12 +1733,13 @@ INFRA_RULES = [
     # SEARCH
     # =========================================================================
     ("Elasticsearch",  "#005571", "Search",
-        ["elasticsearch/"],
+        ["elasticsearch/", "elastic/"],
         [("docker-compose.yml", "elasticsearch"), ("docker-compose.yaml", "elasticsearch"),
-         ("docker-compose.yml", "elastic"),
-         ("requirements.txt", "elasticsearch"), ("requirements.txt", "elastic"),
+         ("docker-compose.yml", "elastic"), ("docker-compose.yaml", "elastic"),
+         ("requirements.txt", "elasticsearch"), ("requirements.txt", "elastic-transport"),
          ("package.json", '"@elastic/elasticsearch"'),
-         ("go.mod", "elastic/go-elasticsearch")]),
+         ("go.mod", "elastic/go-elasticsearch"),
+         ("README.md", "elasticsearch"), ("README.md", "elastic")]),
     ("OpenSearch",     "#003B5C", "Search",
         [], [("docker-compose.yml", "opensearch"),
              ("requirements.txt", "opensearch-py"),
@@ -1508,10 +1784,13 @@ INFRA_RULES = [
     # =========================================================================
     ("Prometheus",     "#E6522C", "Observability",
         ["prometheus.yml", "prometheus.yaml", "prometheus/",
-         "monitoring/prometheus/"],
-        [("docker-compose.yml", "prom/prometheus"),
+         "monitoring/", "monitoring/prometheus/", "observability/"],
+        [("docker-compose.yml", "prometheus"),
+         ("docker-compose.yaml", "prometheus"),
+         ("docker-compose.yml", "prom/prometheus"),
          ("docker-compose.yaml", "prom/prometheus"),
-         ("k8s/", "prometheus"), ("helm/", "prometheus")]),
+         ("k8s/", "prometheus"), ("helm/", "prometheus"),
+         ("README.md", "prometheus")]),
     ("Grafana",        "#F46800", "Observability",
         ["grafana/", "dashboards/"],
         [("docker-compose.yml", "grafana/grafana"),
@@ -1589,9 +1868,17 @@ INFRA_RULES = [
     # DATA / ML INFRA
     # =========================================================================
     ("Apache Spark",   "#E25A1C", "Data Infra",
-        [], [("requirements.txt", "pyspark"),
-             ("build.sbt", "spark"),
-             ("pom.xml", "spark-core")]),
+        ["spark/", "spark-defaults.conf", "spark-env.sh"],
+        [("requirements.txt", "pyspark"),
+         ("build.sbt", "spark"),
+         ("pom.xml", "spark-core"),
+         ("pom.xml", "spark-sql"),
+         ("docker-compose.yml", "spark"),
+         ("docker-compose.yaml", "spark"),
+         ("README.md", "apache spark"),
+         ("README.md", "pyspark"),
+         ("k8s/", "spark"),
+         ("go.mod", "spark")]),
     ("Apache Airflow", "#017CEE", "Data Infra",
         ["dags/", "airflow/"],
         [("requirements.txt", "apache-airflow"),
@@ -1636,4 +1923,114 @@ INFRA_RULES = [
         [], [("package.json", '"simple-peer"'),
              ("package.json", '"@livekit/client"'),
              ("requirements.txt", "aiortc")]),
+    # =========================================================================
+    # DATABASES — ANALYTICAL / COLUMNAR
+    # =========================================================================
+    ("ClickHouse",     "#FFCC01", "Databases",
+        ["clickhouse/", "clickhouse.xml", "users.xml"],
+        [("docker-compose.yml", "clickhouse"),
+         ("docker-compose.yaml", "clickhouse"),
+         ("docker-compose.yml", "yandex/clickhouse"),
+         ("requirements.txt", "clickhouse-connect"),
+         ("requirements.txt", "clickhouse-driver"),
+         ("package.json", '"@clickhouse/client"'),
+         ("go.mod", "clickhouse-go"),
+         ("README.md", "clickhouse")]),
+    ("Apache Druid",   "#29F1FB", "Databases",
+        ["druid/"],
+        [("docker-compose.yml", "druid"),
+         ("docker-compose.yaml", "druid"),
+         ("README.md", "apache druid")]),
+    ("Apache Hive",    "#FDEE21", "Databases",
+        [], [("requirements.txt", "pyhive"),
+             ("build.sbt", "hive"),
+             ("pom.xml", "hive"),
+             ("README.md", "apache hive")]),
+    ("Presto / Trino", "#DD00A1", "Databases",
+        [], [("requirements.txt", "presto-python-client"),
+             ("requirements.txt", "trino"),
+             ("docker-compose.yml", "trino"),
+             ("docker-compose.yaml", "prestodb"),
+             ("README.md", "trino"), ("README.md", "presto")]),
+    ("Snowflake",      "#29B5E8", "Databases",
+        [], [("requirements.txt", "snowflake-connector-python"),
+             ("requirements.txt", "snowflake-sqlalchemy"),
+             ("package.json", '"snowflake-sdk"'),
+             ("README.md", "snowflake")]),
+    ("BigTable",       "#4285F4", "Databases",
+        [], [("requirements.txt", "google-cloud-bigtable"),
+             ("main.tf", "google_bigtable")]),
+
+    # =========================================================================
+    # DATA / ML INFRA — additional
+    # =========================================================================
+    ("Apache Flink",   "#E6526F", "Data Infra",
+        ["flink/"],
+        [("docker-compose.yml", "flink"),
+         ("docker-compose.yaml", "flink"),
+         ("pom.xml", "flink"),
+         ("build.sbt", "flink"),
+         ("README.md", "apache flink")]),
+    ("Databricks",     "#FF3621", "Data Infra",
+        [".databricks/", "databricks.yml"],
+        [("requirements.txt", "databricks"),
+         ("README.md", "databricks")]),
+    ("Apache Beam",    "#E34F22", "Data Infra",
+        [], [("requirements.txt", "apache-beam"),
+             ("pom.xml", "beam")]),
+    ("Great Expectations", "#FF6310", "Data Infra",
+        ["great_expectations/"],
+        [("requirements.txt", "great-expectations")]),
+    ("Metabase",       "#509EE3", "Data Infra",
+        [], [("docker-compose.yml", "metabase"),
+             ("docker-compose.yaml", "metabase"),
+             ("README.md", "metabase")]),
+    ("Superset",       "#FF0000", "Data Infra",
+        ["superset/"],
+        [("docker-compose.yml", "superset"),
+         ("requirements.txt", "apache-superset"),
+         ("README.md", "superset")]),
+
+    # =========================================================================
+    # MESSAGING — additional
+    # =========================================================================
+    ("Apache ActiveMQ", "#E01A22", "Messaging",
+        [], [("docker-compose.yml", "activemq"),
+             ("requirements.txt", "stomp.py"),
+             ("pom.xml", "activemq"),
+             ("README.md", "activemq")]),
+    ("ZeroMQ",         "#DF0000", "Messaging",
+        [], [("requirements.txt", "pyzmq"),
+             ("package.json", '"zeromq"'),
+             ("go.mod", "zeromq"),
+             ("Cargo.toml", "zmq")]),
+
+    # =========================================================================
+    # RUNTIME / SERVERLESS
+    # =========================================================================
+    ("AWS Lambda",     "#FF9900", "Serverless",
+        ["serverless.yml", "serverless.yaml", "handler.py", "handler.js",
+         "sam-template.yaml", "template.yaml"],
+        [("main.tf", "aws_lambda_function"),
+         ("README.md", "lambda"),
+         (".github/workflows", "lambda")]),
+    ("Cloudflare Workers", "#F38020", "Serverless",
+        ["wrangler.toml", "wrangler.json"],
+        [("package.json", '"wrangler"'),
+         ("package.json", '"@cloudflare/workers-types"')]),
+    ("Deno Deploy",    "#070707", "Serverless",
+        ["deno.json", "deno.jsonc", "import_map.json"],
+        [("README.md", "deno deploy")]),
+
+    # =========================================================================
+    # ADDITIONAL .tf / HCL file signals (catches any .tf in tree)
+    # =========================================================================
+    ("OpenTofu",       "#FFDA18", "IaC",
+        [".opentofu/", "tofu.lock.hcl", "tofu.hcl"], []),
+    ("Packer",         "#02A8EF", "IaC",
+        ["packer.json", "packer.pkr.hcl",
+         "*.pkr.hcl", "packer/"],
+        [(".github/workflows", "packer"),
+         ("README.md", "packer")]),
+
 ]
