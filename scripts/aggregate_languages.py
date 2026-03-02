@@ -241,7 +241,9 @@ INFRA_RULES = [
 def gh_get(path, params=None):
     r = requests.get(f"{API}{path}", headers=HEADERS,
                      params=params, timeout=30)
-    if r.status_code in (404, 403, 451):
+    # 404 = not found, 403 = forbidden, 451 = unavailable for legal reasons
+    # 409 = conflict (empty repo — no commits yet, git tree unavailable)
+    if r.status_code in (404, 403, 409, 451):
         return None
     r.raise_for_status()
     return r.json()
