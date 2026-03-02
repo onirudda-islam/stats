@@ -296,7 +296,7 @@ def fetch_all_repos():
     # ── Path 1: /user/repos?type=all ─────────────────────────────────────────
     # Returns personal repos + org repos the token has direct access to
     print("      [Path 1] /user/repos?type=all")
-    _drain("/user/repos", {"type": "all", "affiliation": "owner,collaborator,organization_member"},
+    _drain("/user/repos", {"affiliation": "owner,collaborator,organization_member"},
            "user/repos")
 
     # ── Path 2: /user/orgs (member orgs) ─────────────────────────────────────
