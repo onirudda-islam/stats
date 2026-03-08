@@ -27,13 +27,13 @@
 <rect y="60" width="860" height="28" fill="#0d1117"/>
 
 <text x="28" y="46" class="title">🛠️  Tech Stack — @onirudda-islam</text>
-<text x="28" y="66" class="subtitle">Dynamically scanned across all repositories · Updated 2026-03-02</text>
+<text x="28" y="66" class="subtitle">Dynamically scanned across all repositories · Updated 2026-03-08</text>
 <text x="28" y="108" class="section-label">LANGUAGES</text>
 <g clip-path="url(#bar-clip)">
 <rect x="28" y="120" width="332" height="12" fill="#F7DF1E"><title>JavaScript: 41.3%</title></rect>
 <rect x="360" y="120" width="213" height="12" fill="#3776AB"><title>Python: 26.5%</title></rect>
 <rect x="573" y="120" width="105" height="12" fill="#0175C2"><title>Dart: 13.1%</title></rect>
-<rect x="678" y="120" width="38" height="12" fill="#3178C6"><title>TypeScript: 4.7%</title></rect>
+<rect x="678" y="120" width="38" height="12" fill="#3178C6"><title>TypeScript: 4.8%</title></rect>
 <rect x="716" y="120" width="21" height="12" fill="#6E7681"><title>SCSS: 2.6%</title></rect>
 <rect x="737" y="120" width="21" height="12" fill="#777BB4"><title>PHP: 2.6%</title></rect>
 <rect x="758" y="120" width="14" height="12" fill="#6E7681"><title>HTML: 1.7%</title></rect>
