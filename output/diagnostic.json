@@ -1,9 +1,15 @@
 {
-  "generated_at": "2026-03-15T01:22:48.673821+00:00",
-  "total_repos": 172,
+  "generated_at": "2026-03-22T01:15:33.319737+00:00",
+  "total_repos": 173,
   "repos": [
     {
       "full_name": "Accornya-inc/Accornya-website",
+      "private": true,
+      "owner": "Accornya-inc",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Accornya-inc/hzbrl",
       "private": true,
       "owner": "Accornya-inc",
       "default_branch": "main"

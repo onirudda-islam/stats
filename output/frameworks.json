@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-03-15T01:22:48.227812+00:00",
+  "generated_at": "2026-03-22T01:15:32.958749+00:00",
   "aggregated": {
     "React": 62,
-    "Next.js": 22,
     "Express": 22,
+    "Next.js": 22,
     "Solidity": 16,
     "Django": 15,
+    "Redis": 9,
     "PostgreSQL": 9,
-    "Redis": 8,
     "Prisma": 6,
     "Flask": 4,
     "SQLAlchemy": 4,
     "Celery": 4,
+    "Grafana": 3,
+    "Prometheus": 3,
     "gRPC": 3,
-    "Nginx": 2,
     "MongoDB": 2,
-    "Prometheus": 2,
-    "Grafana": 2,
+    "Nginx": 2,
     "FastAPI": 2,
     "Terraform": 2,
     "Pydantic": 2,
@@ -915,16 +915,25 @@
       "repo": "ivac",
       "frameworks": [
         "Express",
+        "Grafana",
         "MongoDB",
-        "React"
+        "Prometheus",
+        "React",
+        "Redis"
       ],
       "infra": [
         "Docker",
+        "Grafana",
         "MongoDB",
+        "Prometheus",
+        "Redis",
         "Terraform"
       ],
       "compose_images": [
-        "mongo"
+        "grafana/grafana",
+        "mongo",
+        "prom/prometheus",
+        "redis"
       ]
     },
     {
