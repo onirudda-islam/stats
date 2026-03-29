@@ -1,33 +1,37 @@
 {
-  "generated_at": "2026-03-22T01:15:32.958749+00:00",
+  "generated_at": "2026-03-29T01:25:40.523159+00:00",
   "aggregated": {
-    "React": 62,
-    "Express": 22,
-    "Next.js": 22,
+    "React": 63,
+    "Express": 23,
+    "Next.js": 23,
     "Solidity": 16,
     "Django": 15,
-    "Redis": 9,
+    "Redis": 10,
     "PostgreSQL": 9,
     "Prisma": 6,
+    "SQLAlchemy": 5,
+    "gRPC": 4,
     "Flask": 4,
-    "SQLAlchemy": 4,
     "Celery": 4,
+    "MongoDB": 3,
+    "Pydantic": 3,
+    "FastAPI": 3,
     "Grafana": 3,
     "Prometheus": 3,
-    "gRPC": 3,
-    "MongoDB": 2,
     "Nginx": 2,
-    "FastAPI": 2,
+    "Tokio": 2,
+    "NumPy": 2,
+    "Protocol Buffers": 2,
     "Terraform": 2,
-    "Pydantic": 2,
     "Vue.js": 2,
+    "MeiliSearch": 1,
+    "TimescaleDB": 1,
+    "Axum": 1,
+    "MinIO": 1,
     "GraphQL": 1,
     "OpenTelemetry": 1,
-    "Protocol Buffers": 1,
-    "HuggingFace": 1,
-    "NumPy": 1,
     "Pandas": 1,
-    "Tokio": 1,
+    "HuggingFace": 1,
     "MySQL": 1,
     "MariaDB": 1
   },
@@ -53,6 +57,47 @@
         "mongo",
         "nginx",
         "redis"
+      ]
+    },
+    {
+      "repo": "hzbrl",
+      "frameworks": [
+        "Axum",
+        "FastAPI",
+        "MeiliSearch",
+        "MinIO",
+        "MongoDB",
+        "Next.js",
+        "NumPy",
+        "Protocol Buffers",
+        "Pydantic",
+        "React",
+        "Redis",
+        "SQLAlchemy",
+        "TimescaleDB",
+        "Tokio",
+        "gRPC"
+      ],
+      "infra": [
+        "Docker",
+        "GitHub Actions",
+        "Grafana",
+        "Kubernetes",
+        "MeiliSearch",
+        "MinIO",
+        "MongoDB",
+        "PostgreSQL",
+        "Protocol Buffers",
+        "Redis",
+        "TimescaleDB"
+      ],
+      "compose_images": [
+        "getmeili/meilisearch",
+        "minio/mc",
+        "minio/minio",
+        "mongo",
+        "redis",
+        "timescale/timescaledb"
       ]
     },
     {
@@ -409,6 +454,7 @@
     {
       "repo": "mememates",
       "frameworks": [
+        "Express",
         "Protocol Buffers"
       ],
       "infra": [
