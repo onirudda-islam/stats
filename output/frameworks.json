@@ -1,37 +1,42 @@
 {
-  "generated_at": "2026-03-29T01:25:40.523159+00:00",
+  "generated_at": "2026-04-05T01:23:26.645928+00:00",
   "aggregated": {
     "React": 63,
-    "Express": 23,
     "Next.js": 23,
+    "Express": 22,
     "Solidity": 16,
     "Django": 15,
-    "Redis": 10,
-    "PostgreSQL": 9,
+    "Redis": 11,
+    "PostgreSQL": 10,
     "Prisma": 6,
     "SQLAlchemy": 5,
+    "MongoDB": 4,
     "gRPC": 4,
     "Flask": 4,
     "Celery": 4,
-    "MongoDB": 3,
-    "Pydantic": 3,
+    "Protocol Buffers": 3,
     "FastAPI": 3,
-    "Grafana": 3,
+    "Pydantic": 3,
+    "Terraform": 3,
     "Prometheus": 3,
-    "Nginx": 2,
-    "Tokio": 2,
+    "Grafana": 3,
     "NumPy": 2,
-    "Protocol Buffers": 2,
-    "Terraform": 2,
+    "Tokio": 2,
     "Vue.js": 2,
-    "MeiliSearch": 1,
+    "MinIO": 1,
     "TimescaleDB": 1,
     "Axum": 1,
-    "MinIO": 1,
+    "MeiliSearch": 1,
+    "Keycloak": 1,
+    "ClickHouse": 1,
+    "Kafka": 1,
+    "Docker Registry": 1,
+    "Cassandra": 1,
     "GraphQL": 1,
     "OpenTelemetry": 1,
     "Pandas": 1,
     "HuggingFace": 1,
+    "Nginx": 1,
     "MySQL": 1,
     "MariaDB": 1
   },
@@ -42,20 +47,17 @@
         "Express",
         "MongoDB",
         "Next.js",
-        "Nginx",
         "React",
         "Redis"
       ],
       "infra": [
         "Docker",
         "MongoDB",
-        "Nginx",
         "Redis",
         "Terraform"
       ],
       "compose_images": [
         "mongo",
-        "nginx",
         "redis"
       ]
     },
@@ -81,7 +83,6 @@
       "infra": [
         "Docker",
         "GitHub Actions",
-        "Grafana",
         "Kubernetes",
         "MeiliSearch",
         "MinIO",
@@ -98,6 +99,47 @@
         "mongo",
         "redis",
         "timescale/timescaledb"
+      ]
+    },
+    {
+      "repo": "uspwp",
+      "frameworks": [
+        "Cassandra",
+        "ClickHouse",
+        "Docker Registry",
+        "Kafka",
+        "Keycloak",
+        "MongoDB",
+        "PostgreSQL",
+        "Protocol Buffers",
+        "Redis",
+        "Terraform"
+      ],
+      "infra": [
+        "Cassandra",
+        "ClickHouse",
+        "Docker",
+        "Docker Registry",
+        "GitHub Actions",
+        "Grafana",
+        "Helm",
+        "Kafka",
+        "Keycloak",
+        "MongoDB",
+        "PostgreSQL",
+        "Protocol Buffers",
+        "Redis",
+        "Terraform"
+      ],
+      "compose_images": [
+        "bitnami/kafka",
+        "bitnami/schema-registry",
+        "cassandra",
+        "clickhouse/clickhouse-server",
+        "mongo",
+        "postgres",
+        "quay.io/keycloak/keycloak",
+        "redis"
       ]
     },
     {
@@ -454,7 +496,6 @@
     {
       "repo": "mememates",
       "frameworks": [
-        "Express",
         "Protocol Buffers"
       ],
       "infra": [
@@ -702,7 +743,9 @@
         "Next.js",
         "React"
       ],
-      "infra": [],
+      "infra": [
+        "Docker"
+      ],
       "compose_images": []
     },
     {

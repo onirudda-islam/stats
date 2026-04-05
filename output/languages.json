@@ -1,43 +1,43 @@
 {
-  "generated_at": "2026-03-29T01:21:01.085200+00:00",
-  "total_bytes": 122032475,
+  "generated_at": "2026-04-05T01:21:10.655284+00:00",
+  "total_bytes": 123379393,
   "languages": [
     {
       "name": "JavaScript",
-      "bytes": 45773055,
-      "percentage": 37.51,
+      "bytes": 45773631,
+      "percentage": 37.1,
       "color": "#F7DF1E",
       "category": "Languages",
       "repo_count": 94
     },
     {
       "name": "Python",
-      "bytes": 30953125,
-      "percentage": 25.36,
+      "bytes": 31423138,
+      "percentage": 25.47,
       "color": "#3776AB",
       "category": "Languages",
-      "repo_count": 33
+      "repo_count": 34
     },
     {
       "name": "Dart",
       "bytes": 15855584,
-      "percentage": 12.99,
+      "percentage": 12.85,
       "color": "#0175C2",
       "category": "Languages",
       "repo_count": 17
     },
     {
       "name": "TypeScript",
-      "bytes": 9361349,
-      "percentage": 7.67,
+      "bytes": 9700497,
+      "percentage": 7.86,
       "color": "#3178C6",
       "category": "Languages",
       "repo_count": 17
     },
     {
       "name": "Go",
-      "bytes": 4042017,
-      "percentage": 3.31,
+      "bytes": 4401933,
+      "percentage": 3.57,
       "color": "#00ADD8",
       "category": "Languages",
       "repo_count": 2
@@ -45,7 +45,7 @@
     {
       "name": "SCSS",
       "bytes": 2940449,
-      "percentage": 2.41,
+      "percentage": 2.38,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 7
@@ -53,7 +53,7 @@
     {
       "name": "PHP",
       "bytes": 2883272,
-      "percentage": 2.36,
+      "percentage": 2.34,
       "color": "#777BB4",
       "category": "Languages",
       "repo_count": 2
@@ -61,7 +61,7 @@
     {
       "name": "HTML",
       "bytes": 1713635,
-      "percentage": 1.4,
+      "percentage": 1.39,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 72
@@ -69,23 +69,23 @@
     {
       "name": "Blade",
       "bytes": 1689000,
-      "percentage": 1.38,
+      "percentage": 1.37,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 1
     },
     {
       "name": "Makefile",
-      "bytes": 1276355,
-      "percentage": 1.05,
+      "bytes": 1279812,
+      "percentage": 1.04,
       "color": "#6E7681",
       "category": "Languages",
-      "repo_count": 4
+      "repo_count": 5
     },
     {
       "name": "Jupyter Notebook",
       "bytes": 1055739,
-      "percentage": 0.87,
+      "percentage": 0.86,
       "color": "#DA5B0B",
       "category": "Languages",
       "repo_count": 1
@@ -93,14 +93,22 @@
     {
       "name": "Java",
       "bytes": 916876,
-      "percentage": 0.75,
+      "percentage": 0.74,
       "color": "#ED8B00",
       "category": "Languages",
       "repo_count": 3
     },
     {
+      "name": "Shell",
+      "bytes": 686688,
+      "percentage": 0.56,
+      "color": "#89E051",
+      "category": "Languages",
+      "repo_count": 37
+    },
+    {
       "name": "CSS",
-      "bytes": 664775,
+      "bytes": 671462,
       "percentage": 0.54,
       "color": "#6E7681",
       "category": "Languages",
@@ -108,24 +116,16 @@
     },
     {
       "name": "Rust",
-      "bytes": 539548,
+      "bytes": 541928,
       "percentage": 0.44,
       "color": "#CE422B",
       "category": "Languages",
       "repo_count": 3
     },
     {
-      "name": "Shell",
-      "bytes": 531503,
-      "percentage": 0.44,
-      "color": "#89E051",
-      "category": "Languages",
-      "repo_count": 36
-    },
-    {
       "name": "Vue",
       "bytes": 434454,
-      "percentage": 0.36,
+      "percentage": 0.35,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 2
@@ -157,26 +157,26 @@
     {
       "name": "CMake",
       "bytes": 153178,
-      "percentage": 0.13,
+      "percentage": 0.12,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 8
     },
     {
       "name": "Dockerfile",
-      "bytes": 74106,
+      "bytes": 78983,
       "percentage": 0.06,
       "color": "#6E7681",
       "category": "Languages",
-      "repo_count": 42
+      "repo_count": 43
     },
     {
       "name": "HCL",
-      "bytes": 46079,
+      "bytes": 50758,
       "percentage": 0.04,
       "color": "#6E7681",
       "category": "Languages",
-      "repo_count": 2
+      "repo_count": 3
     },
     {
       "name": "GLSL",
