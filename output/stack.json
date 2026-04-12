@@ -1,43 +1,43 @@
 {
-  "generated_at": "2026-04-05T01:23:26.974243+00:00",
-  "repo_count": 174,
+  "generated_at": "2026-04-12T01:29:53.154883+00:00",
+  "repo_count": 175,
   "languages": [
     {
       "name": "JavaScript",
-      "bytes": 45773631,
-      "percentage": 37.1,
+      "bytes": 45773777,
+      "percentage": 36.63,
       "color": "#F7DF1E",
       "category": "Languages",
-      "repo_count": 94
+      "repo_count": 95
     },
     {
       "name": "Python",
-      "bytes": 31423138,
-      "percentage": 25.47,
+      "bytes": 31446694,
+      "percentage": 25.17,
       "color": "#3776AB",
       "category": "Languages",
-      "repo_count": 34
+      "repo_count": 35
     },
     {
       "name": "Dart",
-      "bytes": 15855584,
-      "percentage": 12.85,
+      "bytes": 16484193,
+      "percentage": 13.19,
       "color": "#0175C2",
       "category": "Languages",
       "repo_count": 17
     },
     {
       "name": "TypeScript",
-      "bytes": 9700497,
-      "percentage": 7.86,
+      "bytes": 10622411,
+      "percentage": 8.5,
       "color": "#3178C6",
       "category": "Languages",
-      "repo_count": 17
+      "repo_count": 18
     },
     {
       "name": "Go",
       "bytes": 4401933,
-      "percentage": 3.57,
+      "percentage": 3.52,
       "color": "#00ADD8",
       "category": "Languages",
       "repo_count": 2
@@ -45,7 +45,7 @@
     {
       "name": "SCSS",
       "bytes": 2940449,
-      "percentage": 2.38,
+      "percentage": 2.35,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 7
@@ -53,7 +53,7 @@
     {
       "name": "PHP",
       "bytes": 2883272,
-      "percentage": 2.34,
+      "percentage": 2.31,
       "color": "#777BB4",
       "category": "Languages",
       "repo_count": 2
@@ -61,7 +61,7 @@
     {
       "name": "HTML",
       "bytes": 1713635,
-      "percentage": 1.39,
+      "percentage": 1.37,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 72
@@ -69,7 +69,7 @@
     {
       "name": "Blade",
       "bytes": 1689000,
-      "percentage": 1.37,
+      "percentage": 1.35,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 1
@@ -77,7 +77,7 @@
     {
       "name": "Makefile",
       "bytes": 1279812,
-      "percentage": 1.04,
+      "percentage": 1.02,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 5
@@ -85,7 +85,7 @@
     {
       "name": "Jupyter Notebook",
       "bytes": 1055739,
-      "percentage": 0.86,
+      "percentage": 0.84,
       "color": "#DA5B0B",
       "category": "Languages",
       "repo_count": 1
@@ -93,31 +93,31 @@
     {
       "name": "Java",
       "bytes": 916876,
-      "percentage": 0.74,
+      "percentage": 0.73,
       "color": "#ED8B00",
       "category": "Languages",
       "repo_count": 3
     },
     {
       "name": "Shell",
-      "bytes": 686688,
-      "percentage": 0.56,
+      "bytes": 686717,
+      "percentage": 0.55,
       "color": "#89E051",
       "category": "Languages",
       "repo_count": 37
     },
     {
       "name": "CSS",
-      "bytes": 671462,
+      "bytes": 672398,
       "percentage": 0.54,
       "color": "#6E7681",
       "category": "Languages",
-      "repo_count": 72
+      "repo_count": 73
     },
     {
       "name": "Rust",
       "bytes": 541928,
-      "percentage": 0.44,
+      "percentage": 0.43,
       "color": "#CE422B",
       "category": "Languages",
       "repo_count": 3
@@ -133,7 +133,7 @@
     {
       "name": "Kotlin",
       "bytes": 403532,
-      "percentage": 0.33,
+      "percentage": 0.32,
       "color": "#7F52FF",
       "category": "Languages",
       "repo_count": 17
@@ -149,7 +149,7 @@
     {
       "name": "C++",
       "bytes": 191866,
-      "percentage": 0.16,
+      "percentage": 0.15,
       "color": "#00599C",
       "category": "Languages",
       "repo_count": 8
@@ -164,11 +164,11 @@
     },
     {
       "name": "Dockerfile",
-      "bytes": 78983,
+      "bytes": 80290,
       "percentage": 0.06,
       "color": "#6E7681",
       "category": "Languages",
-      "repo_count": 43
+      "repo_count": 44
     },
     {
       "name": "HCL",
@@ -365,41 +365,13 @@
     "Vercel"
   ],
   "commit_stats": {
-    "total_commits": 1468,
-    "total_prs": 117,
+    "total_commits": 1612,
+    "total_prs": 199,
     "total_issues": 0,
     "contrib_years": [],
     "error": null,
-    "calendar_total": 1618,
+    "calendar_total": 1847,
     "contribution_days": [
-      {
-        "date": "2025-04-06",
-        "count": 0
-      },
-      {
-        "date": "2025-04-07",
-        "count": 0
-      },
-      {
-        "date": "2025-04-08",
-        "count": 0
-      },
-      {
-        "date": "2025-04-09",
-        "count": 0
-      },
-      {
-        "date": "2025-04-10",
-        "count": 0
-      },
-      {
-        "date": "2025-04-11",
-        "count": 0
-      },
-      {
-        "date": "2025-04-12",
-        "count": 0
-      },
       {
         "date": "2025-04-13",
         "count": 0
@@ -1830,7 +1802,35 @@
       },
       {
         "date": "2026-04-05",
-        "count": 14
+        "count": 44
+      },
+      {
+        "date": "2026-04-06",
+        "count": 34
+      },
+      {
+        "date": "2026-04-07",
+        "count": 16
+      },
+      {
+        "date": "2026-04-08",
+        "count": 125
+      },
+      {
+        "date": "2026-04-09",
+        "count": 22
+      },
+      {
+        "date": "2026-04-10",
+        "count": 1
+      },
+      {
+        "date": "2026-04-11",
+        "count": 1
+      },
+      {
+        "date": "2026-04-12",
+        "count": 0
       }
     ]
   }

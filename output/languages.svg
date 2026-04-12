@@ -27,25 +27,25 @@
 <rect y="60" width="860" height="28" fill="#0d1117"/>
 
 <text x="28" y="46" class="title">🛠️  Tech Stack — @onirudda-islam</text>
-<text x="28" y="66" class="subtitle">Dynamically scanned across all repositories · Updated 2026-04-05</text>
+<text x="28" y="66" class="subtitle">Dynamically scanned across all repositories · Updated 2026-04-12</text>
 <text x="28" y="108" class="section-label">LANGUAGES</text>
 <g clip-path="url(#bar-clip)">
-<rect x="28" y="120" width="298" height="12" fill="#F7DF1E"><title>JavaScript: 37.1%</title></rect>
-<rect x="326" y="120" width="205" height="12" fill="#3776AB"><title>Python: 25.5%</title></rect>
-<rect x="531" y="120" width="103" height="12" fill="#0175C2"><title>Dart: 12.9%</title></rect>
-<rect x="634" y="120" width="63" height="12" fill="#3178C6"><title>TypeScript: 7.9%</title></rect>
-<rect x="697" y="120" width="29" height="12" fill="#00ADD8"><title>Go: 3.6%</title></rect>
-<rect x="726" y="120" width="19" height="12" fill="#6E7681"><title>SCSS: 2.4%</title></rect>
-<rect x="745" y="120" width="19" height="12" fill="#777BB4"><title>PHP: 2.3%</title></rect>
-<rect x="764" y="120" width="11" height="12" fill="#6E7681"><title>HTML: 1.4%</title></rect>
-<rect x="775" y="120" width="11" height="12" fill="#6E7681"><title>Blade: 1.4%</title></rect>
-<rect x="786" y="120" width="8" height="12" fill="#6E7681"><title>Makefile: 1.0%</title></rect>
-<rect x="794" y="120" width="7" height="12" fill="#DA5B0B"><title>Jupyter Notebook: 0.9%</title></rect>
-<rect x="801" y="120" width="6" height="12" fill="#ED8B00"><title>Java: 0.7%</title></rect>
-<rect x="807" y="120" width="4" height="12" fill="#89E051"><title>Shell: 0.6%</title></rect>
-<rect x="811" y="120" width="4" height="12" fill="#6E7681"><title>CSS: 0.5%</title></rect>
-<rect x="815" y="120" width="4" height="12" fill="#CE422B"><title>Rust: 0.4%</title></rect>
-<rect x="819" y="120" width="3" height="12" fill="#6E7681"><title>Vue: 0.4%</title></rect>
+<rect x="28" y="120" width="295" height="12" fill="#F7DF1E"><title>JavaScript: 36.6%</title></rect>
+<rect x="323" y="120" width="202" height="12" fill="#3776AB"><title>Python: 25.2%</title></rect>
+<rect x="525" y="120" width="106" height="12" fill="#0175C2"><title>Dart: 13.2%</title></rect>
+<rect x="631" y="120" width="68" height="12" fill="#3178C6"><title>TypeScript: 8.5%</title></rect>
+<rect x="699" y="120" width="28" height="12" fill="#00ADD8"><title>Go: 3.5%</title></rect>
+<rect x="727" y="120" width="19" height="12" fill="#6E7681"><title>SCSS: 2.4%</title></rect>
+<rect x="746" y="120" width="19" height="12" fill="#777BB4"><title>PHP: 2.3%</title></rect>
+<rect x="765" y="120" width="11" height="12" fill="#6E7681"><title>HTML: 1.4%</title></rect>
+<rect x="776" y="120" width="11" height="12" fill="#6E7681"><title>Blade: 1.4%</title></rect>
+<rect x="787" y="120" width="8" height="12" fill="#6E7681"><title>Makefile: 1.0%</title></rect>
+<rect x="795" y="120" width="7" height="12" fill="#DA5B0B"><title>Jupyter Notebook: 0.8%</title></rect>
+<rect x="802" y="120" width="6" height="12" fill="#ED8B00"><title>Java: 0.7%</title></rect>
+<rect x="808" y="120" width="4" height="12" fill="#89E051"><title>Shell: 0.5%</title></rect>
+<rect x="812" y="120" width="4" height="12" fill="#6E7681"><title>CSS: 0.5%</title></rect>
+<rect x="816" y="120" width="3" height="12" fill="#CE422B"><title>Rust: 0.4%</title></rect>
+<rect x="819" y="120" width="3" height="12" fill="#6E7681"><title>Vue: 0.3%</title></rect>
 <rect x="822" y="120" width="3" height="12" fill="#7F52FF"><title>Kotlin: 0.3%</title></rect>
 <rect x="825" y="120" width="2" height="12" fill="#363636"><title>Solidity: 0.3%</title></rect>
 <rect x="827" y="120" width="2" height="12" fill="#00599C"><title>C++: 0.2%</title></rect>
@@ -56,13 +56,13 @@
   <rect x="28" y="142" width="137" height="26" rx="5"
         fill="#F7DF1E22" stroke="#F7DF1E66" stroke-width="1"/>
   <circle cx="39" cy="155" r="4" fill="#F7DF1E"/>
-  <text x="48" y="159" class="tag-text">JavaScript · 94r</text>
+  <text x="48" y="159" class="tag-text">JavaScript · 95r</text>
 </g>
 <g>
   <rect x="173" y="142" width="108" height="26" rx="5"
         fill="#3776AB22" stroke="#3776AB66" stroke-width="1"/>
   <circle cx="184" cy="155" r="4" fill="#3776AB"/>
-  <text x="193" y="159" class="tag-text">Python · 34r</text>
+  <text x="193" y="159" class="tag-text">Python · 35r</text>
 </g>
 <g>
   <rect x="289" y="142" width="94" height="26" rx="5"
@@ -74,7 +74,7 @@
   <rect x="391" y="142" width="137" height="26" rx="5"
         fill="#3178C622" stroke="#3178C666" stroke-width="1"/>
   <circle cx="402" cy="155" r="4" fill="#3178C6"/>
-  <text x="411" y="159" class="tag-text">TypeScript · 17r</text>
+  <text x="411" y="159" class="tag-text">TypeScript · 18r</text>
 </g>
 <g>
   <rect x="536" y="142" width="72" height="26" rx="5"

@@ -1,43 +1,43 @@
 {
-  "generated_at": "2026-04-05T01:23:26.645928+00:00",
+  "generated_at": "2026-04-12T01:29:52.531690+00:00",
   "aggregated": {
-    "React": 63,
-    "Next.js": 23,
-    "Express": 22,
+    "React": 64,
+    "Next.js": 24,
+    "Express": 23,
     "Solidity": 16,
     "Django": 15,
     "Redis": 11,
     "PostgreSQL": 10,
     "Prisma": 6,
+    "MongoDB": 5,
     "SQLAlchemy": 5,
-    "MongoDB": 4,
     "gRPC": 4,
     "Flask": 4,
     "Celery": 4,
-    "Protocol Buffers": 3,
     "FastAPI": 3,
+    "Protocol Buffers": 3,
     "Pydantic": 3,
     "Terraform": 3,
     "Prometheus": 3,
     "Grafana": 3,
-    "NumPy": 2,
     "Tokio": 2,
+    "NumPy": 2,
     "Vue.js": 2,
-    "MinIO": 1,
     "TimescaleDB": 1,
     "Axum": 1,
     "MeiliSearch": 1,
+    "MinIO": 1,
+    "Kafka": 1,
     "Keycloak": 1,
     "ClickHouse": 1,
-    "Kafka": 1,
     "Docker Registry": 1,
     "Cassandra": 1,
     "GraphQL": 1,
     "OpenTelemetry": 1,
     "Pandas": 1,
     "HuggingFace": 1,
-    "Nginx": 1,
     "MySQL": 1,
+    "Nginx": 1,
     "MariaDB": 1
   },
   "per_repo": [
@@ -83,6 +83,7 @@
       "infra": [
         "Docker",
         "GitHub Actions",
+        "Grafana",
         "Kubernetes",
         "MeiliSearch",
         "MinIO",
@@ -1565,6 +1566,23 @@
       ],
       "infra": [],
       "compose_images": []
+    },
+    {
+      "repo": "test_bet",
+      "frameworks": [
+        "Express",
+        "MongoDB",
+        "Next.js",
+        "React"
+      ],
+      "infra": [
+        "Docker",
+        "Kubernetes",
+        "MongoDB"
+      ],
+      "compose_images": [
+        "mongo"
+      ]
     },
     {
       "repo": "ubazaar-admin",
