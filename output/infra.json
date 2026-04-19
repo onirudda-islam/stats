@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-12T01:29:52.533188+00:00",
+  "generated_at": "2026-04-19T01:32:47.606100+00:00",
   "aggregated": {
     "Docker": 48,
     "GitHub Actions": 35,
@@ -20,17 +20,17 @@
     "TimescaleDB": 1,
     "MeiliSearch": 1,
     "MinIO": 1,
-    "Kafka": 1,
-    "Keycloak": 1,
-    "ClickHouse": 1,
-    "Docker Registry": 1,
     "Cassandra": 1,
+    "Kafka": 1,
+    "ClickHouse": 1,
+    "Keycloak": 1,
+    "Docker Registry": 1,
     "GraphQL": 1,
     "CircleCI": 1,
     "OpenTelemetry": 1,
     "CDK": 1,
-    "MySQL": 1,
     "Nginx": 1,
+    "MySQL": 1,
     "MariaDB": 1
   }
 }
