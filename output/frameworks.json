@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T01:32:47.604867+00:00",
+  "generated_at": "2026-04-26T01:35:34.519556+00:00",
   "aggregated": {
     "React": 64,
     "Next.js": 24,
@@ -22,23 +22,24 @@
     "Prometheus": 3,
     "Tokio": 2,
     "NumPy": 2,
+    "HuggingFace": 2,
     "Vue.js": 2,
     "TimescaleDB": 1,
     "MeiliSearch": 1,
     "MinIO": 1,
     "Axum": 1,
-    "Cassandra": 1,
-    "Kafka": 1,
-    "ClickHouse": 1,
-    "Keycloak": 1,
     "Docker Registry": 1,
+    "Kafka": 1,
+    "Keycloak": 1,
+    "ClickHouse": 1,
+    "Cassandra": 1,
     "GraphQL": 1,
     "OpenTelemetry": 1,
     "Pandas": 1,
-    "HuggingFace": 1,
     "Nginx": 1,
     "MySQL": 1,
-    "MariaDB": 1
+    "MariaDB": 1,
+    "PyTorch": 1
   },
   "per_repo": [
     {
@@ -1571,8 +1572,10 @@
       "repo": "test_bet",
       "frameworks": [
         "Express",
+        "HuggingFace",
         "MongoDB",
         "Next.js",
+        "PyTorch",
         "React"
       ],
       "infra": [
