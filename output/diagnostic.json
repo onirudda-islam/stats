@@ -1,9 +1,15 @@
 {
-  "generated_at": "2026-04-26T01:35:35.086154+00:00",
+  "generated_at": "2026-05-03T01:51:29.683353+00:00",
   "total_repos": 175,
   "repos": [
     {
       "full_name": "Accornya-inc/Accornya-website",
+      "private": true,
+      "owner": "Accornya-inc",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Accornya-inc/adef",
       "private": true,
       "owner": "Accornya-inc",
       "default_branch": "main"
@@ -234,12 +240,6 @@
       "full_name": "Edtec-ai/edtec-monitoring",
       "private": true,
       "owner": "Edtec-ai",
-      "default_branch": "main"
-    },
-    {
-      "full_name": "FlicLabs/mememates",
-      "private": true,
-      "owner": "FlicLabs",
       "default_branch": "main"
     },
     {

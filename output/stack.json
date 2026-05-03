@@ -1,43 +1,43 @@
 {
-  "generated_at": "2026-04-26T01:35:35.087293+00:00",
+  "generated_at": "2026-05-03T01:51:29.684421+00:00",
   "repo_count": 175,
   "languages": [
     {
       "name": "JavaScript",
-      "bytes": 45836655,
-      "percentage": 35.33,
+      "bytes": 45835275,
+      "percentage": 36.21,
       "color": "#F7DF1E",
       "category": "Languages",
-      "repo_count": 95
+      "repo_count": 94
     },
     {
       "name": "Python",
       "bytes": 31667751,
-      "percentage": 24.41,
+      "percentage": 25.02,
       "color": "#3776AB",
       "category": "Languages",
       "repo_count": 35
     },
     {
-      "name": "Dart",
-      "bytes": 16586710,
-      "percentage": 12.79,
-      "color": "#0175C2",
+      "name": "TypeScript",
+      "bytes": 14971551,
+      "percentage": 11.83,
+      "color": "#3178C6",
       "category": "Languages",
       "repo_count": 17
     },
     {
-      "name": "TypeScript",
-      "bytes": 14937223,
-      "percentage": 11.51,
-      "color": "#3178C6",
+      "name": "Dart",
+      "bytes": 13529759,
+      "percentage": 10.69,
+      "color": "#0175C2",
       "category": "Languages",
-      "repo_count": 18
+      "repo_count": 16
     },
     {
       "name": "Go",
       "bytes": 4417584,
-      "percentage": 3.41,
+      "percentage": 3.49,
       "color": "#00ADD8",
       "category": "Languages",
       "repo_count": 2
@@ -45,7 +45,7 @@
     {
       "name": "SCSS",
       "bytes": 2940449,
-      "percentage": 2.27,
+      "percentage": 2.32,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 7
@@ -53,39 +53,39 @@
     {
       "name": "PHP",
       "bytes": 2883272,
-      "percentage": 2.22,
+      "percentage": 2.28,
       "color": "#777BB4",
       "category": "Languages",
       "repo_count": 2
     },
     {
-      "name": "HTML",
-      "bytes": 1713635,
-      "percentage": 1.32,
-      "color": "#6E7681",
-      "category": "Languages",
-      "repo_count": 72
-    },
-    {
       "name": "Blade",
       "bytes": 1689000,
-      "percentage": 1.3,
+      "percentage": 1.33,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 1
     },
     {
+      "name": "HTML",
+      "bytes": 1568684,
+      "percentage": 1.24,
+      "color": "#6E7681",
+      "category": "Languages",
+      "repo_count": 71
+    },
+    {
       "name": "Makefile",
       "bytes": 1279812,
-      "percentage": 0.99,
+      "percentage": 1.01,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 5
     },
     {
       "name": "Jupyter Notebook",
-      "bytes": 1078135,
-      "percentage": 0.83,
+      "bytes": 1092659,
+      "percentage": 0.86,
       "color": "#DA5B0B",
       "category": "Languages",
       "repo_count": 2
@@ -93,7 +93,7 @@
     {
       "name": "Java",
       "bytes": 916876,
-      "percentage": 0.71,
+      "percentage": 0.72,
       "color": "#ED8B00",
       "category": "Languages",
       "repo_count": 3
@@ -101,23 +101,23 @@
     {
       "name": "CSS",
       "bytes": 698795,
-      "percentage": 0.54,
+      "percentage": 0.55,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 73
     },
     {
       "name": "Shell",
-      "bytes": 693415,
-      "percentage": 0.53,
+      "bytes": 691599,
+      "percentage": 0.55,
       "color": "#89E051",
       "category": "Languages",
-      "repo_count": 38
+      "repo_count": 37
     },
     {
       "name": "Rust",
       "bytes": 541928,
-      "percentage": 0.42,
+      "percentage": 0.43,
       "color": "#CE422B",
       "category": "Languages",
       "repo_count": 3
@@ -125,23 +125,23 @@
     {
       "name": "Vue",
       "bytes": 434454,
-      "percentage": 0.33,
+      "percentage": 0.34,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 2
     },
     {
       "name": "Kotlin",
-      "bytes": 403532,
-      "percentage": 0.31,
+      "bytes": 402922,
+      "percentage": 0.32,
       "color": "#7F52FF",
       "category": "Languages",
-      "repo_count": 17
+      "repo_count": 16
     },
     {
       "name": "Solidity",
       "bytes": 369191,
-      "percentage": 0.28,
+      "percentage": 0.29,
       "color": "#363636",
       "category": "Languages",
       "repo_count": 16
@@ -196,19 +196,19 @@
     },
     {
       "name": "Swift",
-      "bytes": 23936,
+      "bytes": 23086,
       "percentage": 0.02,
       "color": "#FA7343",
       "category": "Languages",
-      "repo_count": 15
+      "repo_count": 14
     },
     {
       "name": "Ruby",
-      "bytes": 19836,
-      "percentage": 0.02,
+      "bytes": 18300,
+      "percentage": 0.01,
       "color": "#CC342D",
       "category": "Languages",
-      "repo_count": 11
+      "repo_count": 10
     },
     {
       "name": "C",
@@ -236,11 +236,11 @@
     },
     {
       "name": "Objective-C",
-      "bytes": 7856,
+      "bytes": 7817,
       "percentage": 0.01,
       "color": "#6E7681",
       "category": "Languages",
-      "repo_count": 16
+      "repo_count": 15
     },
     {
       "name": "Handlebars",
@@ -366,41 +366,13 @@
     "Vercel"
   ],
   "commit_stats": {
-    "total_commits": 2026,
+    "total_commits": 2029,
     "total_prs": 201,
     "total_issues": 0,
     "contrib_years": [],
     "error": null,
-    "calendar_total": 2263,
+    "calendar_total": 2266,
     "contribution_days": [
-      {
-        "date": "2025-04-27",
-        "count": 0
-      },
-      {
-        "date": "2025-04-28",
-        "count": 0
-      },
-      {
-        "date": "2025-04-29",
-        "count": 0
-      },
-      {
-        "date": "2025-04-30",
-        "count": 0
-      },
-      {
-        "date": "2025-05-01",
-        "count": 0
-      },
-      {
-        "date": "2025-05-02",
-        "count": 0
-      },
-      {
-        "date": "2025-05-03",
-        "count": 0
-      },
       {
         "date": "2025-05-04",
         "count": 0
@@ -1831,6 +1803,34 @@
       },
       {
         "date": "2026-04-26",
+        "count": 3
+      },
+      {
+        "date": "2026-04-27",
+        "count": 0
+      },
+      {
+        "date": "2026-04-28",
+        "count": 0
+      },
+      {
+        "date": "2026-04-29",
+        "count": 2
+      },
+      {
+        "date": "2026-04-30",
+        "count": 0
+      },
+      {
+        "date": "2026-05-01",
+        "count": 0
+      },
+      {
+        "date": "2026-05-02",
+        "count": 0
+      },
+      {
+        "date": "2026-05-03",
         "count": 0
       }
     ]

@@ -27,36 +27,36 @@
 <rect y="60" width="860" height="28" fill="#0d1117"/>
 
 <text x="28" y="46" class="title">🛠️  Tech Stack — @onirudda-islam</text>
-<text x="28" y="66" class="subtitle">Dynamically scanned across all repositories · Updated 2026-04-26</text>
+<text x="28" y="66" class="subtitle">Dynamically scanned across all repositories · Updated 2026-05-03</text>
 <text x="28" y="108" class="section-label">LANGUAGES</text>
 <g clip-path="url(#bar-clip)">
-<rect x="28" y="120" width="284" height="12" fill="#F7DF1E"><title>JavaScript: 35.3%</title></rect>
-<rect x="312" y="120" width="196" height="12" fill="#3776AB"><title>Python: 24.4%</title></rect>
-<rect x="508" y="120" width="103" height="12" fill="#0175C2"><title>Dart: 12.8%</title></rect>
-<rect x="611" y="120" width="93" height="12" fill="#3178C6"><title>TypeScript: 11.5%</title></rect>
-<rect x="704" y="120" width="27" height="12" fill="#00ADD8"><title>Go: 3.4%</title></rect>
-<rect x="731" y="120" width="18" height="12" fill="#6E7681"><title>SCSS: 2.3%</title></rect>
-<rect x="749" y="120" width="18" height="12" fill="#777BB4"><title>PHP: 2.2%</title></rect>
-<rect x="767" y="120" width="11" height="12" fill="#6E7681"><title>HTML: 1.3%</title></rect>
-<rect x="778" y="120" width="10" height="12" fill="#6E7681"><title>Blade: 1.3%</title></rect>
-<rect x="788" y="120" width="8" height="12" fill="#6E7681"><title>Makefile: 1.0%</title></rect>
-<rect x="796" y="120" width="7" height="12" fill="#DA5B0B"><title>Jupyter Notebook: 0.8%</title></rect>
-<rect x="803" y="120" width="6" height="12" fill="#ED8B00"><title>Java: 0.7%</title></rect>
-<rect x="809" y="120" width="4" height="12" fill="#6E7681"><title>CSS: 0.5%</title></rect>
-<rect x="813" y="120" width="4" height="12" fill="#89E051"><title>Shell: 0.5%</title></rect>
-<rect x="817" y="120" width="3" height="12" fill="#CE422B"><title>Rust: 0.4%</title></rect>
-<rect x="820" y="120" width="3" height="12" fill="#6E7681"><title>Vue: 0.3%</title></rect>
-<rect x="823" y="120" width="3" height="12" fill="#7F52FF"><title>Kotlin: 0.3%</title></rect>
-<rect x="826" y="120" width="2" height="12" fill="#363636"><title>Solidity: 0.3%</title></rect>
-<rect x="828" y="120" width="2" height="12" fill="#00599C"><title>C++: 0.1%</title></rect>
-<rect x="830" y="120" width="2" height="12" fill="#6E7681"><title>CMake: 0.1%</title></rect>
-<rect x="832" y="120" width="2" height="12" fill="#6E7681"><title>Other: 0.2%</title></rect>
+<rect x="28" y="120" width="291" height="12" fill="#F7DF1E"><title>JavaScript: 36.2%</title></rect>
+<rect x="319" y="120" width="201" height="12" fill="#3776AB"><title>Python: 25.0%</title></rect>
+<rect x="520" y="120" width="95" height="12" fill="#3178C6"><title>TypeScript: 11.8%</title></rect>
+<rect x="615" y="120" width="86" height="12" fill="#0175C2"><title>Dart: 10.7%</title></rect>
+<rect x="701" y="120" width="28" height="12" fill="#00ADD8"><title>Go: 3.5%</title></rect>
+<rect x="729" y="120" width="19" height="12" fill="#6E7681"><title>SCSS: 2.3%</title></rect>
+<rect x="748" y="120" width="18" height="12" fill="#777BB4"><title>PHP: 2.3%</title></rect>
+<rect x="766" y="120" width="11" height="12" fill="#6E7681"><title>Blade: 1.3%</title></rect>
+<rect x="777" y="120" width="10" height="12" fill="#6E7681"><title>HTML: 1.2%</title></rect>
+<rect x="787" y="120" width="8" height="12" fill="#6E7681"><title>Makefile: 1.0%</title></rect>
+<rect x="795" y="120" width="7" height="12" fill="#DA5B0B"><title>Jupyter Notebook: 0.9%</title></rect>
+<rect x="802" y="120" width="6" height="12" fill="#ED8B00"><title>Java: 0.7%</title></rect>
+<rect x="808" y="120" width="4" height="12" fill="#6E7681"><title>CSS: 0.6%</title></rect>
+<rect x="812" y="120" width="4" height="12" fill="#89E051"><title>Shell: 0.5%</title></rect>
+<rect x="816" y="120" width="3" height="12" fill="#CE422B"><title>Rust: 0.4%</title></rect>
+<rect x="819" y="120" width="3" height="12" fill="#6E7681"><title>Vue: 0.3%</title></rect>
+<rect x="822" y="120" width="3" height="12" fill="#7F52FF"><title>Kotlin: 0.3%</title></rect>
+<rect x="825" y="120" width="2" height="12" fill="#363636"><title>Solidity: 0.3%</title></rect>
+<rect x="827" y="120" width="2" height="12" fill="#00599C"><title>C++: 0.2%</title></rect>
+<rect x="829" y="120" width="2" height="12" fill="#6E7681"><title>CMake: 0.1%</title></rect>
+<rect x="831" y="120" width="2" height="12" fill="#6E7681"><title>Other: 0.2%</title></rect>
 </g>
 <g>
   <rect x="28" y="142" width="137" height="26" rx="5"
         fill="#F7DF1E22" stroke="#F7DF1E66" stroke-width="1"/>
   <circle cx="39" cy="155" r="4" fill="#F7DF1E"/>
-  <text x="48" y="159" class="tag-text">JavaScript · 95r</text>
+  <text x="48" y="159" class="tag-text">JavaScript · 94r</text>
 </g>
 <g>
   <rect x="173" y="142" width="108" height="26" rx="5"
@@ -65,16 +65,16 @@
   <text x="193" y="159" class="tag-text">Python · 35r</text>
 </g>
 <g>
-  <rect x="289" y="142" width="94" height="26" rx="5"
-        fill="#0175C222" stroke="#0175C266" stroke-width="1"/>
-  <circle cx="300" cy="155" r="4" fill="#0175C2"/>
-  <text x="309" y="159" class="tag-text">Dart · 17r</text>
+  <rect x="289" y="142" width="137" height="26" rx="5"
+        fill="#3178C622" stroke="#3178C666" stroke-width="1"/>
+  <circle cx="300" cy="155" r="4" fill="#3178C6"/>
+  <text x="309" y="159" class="tag-text">TypeScript · 17r</text>
 </g>
 <g>
-  <rect x="391" y="142" width="137" height="26" rx="5"
-        fill="#3178C622" stroke="#3178C666" stroke-width="1"/>
-  <circle cx="402" cy="155" r="4" fill="#3178C6"/>
-  <text x="411" y="159" class="tag-text">TypeScript · 18r</text>
+  <rect x="434" y="142" width="94" height="26" rx="5"
+        fill="#0175C222" stroke="#0175C266" stroke-width="1"/>
+  <circle cx="445" cy="155" r="4" fill="#0175C2"/>
+  <text x="454" y="159" class="tag-text">Dart · 16r</text>
 </g>
 <g>
   <rect x="536" y="142" width="72" height="26" rx="5"
@@ -128,7 +128,7 @@
   <rect x="586" y="176" width="108" height="26" rx="5"
         fill="#7F52FF22" stroke="#7F52FF66" stroke-width="1"/>
   <circle cx="597" cy="189" r="4" fill="#7F52FF"/>
-  <text x="606" y="193" class="tag-text">Kotlin · 17r</text>
+  <text x="606" y="193" class="tag-text">Kotlin · 16r</text>
 </g>
 <g>
   <rect x="702" y="176" width="122" height="26" rx="5"
@@ -152,13 +152,13 @@
   <rect x="202" y="210" width="101" height="26" rx="5"
         fill="#FA734322" stroke="#FA734366" stroke-width="1"/>
   <circle cx="213" cy="223" r="4" fill="#FA7343"/>
-  <text x="222" y="227" class="tag-text">Swift · 15r</text>
+  <text x="222" y="227" class="tag-text">Swift · 14r</text>
 </g>
 <g>
   <rect x="311" y="210" width="94" height="26" rx="5"
         fill="#CC342D22" stroke="#CC342D66" stroke-width="1"/>
   <circle cx="322" cy="223" r="4" fill="#CC342D"/>
-  <text x="331" y="227" class="tag-text">Ruby · 11r</text>
+  <text x="331" y="227" class="tag-text">Ruby · 10r</text>
 </g>
 <g>
   <rect x="413" y="210" width="65" height="26" rx="5"

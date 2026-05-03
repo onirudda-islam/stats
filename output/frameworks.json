@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T01:35:34.519556+00:00",
+  "generated_at": "2026-05-03T01:51:29.230623+00:00",
   "aggregated": {
     "React": 64,
     "Next.js": 24,
@@ -16,28 +16,28 @@
     "Celery": 4,
     "FastAPI": 3,
     "Pydantic": 3,
-    "Protocol Buffers": 3,
     "Terraform": 3,
-    "Grafana": 3,
     "Prometheus": 3,
-    "Tokio": 2,
+    "Grafana": 3,
     "NumPy": 2,
+    "Tokio": 2,
+    "Protocol Buffers": 2,
     "HuggingFace": 2,
     "Vue.js": 2,
-    "TimescaleDB": 1,
-    "MeiliSearch": 1,
-    "MinIO": 1,
     "Axum": 1,
-    "Docker Registry": 1,
+    "MeiliSearch": 1,
+    "TimescaleDB": 1,
+    "MinIO": 1,
     "Kafka": 1,
+    "Docker Registry": 1,
     "Keycloak": 1,
     "ClickHouse": 1,
     "Cassandra": 1,
     "GraphQL": 1,
     "OpenTelemetry": 1,
     "Pandas": 1,
-    "Nginx": 1,
     "MySQL": 1,
+    "Nginx": 1,
     "MariaDB": 1,
     "PyTorch": 1
   },
@@ -494,17 +494,6 @@
         "otel/opentelemetry-collector-contrib",
         "prom/prometheus"
       ]
-    },
-    {
-      "repo": "mememates",
-      "frameworks": [
-        "Protocol Buffers"
-      ],
-      "infra": [
-        "Firebase",
-        "Protocol Buffers"
-      ],
-      "compose_images": []
     },
     {
       "repo": "bazigar-website",
