@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T01:56:19.530063+00:00",
+  "generated_at": "2026-05-17T01:59:44.776991+00:00",
   "aggregated": {
     "React": 64,
     "Next.js": 24,
@@ -11,33 +11,33 @@
     "Prisma": 6,
     "MongoDB": 5,
     "SQLAlchemy": 5,
+    "Terraform": 4,
     "gRPC": 4,
     "Flask": 4,
     "Celery": 4,
-    "FastAPI": 3,
     "Pydantic": 3,
-    "Terraform": 3,
-    "Grafana": 3,
+    "FastAPI": 3,
     "Prometheus": 3,
-    "NumPy": 2,
+    "Grafana": 3,
     "Protocol Buffers": 2,
     "Tokio": 2,
+    "NumPy": 2,
     "HuggingFace": 2,
     "Vue.js": 2,
+    "MeiliSearch": 1,
     "Axum": 1,
     "MinIO": 1,
-    "MeiliSearch": 1,
     "TimescaleDB": 1,
-    "ClickHouse": 1,
     "Keycloak": 1,
-    "Docker Registry": 1,
+    "ClickHouse": 1,
     "Cassandra": 1,
+    "Docker Registry": 1,
     "Kafka": 1,
     "GraphQL": 1,
     "OpenTelemetry": 1,
     "Pandas": 1,
-    "Nginx": 1,
     "MySQL": 1,
+    "Nginx": 1,
     "MariaDB": 1,
     "PyTorch": 1
   },
@@ -61,6 +61,19 @@
         "mongo",
         "redis"
       ]
+    },
+    {
+      "repo": "adef",
+      "frameworks": [
+        "Terraform"
+      ],
+      "infra": [
+        "GitHub Actions",
+        "Grafana",
+        "Helm",
+        "Terraform"
+      ],
+      "compose_images": []
     },
     {
       "repo": "hzbrl",
