@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-17T01:59:45.114510+00:00",
-  "repo_count": 175,
+  "generated_at": "2026-05-24T02:10:11.162722+00:00",
+  "repo_count": 176,
   "languages": [
     {
       "name": "JavaScript",
@@ -12,15 +12,15 @@
     },
     {
       "name": "Python",
-      "bytes": 32172879,
-      "percentage": 24.2,
+      "bytes": 32227136,
+      "percentage": 24.24,
       "color": "#3776AB",
       "category": "Languages",
       "repo_count": 36
     },
     {
       "name": "TypeScript",
-      "bytes": 15215850,
+      "bytes": 15206646,
       "percentage": 11.44,
       "color": "#3178C6",
       "category": "Languages",
@@ -28,19 +28,19 @@
     },
     {
       "name": "Dart",
-      "bytes": 14032320,
-      "percentage": 10.55,
+      "bytes": 14124386,
+      "percentage": 10.62,
       "color": "#0175C2",
       "category": "Languages",
       "repo_count": 16
     },
     {
       "name": "HTML",
-      "bytes": 6546634,
-      "percentage": 4.92,
+      "bytes": 6405337,
+      "percentage": 4.82,
       "color": "#6E7681",
       "category": "Languages",
-      "repo_count": 73
+      "repo_count": 72
     },
     {
       "name": "Go",
@@ -108,7 +108,7 @@
     },
     {
       "name": "Shell",
-      "bytes": 695872,
+      "bytes": 697318,
       "percentage": 0.52,
       "color": "#89E051",
       "category": "Languages",
@@ -132,7 +132,7 @@
     },
     {
       "name": "Kotlin",
-      "bytes": 402922,
+      "bytes": 402919,
       "percentage": 0.3,
       "color": "#7F52FF",
       "category": "Languages",
@@ -148,7 +148,7 @@
     },
     {
       "name": "C++",
-      "bytes": 191866,
+      "bytes": 192051,
       "percentage": 0.14,
       "color": "#00599C",
       "category": "Languages",
@@ -156,7 +156,7 @@
     },
     {
       "name": "CMake",
-      "bytes": 153216,
+      "bytes": 153237,
       "percentage": 0.12,
       "color": "#6E7681",
       "category": "Languages",
@@ -196,7 +196,7 @@
     },
     {
       "name": "Swift",
-      "bytes": 23492,
+      "bytes": 23615,
       "percentage": 0.02,
       "color": "#FA7343",
       "category": "Languages",
@@ -265,6 +265,14 @@
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 2
+    },
+    {
+      "name": "PowerShell",
+      "bytes": 2843,
+      "percentage": 0.0,
+      "color": "#6E7681",
+      "category": "Languages",
+      "repo_count": 1
     },
     {
       "name": "PureBasic",
@@ -374,41 +382,13 @@
     "Vercel"
   ],
   "commit_stats": {
-    "total_commits": 2137,
-    "total_prs": 204,
+    "total_commits": 2186,
+    "total_prs": 210,
     "total_issues": 0,
     "contrib_years": [],
     "error": null,
-    "calendar_total": 2377,
+    "calendar_total": 2432,
     "contribution_days": [
-      {
-        "date": "2025-05-18",
-        "count": 0
-      },
-      {
-        "date": "2025-05-19",
-        "count": 0
-      },
-      {
-        "date": "2025-05-20",
-        "count": 0
-      },
-      {
-        "date": "2025-05-21",
-        "count": 0
-      },
-      {
-        "date": "2025-05-22",
-        "count": 0
-      },
-      {
-        "date": "2025-05-23",
-        "count": 5
-      },
-      {
-        "date": "2025-05-24",
-        "count": 0
-      },
       {
         "date": "2025-05-25",
         "count": 0
@@ -1839,6 +1819,34 @@
       },
       {
         "date": "2026-05-17",
+        "count": 0
+      },
+      {
+        "date": "2026-05-18",
+        "count": 19
+      },
+      {
+        "date": "2026-05-19",
+        "count": 12
+      },
+      {
+        "date": "2026-05-20",
+        "count": 23
+      },
+      {
+        "date": "2026-05-21",
+        "count": 1
+      },
+      {
+        "date": "2026-05-22",
+        "count": 0
+      },
+      {
+        "date": "2026-05-23",
+        "count": 0
+      },
+      {
+        "date": "2026-05-24",
         "count": 0
       }
     ]
