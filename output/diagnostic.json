@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-14T02:36:18.453299+00:00",
-  "total_repos": 176,
+  "generated_at": "2026-06-21T02:39:23.080592+00:00",
+  "total_repos": 177,
   "repos": [
     {
       "full_name": "Accornya-inc/Accornya-website",
@@ -874,6 +874,12 @@
     },
     {
       "full_name": "Silicornya/School_Admission_Campain",
+      "private": true,
+      "owner": "Silicornya",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "Silicornya/school_erp",
       "private": true,
       "owner": "Silicornya",
       "default_branch": "main"
