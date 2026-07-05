@@ -27,25 +27,25 @@
 <rect y="60" width="860" height="28" fill="#0d1117"/>
 
 <text x="28" y="46" class="title">🛠️  Tech Stack — @onirudda-islam</text>
-<text x="28" y="66" class="subtitle">Dynamically scanned across all repositories · Updated 2026-06-28</text>
+<text x="28" y="66" class="subtitle">Dynamically scanned across all repositories · Updated 2026-07-05</text>
 <text x="28" y="108" class="section-label">LANGUAGES</text>
 <g clip-path="url(#bar-clip)">
-<rect x="28" y="120" width="295" height="12" fill="#F7DF1E"><title>JavaScript: 36.7%</title></rect>
-<rect x="323" y="120" width="187" height="12" fill="#3776AB"><title>Python: 23.3%</title></rect>
-<rect x="510" y="120" width="87" height="12" fill="#3178C6"><title>TypeScript: 10.9%</title></rect>
-<rect x="597" y="120" width="84" height="12" fill="#0175C2"><title>Dart: 10.4%</title></rect>
-<rect x="681" y="120" width="37" height="12" fill="#6E7681"><title>HTML: 4.6%</title></rect>
-<rect x="718" y="120" width="25" height="12" fill="#00ADD8"><title>Go: 3.2%</title></rect>
-<rect x="743" y="120" width="17" height="12" fill="#6E7681"><title>SCSS: 2.1%</title></rect>
-<rect x="760" y="120" width="17" height="12" fill="#777BB4"><title>PHP: 2.1%</title></rect>
-<rect x="777" y="120" width="10" height="12" fill="#6E7681"><title>Blade: 1.2%</title></rect>
-<rect x="787" y="120" width="7" height="12" fill="#6E7681"><title>Makefile: 0.9%</title></rect>
-<rect x="794" y="120" width="6" height="12" fill="#DA5B0B"><title>Jupyter Notebook: 0.8%</title></rect>
-<rect x="800" y="120" width="5" height="12" fill="#ED8B00"><title>Java: 0.7%</title></rect>
-<rect x="805" y="120" width="4" height="12" fill="#6E7681"><title>PLpgSQL: 0.6%</title></rect>
-<rect x="809" y="120" width="4" height="12" fill="#6E7681"><title>CSS: 0.5%</title></rect>
-<rect x="813" y="120" width="4" height="12" fill="#89E051"><title>Shell: 0.5%</title></rect>
-<rect x="817" y="120" width="3" height="12" fill="#CE422B"><title>Rust: 0.4%</title></rect>
+<rect x="28" y="120" width="290" height="12" fill="#F7DF1E"><title>JavaScript: 36.0%</title></rect>
+<rect x="318" y="120" width="184" height="12" fill="#3776AB"><title>Python: 22.9%</title></rect>
+<rect x="502" y="120" width="87" height="12" fill="#3178C6"><title>TypeScript: 10.8%</title></rect>
+<rect x="589" y="120" width="87" height="12" fill="#0175C2"><title>Dart: 10.8%</title></rect>
+<rect x="676" y="120" width="36" height="12" fill="#6E7681"><title>HTML: 4.5%</title></rect>
+<rect x="712" y="120" width="27" height="12" fill="#00ADD8"><title>Go: 3.4%</title></rect>
+<rect x="739" y="120" width="17" height="12" fill="#6E7681"><title>SCSS: 2.1%</title></rect>
+<rect x="756" y="120" width="16" height="12" fill="#777BB4"><title>PHP: 2.0%</title></rect>
+<rect x="772" y="120" width="10" height="12" fill="#6E7681"><title>Blade: 1.2%</title></rect>
+<rect x="782" y="120" width="8" height="12" fill="#CE422B"><title>Rust: 1.0%</title></rect>
+<rect x="790" y="120" width="7" height="12" fill="#6E7681"><title>Makefile: 0.9%</title></rect>
+<rect x="797" y="120" width="6" height="12" fill="#DA5B0B"><title>Jupyter Notebook: 0.8%</title></rect>
+<rect x="803" y="120" width="5" height="12" fill="#ED8B00"><title>Java: 0.6%</title></rect>
+<rect x="808" y="120" width="4" height="12" fill="#6E7681"><title>PLpgSQL: 0.5%</title></rect>
+<rect x="812" y="120" width="4" height="12" fill="#6E7681"><title>CSS: 0.5%</title></rect>
+<rect x="816" y="120" width="4" height="12" fill="#89E051"><title>Shell: 0.5%</title></rect>
 <rect x="820" y="120" width="2" height="12" fill="#6E7681"><title>Vue: 0.3%</title></rect>
 <rect x="822" y="120" width="2" height="12" fill="#7F52FF"><title>Kotlin: 0.3%</title></rect>
 <rect x="824" y="120" width="2" height="12" fill="#363636"><title>Solidity: 0.3%</title></rect>
@@ -56,7 +56,7 @@
   <rect x="28" y="142" width="137" height="26" rx="5"
         fill="#F7DF1E22" stroke="#F7DF1E66" stroke-width="1"/>
   <circle cx="39" cy="155" r="4" fill="#F7DF1E"/>
-  <text x="48" y="159" class="tag-text">JavaScript · 95r</text>
+  <text x="48" y="159" class="tag-text">JavaScript · 96r</text>
 </g>
 <g>
   <rect x="173" y="142" width="108" height="26" rx="5"
@@ -68,7 +68,7 @@
   <rect x="289" y="142" width="137" height="26" rx="5"
         fill="#3178C622" stroke="#3178C666" stroke-width="1"/>
   <circle cx="300" cy="155" r="4" fill="#3178C6"/>
-  <text x="309" y="159" class="tag-text">TypeScript · 17r</text>
+  <text x="309" y="159" class="tag-text">TypeScript · 18r</text>
 </g>
 <g>
   <rect x="434" y="142" width="94" height="26" rx="5"
@@ -80,7 +80,7 @@
   <rect x="536" y="142" width="72" height="26" rx="5"
         fill="#00ADD822" stroke="#00ADD866" stroke-width="1"/>
   <circle cx="547" cy="155" r="4" fill="#00ADD8"/>
-  <text x="556" y="159" class="tag-text">Go · 2r</text>
+  <text x="556" y="159" class="tag-text">Go · 3r</text>
 </g>
 <g>
   <rect x="616" y="142" width="86" height="26" rx="5"
@@ -101,28 +101,28 @@
   <text x="48" y="193" class="tag-text">Blade · 1r</text>
 </g>
 <g>
-  <rect x="130" y="176" width="173" height="26" rx="5"
-        fill="#DA5B0B22" stroke="#DA5B0B66" stroke-width="1"/>
-  <circle cx="141" cy="189" r="4" fill="#DA5B0B"/>
-  <text x="150" y="193" class="tag-text">Jupyter Notebook · 2r</text>
-</g>
-<g>
-  <rect x="311" y="176" width="86" height="26" rx="5"
-        fill="#ED8B0022" stroke="#ED8B0066" stroke-width="1"/>
-  <circle cx="322" cy="189" r="4" fill="#ED8B00"/>
-  <text x="331" y="193" class="tag-text">Java · 3r</text>
-</g>
-<g>
-  <rect x="405" y="176" width="108" height="26" rx="5"
-        fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <circle cx="416" cy="189" r="4" fill="#6E7681"/>
-  <text x="425" y="193" class="tag-text">PLpgSQL · 4r</text>
-</g>
-<g>
-  <rect x="521" y="176" width="86" height="26" rx="5"
+  <rect x="130" y="176" width="86" height="26" rx="5"
         fill="#CE422B22" stroke="#CE422B66" stroke-width="1"/>
-  <circle cx="532" cy="189" r="4" fill="#CE422B"/>
-  <text x="541" y="193" class="tag-text">Rust · 3r</text>
+  <circle cx="141" cy="189" r="4" fill="#CE422B"/>
+  <text x="150" y="193" class="tag-text">Rust · 4r</text>
+</g>
+<g>
+  <rect x="224" y="176" width="173" height="26" rx="5"
+        fill="#DA5B0B22" stroke="#DA5B0B66" stroke-width="1"/>
+  <circle cx="235" cy="189" r="4" fill="#DA5B0B"/>
+  <text x="244" y="193" class="tag-text">Jupyter Notebook · 2r</text>
+</g>
+<g>
+  <rect x="405" y="176" width="86" height="26" rx="5"
+        fill="#ED8B0022" stroke="#ED8B0066" stroke-width="1"/>
+  <circle cx="416" cy="189" r="4" fill="#ED8B00"/>
+  <text x="425" y="193" class="tag-text">Java · 3r</text>
+</g>
+<g>
+  <rect x="499" y="176" width="108" height="26" rx="5"
+        fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
+  <circle cx="510" cy="189" r="4" fill="#6E7681"/>
+  <text x="519" y="193" class="tag-text">PLpgSQL · 4r</text>
 </g>
 <g>
   <rect x="615" y="176" width="79" height="26" rx="5"
@@ -146,43 +146,49 @@
   <rect x="158" y="210" width="79" height="26" rx="5"
         fill="#00599C22" stroke="#00599C66" stroke-width="1"/>
   <circle cx="169" cy="223" r="4" fill="#00599C"/>
-  <text x="178" y="227" class="tag-text">C++ · 8r</text>
+  <text x="178" y="227" class="tag-text">C++ · 7r</text>
 </g>
 <g>
-  <rect x="245" y="210" width="79" height="26" rx="5"
+  <rect x="245" y="210" width="180" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
   <circle cx="256" cy="223" r="4" fill="#6E7681"/>
-  <text x="265" y="227" class="tag-text">MDX · 1r</text>
+  <text x="265" y="227" class="tag-text">Open Policy Agent · 1r</text>
 </g>
 <g>
-  <rect x="332" y="210" width="101" height="26" rx="5"
-        fill="#FA734322" stroke="#FA734366" stroke-width="1"/>
-  <circle cx="343" cy="223" r="4" fill="#FA7343"/>
-  <text x="352" y="227" class="tag-text">Swift · 14r</text>
-</g>
-<g>
-  <rect x="441" y="210" width="94" height="26" rx="5"
-        fill="#CC342D22" stroke="#CC342D66" stroke-width="1"/>
-  <circle cx="452" cy="223" r="4" fill="#CC342D"/>
-  <text x="461" y="227" class="tag-text">Ruby · 10r</text>
-</g>
-<g>
-  <rect x="543" y="210" width="65" height="26" rx="5"
-        fill="#A8B9CC22" stroke="#A8B9CC66" stroke-width="1"/>
-  <circle cx="554" cy="223" r="4" fill="#A8B9CC"/>
-  <text x="563" y="227" class="tag-text">C · 8r</text>
-</g>
-<g>
-  <rect x="616" y="210" width="137" height="26" rx="5"
+  <rect x="433" y="210" width="79" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <circle cx="627" cy="223" r="4" fill="#6E7681"/>
-  <text x="636" y="227" class="tag-text">Go Template · 1r</text>
+  <circle cx="444" cy="223" r="4" fill="#6E7681"/>
+  <text x="453" y="227" class="tag-text">MDX · 1r</text>
 </g>
 <g>
-  <rect x="28" y="244" width="130" height="26" rx="5"
+  <rect x="520" y="210" width="94" height="26" rx="5"
+        fill="#CC342D22" stroke="#CC342D66" stroke-width="1"/>
+  <circle cx="531" cy="223" r="4" fill="#CC342D"/>
+  <text x="540" y="227" class="tag-text">Ruby · 10r</text>
+</g>
+<g>
+  <rect x="622" y="210" width="101" height="26" rx="5"
+        fill="#FA734322" stroke="#FA734366" stroke-width="1"/>
+  <circle cx="633" cy="223" r="4" fill="#FA7343"/>
+  <text x="642" y="227" class="tag-text">Swift · 14r</text>
+</g>
+<g>
+  <rect x="28" y="244" width="137" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
   <circle cx="39" cy="257" r="4" fill="#6E7681"/>
-  <text x="48" y="261" class="tag-text">PowerShell · 1r</text>
+  <text x="48" y="261" class="tag-text">Go Template · 1r</text>
+</g>
+<g>
+  <rect x="173" y="244" width="65" height="26" rx="5"
+        fill="#A8B9CC22" stroke="#A8B9CC66" stroke-width="1"/>
+  <circle cx="184" cy="257" r="4" fill="#A8B9CC"/>
+  <text x="193" y="261" class="tag-text">C · 7r</text>
+</g>
+<g>
+  <rect x="246" y="244" width="130" height="26" rx="5"
+        fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
+  <circle cx="257" cy="257" r="4" fill="#6E7681"/>
+  <text x="266" y="261" class="tag-text">PowerShell · 1r</text>
 </g>
 <line x1="28" y1="302" x2="832" y2="302" stroke="#30363d" stroke-width="1"/>
 <text x="28" y="338" class="section-label">FRAMEWORKS &amp; LIBRARIES</text>
@@ -283,70 +289,64 @@
   <text x="550" y="401" class="tag-text">MeiliSearch</text>
 </g>
 <g>
-  <rect x="639" y="384" width="58" height="26" rx="5"
+  <rect x="639" y="384" width="72" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
   <rect x="645" y="393" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="659" y="401" class="tag-text">MinIO</text>
+  <text x="659" y="401" class="tag-text">MongoDB</text>
 </g>
 <g>
-  <rect x="705" y="384" width="72" height="26" rx="5"
+  <rect x="719" y="384" width="58" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <rect x="711" y="393" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="725" y="401" class="tag-text">MongoDB</text>
+  <rect x="725" y="393" width="8" height="8" rx="2" fill="#6E7681"/>
+  <text x="739" y="401" class="tag-text">MySQL</text>
 </g>
 <g>
-  <rect x="28" y="418" width="58" height="26" rx="5"
-        fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <rect x="34" y="427" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="48" y="435" class="tag-text">MySQL</text>
-</g>
-<g>
-  <rect x="94" y="418" width="72" height="26" rx="5"
+  <rect x="28" y="418" width="72" height="26" rx="5"
         fill="#00000022" stroke="#00000066" stroke-width="1"/>
-  <rect x="100" y="427" width="8" height="8" rx="2" fill="#000000"/>
-  <text x="114" y="435" class="tag-text">Next.js</text>
+  <rect x="34" y="427" width="8" height="8" rx="2" fill="#000000"/>
+  <text x="48" y="435" class="tag-text">Next.js</text>
+</g>
+<g>
+  <rect x="108" y="418" width="58" height="26" rx="5"
+        fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
+  <rect x="114" y="427" width="8" height="8" rx="2" fill="#6E7681"/>
+  <text x="128" y="435" class="tag-text">Nginx</text>
 </g>
 <g>
   <rect x="174" y="418" width="58" height="26" rx="5"
-        fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <rect x="180" y="427" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="194" y="435" class="tag-text">Nginx</text>
-</g>
-<g>
-  <rect x="240" y="418" width="58" height="26" rx="5"
         fill="#4DABCF22" stroke="#4DABCF66" stroke-width="1"/>
-  <rect x="246" y="427" width="8" height="8" rx="2" fill="#4DABCF"/>
-  <text x="260" y="435" class="tag-text">NumPy</text>
+  <rect x="180" y="427" width="8" height="8" rx="2" fill="#4DABCF"/>
+  <text x="194" y="435" class="tag-text">NumPy</text>
 </g>
 <g>
-  <rect x="306" y="418" width="115" height="26" rx="5"
+  <rect x="240" y="418" width="115" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <rect x="312" y="427" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="326" y="435" class="tag-text">OpenTelemetry</text>
+  <rect x="246" y="427" width="8" height="8" rx="2" fill="#6E7681"/>
+  <text x="260" y="435" class="tag-text">OpenTelemetry</text>
 </g>
 <g>
-  <rect x="429" y="418" width="65" height="26" rx="5"
+  <rect x="363" y="418" width="65" height="26" rx="5"
         fill="#15045822" stroke="#15045866" stroke-width="1"/>
-  <rect x="435" y="427" width="8" height="8" rx="2" fill="#150458"/>
-  <text x="449" y="435" class="tag-text">Pandas</text>
+  <rect x="369" y="427" width="8" height="8" rx="2" fill="#150458"/>
+  <text x="383" y="435" class="tag-text">Pandas</text>
 </g>
 <g>
-  <rect x="502" y="418" width="94" height="26" rx="5"
+  <rect x="436" y="418" width="94" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <rect x="508" y="427" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="522" y="435" class="tag-text">PostgreSQL</text>
+  <rect x="442" y="427" width="8" height="8" rx="2" fill="#6E7681"/>
+  <text x="456" y="435" class="tag-text">PostgreSQL</text>
 </g>
 <g>
-  <rect x="604" y="418" width="65" height="26" rx="5"
+  <rect x="538" y="418" width="65" height="26" rx="5"
         fill="#2D374822" stroke="#2D374866" stroke-width="1"/>
-  <rect x="610" y="427" width="8" height="8" rx="2" fill="#2D3748"/>
-  <text x="624" y="435" class="tag-text">Prisma</text>
+  <rect x="544" y="427" width="8" height="8" rx="2" fill="#2D3748"/>
+  <text x="558" y="435" class="tag-text">Prisma</text>
 </g>
 <g>
-  <rect x="677" y="418" width="94" height="26" rx="5"
+  <rect x="611" y="418" width="94" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <rect x="683" y="427" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="697" y="435" class="tag-text">Prometheus</text>
+  <rect x="617" y="427" width="8" height="8" rx="2" fill="#6E7681"/>
+  <text x="631" y="435" class="tag-text">Prometheus</text>
 </g>
 <g>
   <rect x="28" y="452" width="137" height="26" rx="5"
@@ -379,46 +379,52 @@
   <text x="426" y="469" class="tag-text">Redis</text>
 </g>
 <g>
-  <rect x="472" y="452" width="94" height="26" rx="5"
-        fill="#D71F0022" stroke="#D71F0066" stroke-width="1"/>
-  <rect x="478" y="461" width="8" height="8" rx="2" fill="#D71F00"/>
-  <text x="492" y="469" class="tag-text">SQLAlchemy</text>
-</g>
-<g>
-  <rect x="574" y="452" width="79" height="26" rx="5"
+  <rect x="472" y="452" width="79" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <rect x="580" y="461" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="594" y="469" class="tag-text">Solidity</text>
+  <rect x="478" y="461" width="8" height="8" rx="2" fill="#6E7681"/>
+  <text x="492" y="469" class="tag-text">Redpanda</text>
 </g>
 <g>
-  <rect x="661" y="452" width="86" height="26" rx="5"
+  <rect x="559" y="452" width="94" height="26" rx="5"
+        fill="#D71F0022" stroke="#D71F0066" stroke-width="1"/>
+  <rect x="565" y="461" width="8" height="8" rx="2" fill="#D71F00"/>
+  <text x="579" y="469" class="tag-text">SQLAlchemy</text>
+</g>
+<g>
+  <rect x="661" y="452" width="79" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
   <rect x="667" y="461" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="681" y="469" class="tag-text">Terraform</text>
+  <text x="681" y="469" class="tag-text">Solidity</text>
 </g>
 <g>
-  <rect x="28" y="486" width="101" height="26" rx="5"
+  <rect x="28" y="486" width="86" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
   <rect x="34" y="495" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="48" y="503" class="tag-text">TimescaleDB</text>
+  <text x="48" y="503" class="tag-text">Terraform</text>
 </g>
 <g>
-  <rect x="137" y="486" width="58" height="26" rx="5"
+  <rect x="122" y="486" width="101" height="26" rx="5"
+        fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
+  <rect x="128" y="495" width="8" height="8" rx="2" fill="#6E7681"/>
+  <text x="142" y="503" class="tag-text">TimescaleDB</text>
+</g>
+<g>
+  <rect x="231" y="486" width="58" height="26" rx="5"
         fill="#CE422B22" stroke="#CE422B66" stroke-width="1"/>
-  <rect x="143" y="495" width="8" height="8" rx="2" fill="#CE422B"/>
-  <text x="157" y="503" class="tag-text">Tokio</text>
+  <rect x="237" y="495" width="8" height="8" rx="2" fill="#CE422B"/>
+  <text x="251" y="503" class="tag-text">Tokio</text>
 </g>
 <g>
-  <rect x="203" y="486" width="65" height="26" rx="5"
+  <rect x="297" y="486" width="65" height="26" rx="5"
         fill="#4FC08D22" stroke="#4FC08D66" stroke-width="1"/>
-  <rect x="209" y="495" width="8" height="8" rx="2" fill="#4FC08D"/>
-  <text x="223" y="503" class="tag-text">Vue.js</text>
+  <rect x="303" y="495" width="8" height="8" rx="2" fill="#4FC08D"/>
+  <text x="317" y="503" class="tag-text">Vue.js</text>
 </g>
 <g>
-  <rect x="276" y="486" width="50" height="26" rx="5"
+  <rect x="370" y="486" width="50" height="26" rx="5"
         fill="#244C5A22" stroke="#244C5A66" stroke-width="1"/>
-  <rect x="282" y="495" width="8" height="8" rx="2" fill="#244C5A"/>
-  <text x="296" y="503" class="tag-text">gRPC</text>
+  <rect x="376" y="495" width="8" height="8" rx="2" fill="#244C5A"/>
+  <text x="390" y="503" class="tag-text">gRPC</text>
 </g>
 <line x1="28" y1="544" x2="832" y2="544" stroke="#30363d" stroke-width="1"/>
 <text x="28" y="580" class="section-label">INFRASTRUCTURE &amp; DEVOPS</text>
@@ -531,82 +537,82 @@
   <text x="731" y="643" class="tag-text">MeiliSearch</text>
 </g>
 <g>
-  <rect x="28" y="660" width="58" height="26" rx="5"
-        fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <rect x="34" y="669" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="48" y="677" class="tag-text">MinIO</text>
+  <rect x="28" y="660" width="72" height="26" rx="5"
+        fill="#47A24822" stroke="#47A24866" stroke-width="1"/>
+  <rect x="34" y="669" width="8" height="8" rx="2" fill="#47A248"/>
+  <text x="48" y="677" class="tag-text">MongoDB</text>
 </g>
 <g>
-  <rect x="94" y="660" width="72" height="26" rx="5"
-        fill="#47A24822" stroke="#47A24866" stroke-width="1"/>
-  <rect x="100" y="669" width="8" height="8" rx="2" fill="#47A248"/>
-  <text x="114" y="677" class="tag-text">MongoDB</text>
+  <rect x="108" y="660" width="58" height="26" rx="5"
+        fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
+  <rect x="114" y="669" width="8" height="8" rx="2" fill="#6E7681"/>
+  <text x="128" y="677" class="tag-text">MySQL</text>
 </g>
 <g>
   <rect x="174" y="660" width="58" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
   <rect x="180" y="669" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="194" y="677" class="tag-text">MySQL</text>
+  <text x="194" y="677" class="tag-text">Nginx</text>
 </g>
 <g>
-  <rect x="240" y="660" width="58" height="26" rx="5"
-        fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <rect x="246" y="669" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="260" y="677" class="tag-text">Nginx</text>
-</g>
-<g>
-  <rect x="306" y="660" width="115" height="26" rx="5"
+  <rect x="240" y="660" width="115" height="26" rx="5"
         fill="#425CC722" stroke="#425CC766" stroke-width="1"/>
-  <rect x="312" y="669" width="8" height="8" rx="2" fill="#425CC7"/>
-  <text x="326" y="677" class="tag-text">OpenTelemetry</text>
+  <rect x="246" y="669" width="8" height="8" rx="2" fill="#425CC7"/>
+  <text x="260" y="677" class="tag-text">OpenTelemetry</text>
 </g>
 <g>
-  <rect x="429" y="660" width="94" height="26" rx="5"
+  <rect x="363" y="660" width="94" height="26" rx="5"
         fill="#4169E122" stroke="#4169E166" stroke-width="1"/>
-  <rect x="435" y="669" width="8" height="8" rx="2" fill="#4169E1"/>
-  <text x="449" y="677" class="tag-text">PostgreSQL</text>
+  <rect x="369" y="669" width="8" height="8" rx="2" fill="#4169E1"/>
+  <text x="383" y="677" class="tag-text">PostgreSQL</text>
 </g>
 <g>
-  <rect x="531" y="660" width="94" height="26" rx="5"
+  <rect x="465" y="660" width="94" height="26" rx="5"
         fill="#E6522C22" stroke="#E6522C66" stroke-width="1"/>
-  <rect x="537" y="669" width="8" height="8" rx="2" fill="#E6522C"/>
-  <text x="551" y="677" class="tag-text">Prometheus</text>
+  <rect x="471" y="669" width="8" height="8" rx="2" fill="#E6522C"/>
+  <text x="485" y="677" class="tag-text">Prometheus</text>
 </g>
 <g>
-  <rect x="633" y="660" width="137" height="26" rx="5"
+  <rect x="567" y="660" width="137" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <rect x="639" y="669" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="653" y="677" class="tag-text">Protocol Buffers</text>
+  <rect x="573" y="669" width="8" height="8" rx="2" fill="#6E7681"/>
+  <text x="587" y="677" class="tag-text">Protocol Buffers</text>
 </g>
 <g>
-  <rect x="28" y="694" width="58" height="26" rx="5"
+  <rect x="712" y="660" width="58" height="26" rx="5"
         fill="#DC382D22" stroke="#DC382D66" stroke-width="1"/>
-  <rect x="34" y="703" width="8" height="8" rx="2" fill="#DC382D"/>
-  <text x="48" y="711" class="tag-text">Redis</text>
+  <rect x="718" y="669" width="8" height="8" rx="2" fill="#DC382D"/>
+  <text x="732" y="677" class="tag-text">Redis</text>
 </g>
 <g>
-  <rect x="94" y="694" width="79" height="26" rx="5"
+  <rect x="28" y="694" width="79" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <rect x="100" y="703" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="114" y="711" class="tag-text">Solidity</text>
+  <rect x="34" y="703" width="8" height="8" rx="2" fill="#6E7681"/>
+  <text x="48" y="711" class="tag-text">Redpanda</text>
 </g>
 <g>
-  <rect x="181" y="694" width="86" height="26" rx="5"
+  <rect x="115" y="694" width="79" height="26" rx="5"
+        fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
+  <rect x="121" y="703" width="8" height="8" rx="2" fill="#6E7681"/>
+  <text x="135" y="711" class="tag-text">Solidity</text>
+</g>
+<g>
+  <rect x="202" y="694" width="86" height="26" rx="5"
         fill="#7B42BC22" stroke="#7B42BC66" stroke-width="1"/>
-  <rect x="187" y="703" width="8" height="8" rx="2" fill="#7B42BC"/>
-  <text x="201" y="711" class="tag-text">Terraform</text>
+  <rect x="208" y="703" width="8" height="8" rx="2" fill="#7B42BC"/>
+  <text x="222" y="711" class="tag-text">Terraform</text>
 </g>
 <g>
-  <rect x="275" y="694" width="101" height="26" rx="5"
+  <rect x="296" y="694" width="101" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <rect x="281" y="703" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="295" y="711" class="tag-text">TimescaleDB</text>
+  <rect x="302" y="703" width="8" height="8" rx="2" fill="#6E7681"/>
+  <text x="316" y="711" class="tag-text">TimescaleDB</text>
 </g>
 <g>
-  <rect x="384" y="694" width="65" height="26" rx="5"
+  <rect x="405" y="694" width="65" height="26" rx="5"
         fill="#00000022" stroke="#00000066" stroke-width="1"/>
-  <rect x="390" y="703" width="8" height="8" rx="2" fill="#000000"/>
-  <text x="404" y="711" class="tag-text">Vercel</text>
+  <rect x="411" y="703" width="8" height="8" rx="2" fill="#000000"/>
+  <text x="425" y="711" class="tag-text">Vercel</text>
 </g>
 <text x="430" y="752" text-anchor="middle" class="subtitle">github.com/onirudda-islam/stats · auto-generated · do not edit</text>
 </svg>
