@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-08-02T01:48:52.547472+00:00",
+  "generated_at": "2026-08-09T00:53:48.948486+00:00",
   "aggregated": {
     "React": 66,
     "Next.js": 26,
     "Express": 24,
     "Django": 16,
     "Solidity": 16,
-    "Redis": 12,
+    "Redis": 13,
     "PostgreSQL": 12,
     "Prisma": 7,
     "MongoDB": 5,
-    "gRPC": 5,
+    "Terraform": 5,
     "SQLAlchemy": 5,
-    "Terraform": 4,
     "FastAPI": 4,
+    "gRPC": 4,
     "Flask": 4,
     "Celery": 4,
     "Tokio": 3,
     "Protocol Buffers": 3,
-    "HuggingFace": 3,
     "Pydantic": 3,
     "Grafana": 3,
     "Prometheus": 3,
     "TimescaleDB": 2,
-    "Axum": 2,
+    "HuggingFace": 2,
     "Kafka": 2,
+    "Axum": 2,
     "NumPy": 2,
     "Vue.js": 2,
-    "Qdrant": 1,
+    "AWS (LocalStack)": 1,
     "Redpanda": 1,
-    "MinIO": 1,
+    "Qdrant": 1,
     "MeiliSearch": 1,
-    "Keycloak": 1,
-    "Docker Registry": 1,
+    "MinIO": 1,
     "Cassandra": 1,
     "ClickHouse": 1,
+    "Keycloak": 1,
+    "Docker Registry": 1,
     "GraphQL": 1,
     "OpenTelemetry": 1,
     "Pandas": 1,
     "MySQL": 1,
     "Nginx": 1,
-    "MariaDB": 1,
-    "PyTorch": 1
+    "MariaDB": 1
   },
   "per_repo": [
     {
@@ -67,6 +67,7 @@
     {
       "repo": "adef",
       "frameworks": [
+        "AWS (LocalStack)",
         "Axum",
         "FastAPI",
         "HuggingFace",
@@ -79,11 +80,11 @@
         "Redpanda",
         "Terraform",
         "TimescaleDB",
-        "Tokio",
-        "gRPC"
+        "Tokio"
       ],
       "infra": [
         "AWS",
+        "AWS (LocalStack)",
         "Docker",
         "GitHub Actions",
         "Grafana",
@@ -118,6 +119,7 @@
         "ghcr.io/acornya-inc/adef-meridian",
         "ghcr.io/acornya-inc/adef-nexus",
         "ghcr.io/acornya-inc/adef-sentinel",
+        "localstack/localstack",
         "openpolicyagent/opa",
         "postgres",
         "qdrant/qdrant",
@@ -147,6 +149,7 @@
       "infra": [
         "Docker",
         "GitHub Actions",
+        "Grafana",
         "Kubernetes",
         "MeiliSearch",
         "MinIO",
@@ -1644,19 +1647,22 @@
       "repo": "test_bet",
       "frameworks": [
         "Express",
-        "HuggingFace",
         "MongoDB",
         "Next.js",
-        "PyTorch",
-        "React"
+        "React",
+        "Redis",
+        "Terraform"
       ],
       "infra": [
         "Docker",
         "Kubernetes",
-        "MongoDB"
+        "MongoDB",
+        "Redis",
+        "Terraform"
       ],
       "compose_images": [
-        "mongo"
+        "mongo",
+        "redis"
       ]
     },
     {

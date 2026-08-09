@@ -1,59 +1,59 @@
 {
-  "generated_at": "2026-08-02T01:48:53.102054+00:00",
+  "generated_at": "2026-08-09T00:53:49.445486+00:00",
   "repo_count": 177,
   "languages": [
     {
       "name": "JavaScript",
-      "bytes": 51395915,
-      "percentage": 33.44,
+      "bytes": 51476057,
+      "percentage": 33.54,
       "color": "#F7DF1E",
       "category": "Languages",
       "repo_count": 96
     },
     {
       "name": "Python",
-      "bytes": 33407841,
-      "percentage": 21.74,
+      "bytes": 33615942,
+      "percentage": 21.9,
       "color": "#3776AB",
       "category": "Languages",
       "repo_count": 37
     },
     {
-      "name": "TypeScript",
-      "bytes": 16216492,
-      "percentage": 10.55,
-      "color": "#3178C6",
-      "category": "Languages",
-      "repo_count": 18
-    },
-    {
       "name": "Dart",
       "bytes": 15452586,
-      "percentage": 10.05,
+      "percentage": 10.07,
       "color": "#0175C2",
       "category": "Languages",
       "repo_count": 16
     },
     {
       "name": "Go",
-      "bytes": 11577077,
-      "percentage": 7.53,
+      "bytes": 12967068,
+      "percentage": 8.45,
       "color": "#00ADD8",
       "category": "Languages",
       "repo_count": 3
     },
     {
+      "name": "TypeScript",
+      "bytes": 12941588,
+      "percentage": 8.43,
+      "color": "#3178C6",
+      "category": "Languages",
+      "repo_count": 18
+    },
+    {
       "name": "HTML",
-      "bytes": 6399289,
-      "percentage": 4.16,
+      "bytes": 6603739,
+      "percentage": 4.3,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 73
     },
     {
       "name": "Rust",
-      "bytes": 3278808,
-      "percentage": 2.13,
+      "bytes": 4405210,
+      "percentage": 2.87,
       "color": "#CE422B",
       "category": "Languages",
       "repo_count": 3
@@ -61,7 +61,7 @@
     {
       "name": "SCSS",
       "bytes": 2940449,
-      "percentage": 1.91,
+      "percentage": 1.92,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 7
@@ -84,7 +84,7 @@
     },
     {
       "name": "Makefile",
-      "bytes": 1284151,
+      "bytes": 1286092,
       "percentage": 0.84,
       "color": "#6E7681",
       "category": "Languages",
@@ -92,16 +92,16 @@
     },
     {
       "name": "Jupyter Notebook",
-      "bytes": 1105808,
-      "percentage": 0.72,
+      "bytes": 1055739,
+      "percentage": 0.69,
       "color": "#DA5B0B",
       "category": "Languages",
-      "repo_count": 2
+      "repo_count": 1
     },
     {
       "name": "Open Policy Agent",
-      "bytes": 957620,
-      "percentage": 0.62,
+      "bytes": 1002432,
+      "percentage": 0.65,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 1
@@ -116,24 +116,24 @@
     },
     {
       "name": "PLpgSQL",
-      "bytes": 774761,
-      "percentage": 0.5,
+      "bytes": 775920,
+      "percentage": 0.51,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 5
     },
     {
       "name": "Shell",
-      "bytes": 740266,
-      "percentage": 0.48,
+      "bytes": 749524,
+      "percentage": 0.49,
       "color": "#89E051",
       "category": "Languages",
       "repo_count": 37
     },
     {
       "name": "CSS",
-      "bytes": 716514,
-      "percentage": 0.47,
+      "bytes": 690117,
+      "percentage": 0.45,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 75
@@ -172,11 +172,11 @@
     },
     {
       "name": "HCL",
-      "bytes": 136980,
-      "percentage": 0.09,
+      "bytes": 152987,
+      "percentage": 0.1,
       "color": "#6E7681",
       "category": "Languages",
-      "repo_count": 4
+      "repo_count": 5
     },
     {
       "name": "CMake",
@@ -188,11 +188,19 @@
     },
     {
       "name": "Dockerfile",
-      "bytes": 112588,
-      "percentage": 0.07,
+      "bytes": 115288,
+      "percentage": 0.08,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 46
+    },
+    {
+      "name": "Go Template",
+      "bytes": 69043,
+      "percentage": 0.04,
+      "color": "#6E7681",
+      "category": "Languages",
+      "repo_count": 1
     },
     {
       "name": "GLSL",
@@ -241,14 +249,6 @@
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 2
-    },
-    {
-      "name": "Go Template",
-      "bytes": 13858,
-      "percentage": 0.01,
-      "color": "#6E7681",
-      "category": "Languages",
-      "repo_count": 1
     },
     {
       "name": "Less",
@@ -316,6 +316,7 @@
     }
   ],
   "frameworks": [
+    "AWS (LocalStack)",
     "Axum",
     "Cassandra",
     "Celery",
@@ -344,7 +345,6 @@
     "Prisma",
     "Prometheus",
     "Protocol Buffers",
-    "PyTorch",
     "Pydantic",
     "Qdrant",
     "React",
@@ -360,6 +360,7 @@
   ],
   "infra": [
     "AWS",
+    "AWS (LocalStack)",
     "CDK",
     "Cassandra",
     "CircleCI",
@@ -394,41 +395,13 @@
     "Vercel"
   ],
   "commit_stats": {
-    "total_commits": 3554,
-    "total_prs": 468,
-    "total_issues": 0,
+    "total_commits": 4338,
+    "total_prs": 523,
+    "total_issues": 145,
     "contrib_years": [],
     "error": null,
-    "calendar_total": 4075,
+    "calendar_total": 5072,
     "contribution_days": [
-      {
-        "date": "2025-08-03",
-        "count": 0
-      },
-      {
-        "date": "2025-08-04",
-        "count": 0
-      },
-      {
-        "date": "2025-08-05",
-        "count": 0
-      },
-      {
-        "date": "2025-08-06",
-        "count": 9
-      },
-      {
-        "date": "2025-08-07",
-        "count": 0
-      },
-      {
-        "date": "2025-08-08",
-        "count": 3
-      },
-      {
-        "date": "2025-08-09",
-        "count": 1
-      },
       {
         "date": "2025-08-10",
         "count": 1
@@ -1395,39 +1368,39 @@
       },
       {
         "date": "2026-04-08",
-        "count": 127
+        "count": 190
       },
       {
         "date": "2026-04-09",
-        "count": 81
+        "count": 162
       },
       {
         "date": "2026-04-10",
-        "count": 82
+        "count": 163
       },
       {
         "date": "2026-04-11",
-        "count": 40
+        "count": 79
       },
       {
         "date": "2026-04-12",
-        "count": 68
+        "count": 136
       },
       {
         "date": "2026-04-13",
-        "count": 16
+        "count": 25
       },
       {
         "date": "2026-04-14",
-        "count": 59
+        "count": 118
       },
       {
         "date": "2026-04-15",
-        "count": 66
+        "count": 131
       },
       {
         "date": "2026-04-16",
-        "count": 3
+        "count": 6
       },
       {
         "date": "2026-04-17",
@@ -1435,11 +1408,11 @@
       },
       {
         "date": "2026-04-18",
-        "count": 1
+        "count": 2
       },
       {
         "date": "2026-04-19",
-        "count": 1
+        "count": 2
       },
       {
         "date": "2026-04-20",
@@ -1459,15 +1432,15 @@
       },
       {
         "date": "2026-04-24",
-        "count": 17
+        "count": 33
       },
       {
         "date": "2026-04-25",
-        "count": 6
+        "count": 11
       },
       {
         "date": "2026-04-26",
-        "count": 3
+        "count": 6
       },
       {
         "date": "2026-04-27",
@@ -1507,7 +1480,7 @@
       },
       {
         "date": "2026-05-06",
-        "count": 4
+        "count": 6
       },
       {
         "date": "2026-05-07",
@@ -1515,7 +1488,7 @@
       },
       {
         "date": "2026-05-08",
-        "count": 10
+        "count": 20
       },
       {
         "date": "2026-05-09",
@@ -1527,31 +1500,31 @@
       },
       {
         "date": "2026-05-11",
-        "count": 1
+        "count": 2
       },
       {
         "date": "2026-05-12",
-        "count": 5
+        "count": 8
       },
       {
         "date": "2026-05-13",
-        "count": 24
+        "count": 43
       },
       {
         "date": "2026-05-14",
-        "count": 22
+        "count": 44
       },
       {
         "date": "2026-05-15",
-        "count": 17
+        "count": 32
       },
       {
         "date": "2026-05-16",
-        "count": 25
+        "count": 50
       },
       {
         "date": "2026-05-17",
-        "count": 0
+        "count": 6
       },
       {
         "date": "2026-05-18",
@@ -1559,7 +1532,7 @@
       },
       {
         "date": "2026-05-19",
-        "count": 12
+        "count": 23
       },
       {
         "date": "2026-05-20",
@@ -1859,6 +1832,34 @@
       },
       {
         "date": "2026-08-02",
+        "count": 0
+      },
+      {
+        "date": "2026-08-03",
+        "count": 64
+      },
+      {
+        "date": "2026-08-04",
+        "count": 166
+      },
+      {
+        "date": "2026-08-05",
+        "count": 114
+      },
+      {
+        "date": "2026-08-06",
+        "count": 26
+      },
+      {
+        "date": "2026-08-07",
+        "count": 7
+      },
+      {
+        "date": "2026-08-08",
+        "count": 12
+      },
+      {
+        "date": "2026-08-09",
         "count": 0
       }
     ]
