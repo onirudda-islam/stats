@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-09T00:53:49.444425+00:00",
-  "total_repos": 177,
+  "generated_at": "2026-08-16T00:39:49.757597+00:00",
+  "total_repos": 178,
   "repos": [
     {
       "full_name": "Accornya-inc/Accornya-website",
@@ -352,6 +352,12 @@
     },
     {
       "full_name": "onirudda-islam/prism",
+      "private": true,
+      "owner": "onirudda-islam",
+      "default_branch": "main"
+    },
+    {
+      "full_name": "onirudda-islam/rasulnoma",
       "private": true,
       "owner": "onirudda-islam",
       "default_branch": "main"

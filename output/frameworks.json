@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-08-09T00:53:48.948486+00:00",
+  "generated_at": "2026-08-16T00:39:49.063110+00:00",
   "aggregated": {
     "React": 66,
-    "Next.js": 26,
+    "Next.js": 27,
     "Express": 24,
     "Django": 16,
     "Solidity": 16,
-    "Redis": 13,
-    "PostgreSQL": 12,
-    "Prisma": 7,
+    "Redis": 14,
+    "PostgreSQL": 13,
+    "Prisma": 8,
     "MongoDB": 5,
     "Terraform": 5,
+    "gRPC": 5,
     "SQLAlchemy": 5,
     "FastAPI": 4,
-    "gRPC": 4,
     "Flask": 4,
     "Celery": 4,
     "Tokio": 3,
@@ -21,24 +21,25 @@
     "Pydantic": 3,
     "Grafana": 3,
     "Prometheus": 3,
-    "TimescaleDB": 2,
     "HuggingFace": 2,
-    "Kafka": 2,
     "Axum": 2,
+    "TimescaleDB": 2,
+    "Kafka": 2,
+    "MinIO": 2,
     "NumPy": 2,
     "Vue.js": 2,
-    "AWS (LocalStack)": 1,
     "Redpanda": 1,
     "Qdrant": 1,
     "MeiliSearch": 1,
-    "MinIO": 1,
+    "Docker Registry": 1,
     "Cassandra": 1,
     "ClickHouse": 1,
     "Keycloak": 1,
-    "Docker Registry": 1,
     "GraphQL": 1,
     "OpenTelemetry": 1,
     "Pandas": 1,
+    "OpenSearch": 1,
+    "NestJS": 1,
     "MySQL": 1,
     "Nginx": 1,
     "MariaDB": 1
@@ -67,7 +68,6 @@
     {
       "repo": "adef",
       "frameworks": [
-        "AWS (LocalStack)",
         "Axum",
         "FastAPI",
         "HuggingFace",
@@ -76,15 +76,14 @@
         "PostgreSQL",
         "Protocol Buffers",
         "Qdrant",
-        "React",
         "Redpanda",
         "Terraform",
         "TimescaleDB",
-        "Tokio"
+        "Tokio",
+        "gRPC"
       ],
       "infra": [
         "AWS",
-        "AWS (LocalStack)",
         "Docker",
         "GitHub Actions",
         "Grafana",
@@ -119,7 +118,6 @@
         "ghcr.io/acornya-inc/adef-meridian",
         "ghcr.io/acornya-inc/adef-nexus",
         "ghcr.io/acornya-inc/adef-sentinel",
-        "localstack/localstack",
         "openpolicyagent/opa",
         "postgres",
         "qdrant/qdrant",
@@ -699,6 +697,37 @@
         "Solidity"
       ],
       "compose_images": []
+    },
+    {
+      "repo": "rasulnoma",
+      "frameworks": [
+        "MinIO",
+        "NestJS",
+        "Next.js",
+        "OpenSearch",
+        "PostgreSQL",
+        "Prisma",
+        "React",
+        "Redis"
+      ],
+      "infra": [
+        "Docker",
+        "GitHub Actions",
+        "MinIO",
+        "OpenSearch",
+        "PostgreSQL",
+        "Redis",
+        "Terraform"
+      ],
+      "compose_images": [
+        "opensearchproject/opensearch",
+        "postgres",
+        "quay.io/minio/mc",
+        "quay.io/minio/minio",
+        "rasulnoma-api",
+        "rasulnoma-web",
+        "redis"
+      ]
     },
     {
       "repo": "silicornya-backend",
