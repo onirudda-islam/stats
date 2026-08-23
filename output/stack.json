@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T00:39:49.758660+00:00",
+  "generated_at": "2026-08-23T00:44:03.457056+00:00",
   "repo_count": 178,
   "languages": [
     {
@@ -316,7 +316,9 @@
     }
   ],
   "frameworks": [
+    "AWS (LocalStack)",
     "Axum",
+    "Azure (Azurite)",
     "Cassandra",
     "Celery",
     "ClickHouse",
@@ -361,6 +363,8 @@
   ],
   "infra": [
     "AWS",
+    "AWS (LocalStack)",
+    "Azure (Azurite)",
     "CDK",
     "Cassandra",
     "CircleCI",
@@ -396,41 +400,13 @@
     "Vercel"
   ],
   "commit_stats": {
-    "total_commits": 4356,
+    "total_commits": 4325,
     "total_prs": 528,
     "total_issues": 145,
     "contrib_years": [],
     "error": null,
-    "calendar_total": 5096,
+    "calendar_total": 5065,
     "contribution_days": [
-      {
-        "date": "2025-08-17",
-        "count": 0
-      },
-      {
-        "date": "2025-08-18",
-        "count": 0
-      },
-      {
-        "date": "2025-08-19",
-        "count": 0
-      },
-      {
-        "date": "2025-08-20",
-        "count": 3
-      },
-      {
-        "date": "2025-08-21",
-        "count": 1
-      },
-      {
-        "date": "2025-08-22",
-        "count": 0
-      },
-      {
-        "date": "2025-08-23",
-        "count": 0
-      },
       {
         "date": "2025-08-24",
         "count": 0
@@ -1861,6 +1837,34 @@
       },
       {
         "date": "2026-08-16",
+        "count": 0
+      },
+      {
+        "date": "2026-08-17",
+        "count": 0
+      },
+      {
+        "date": "2026-08-18",
+        "count": 0
+      },
+      {
+        "date": "2026-08-19",
+        "count": 0
+      },
+      {
+        "date": "2026-08-20",
+        "count": 0
+      },
+      {
+        "date": "2026-08-21",
+        "count": 0
+      },
+      {
+        "date": "2026-08-22",
+        "count": 0
+      },
+      {
+        "date": "2026-08-23",
         "count": 0
       }
     ]
