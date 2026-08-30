@@ -27,30 +27,30 @@
 <rect y="60" width="860" height="28" fill="#0d1117"/>
 
 <text x="28" y="46" class="title">🛠️  Tech Stack — @onirudda-islam</text>
-<text x="28" y="66" class="subtitle">Dynamically scanned across all repositories · Updated 2026-08-23</text>
+<text x="28" y="66" class="subtitle">Dynamically scanned across all repositories · Updated 2026-08-30</text>
 <text x="28" y="108" class="section-label">LANGUAGES</text>
 <g clip-path="url(#bar-clip)">
-<rect x="28" y="120" width="269" height="12" fill="#F7DF1E"><title>JavaScript: 33.4%</title></rect>
-<rect x="297" y="120" width="176" height="12" fill="#3776AB"><title>Python: 21.8%</title></rect>
-<rect x="473" y="120" width="81" height="12" fill="#0175C2"><title>Dart: 10.0%</title></rect>
-<rect x="554" y="120" width="70" height="12" fill="#3178C6"><title>TypeScript: 8.7%</title></rect>
-<rect x="624" y="120" width="68" height="12" fill="#00ADD8"><title>Go: 8.4%</title></rect>
-<rect x="692" y="120" width="34" height="12" fill="#6E7681"><title>HTML: 4.3%</title></rect>
-<rect x="726" y="120" width="23" height="12" fill="#CE422B"><title>Rust: 2.9%</title></rect>
+<rect x="28" y="120" width="265" height="12" fill="#F7DF1E"><title>JavaScript: 33.0%</title></rect>
+<rect x="293" y="120" width="179" height="12" fill="#3776AB"><title>Python: 22.3%</title></rect>
+<rect x="472" y="120" width="80" height="12" fill="#0175C2"><title>Dart: 9.9%</title></rect>
+<rect x="552" y="120" width="69" height="12" fill="#3178C6"><title>TypeScript: 8.6%</title></rect>
+<rect x="621" y="120" width="68" height="12" fill="#00ADD8"><title>Go: 8.4%</title></rect>
+<rect x="689" y="120" width="34" height="12" fill="#6E7681"><title>HTML: 4.2%</title></rect>
+<rect x="723" y="120" width="26" height="12" fill="#CE422B"><title>Rust: 3.2%</title></rect>
 <rect x="749" y="120" width="15" height="12" fill="#6E7681"><title>SCSS: 1.9%</title></rect>
-<rect x="764" y="120" width="15" height="12" fill="#777BB4"><title>PHP: 1.9%</title></rect>
+<rect x="764" y="120" width="15" height="12" fill="#777BB4"><title>PHP: 1.8%</title></rect>
 <rect x="779" y="120" width="9" height="12" fill="#6E7681"><title>Blade: 1.1%</title></rect>
 <rect x="788" y="120" width="7" height="12" fill="#6E7681"><title>Makefile: 0.8%</title></rect>
-<rect x="795" y="120" width="6" height="12" fill="#DA5B0B"><title>Jupyter Notebook: 0.7%</title></rect>
-<rect x="801" y="120" width="5" height="12" fill="#6E7681"><title>Open Policy Agent: 0.7%</title></rect>
-<rect x="806" y="120" width="5" height="12" fill="#ED8B00"><title>Java: 0.6%</title></rect>
-<rect x="811" y="120" width="4" height="12" fill="#6E7681"><title>PLpgSQL: 0.5%</title></rect>
-<rect x="815" y="120" width="4" height="12" fill="#89E051"><title>Shell: 0.5%</title></rect>
-<rect x="819" y="120" width="4" height="12" fill="#6E7681"><title>CSS: 0.5%</title></rect>
-<rect x="823" y="120" width="2" height="12" fill="#6E7681"><title>Vue: 0.3%</title></rect>
-<rect x="825" y="120" width="2" height="12" fill="#7F52FF"><title>Kotlin: 0.3%</title></rect>
-<rect x="827" y="120" width="2" height="12" fill="#363636"><title>Solidity: 0.2%</title></rect>
-<rect x="829" y="120" width="3" height="12" fill="#6E7681"><title>Other: 0.5%</title></rect>
+<rect x="795" y="120" width="5" height="12" fill="#DA5B0B"><title>Jupyter Notebook: 0.7%</title></rect>
+<rect x="800" y="120" width="5" height="12" fill="#6E7681"><title>Open Policy Agent: 0.7%</title></rect>
+<rect x="805" y="120" width="5" height="12" fill="#ED8B00"><title>Java: 0.6%</title></rect>
+<rect x="810" y="120" width="4" height="12" fill="#6E7681"><title>PLpgSQL: 0.5%</title></rect>
+<rect x="814" y="120" width="4" height="12" fill="#89E051"><title>Shell: 0.5%</title></rect>
+<rect x="818" y="120" width="4" height="12" fill="#6E7681"><title>CSS: 0.4%</title></rect>
+<rect x="822" y="120" width="2" height="12" fill="#6E7681"><title>Vue: 0.3%</title></rect>
+<rect x="824" y="120" width="2" height="12" fill="#7F52FF"><title>Kotlin: 0.3%</title></rect>
+<rect x="826" y="120" width="2" height="12" fill="#363636"><title>Solidity: 0.2%</title></rect>
+<rect x="828" y="120" width="4" height="12" fill="#6E7681"><title>Other: 0.6%</title></rect>
 </g>
 <g>
   <rect x="28" y="142" width="137" height="26" rx="5"

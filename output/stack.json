@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-08-23T00:44:03.457056+00:00",
+  "generated_at": "2026-08-30T02:17:46.591707+00:00",
   "repo_count": 178,
   "languages": [
     {
       "name": "JavaScript",
-      "bytes": 51509062,
-      "percentage": 33.45,
+      "bytes": 51514338,
+      "percentage": 32.99,
       "color": "#F7DF1E",
       "category": "Languages",
       "repo_count": 97
     },
     {
       "name": "Python",
-      "bytes": 33627331,
-      "percentage": 21.84,
+      "bytes": 34752497,
+      "percentage": 22.26,
       "color": "#3776AB",
       "category": "Languages",
       "repo_count": 37
@@ -21,22 +21,22 @@
     {
       "name": "Dart",
       "bytes": 15452586,
-      "percentage": 10.03,
+      "percentage": 9.9,
       "color": "#0175C2",
       "category": "Languages",
       "repo_count": 16
     },
     {
       "name": "TypeScript",
-      "bytes": 13401884,
-      "percentage": 8.7,
+      "bytes": 13445430,
+      "percentage": 8.61,
       "color": "#3178C6",
       "category": "Languages",
       "repo_count": 19
     },
     {
       "name": "Go",
-      "bytes": 12967068,
+      "bytes": 13144775,
       "percentage": 8.42,
       "color": "#00ADD8",
       "category": "Languages",
@@ -45,15 +45,15 @@
     {
       "name": "HTML",
       "bytes": 6603739,
-      "percentage": 4.29,
+      "percentage": 4.23,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 73
     },
     {
       "name": "Rust",
-      "bytes": 4405210,
-      "percentage": 2.86,
+      "bytes": 5037201,
+      "percentage": 3.23,
       "color": "#CE422B",
       "category": "Languages",
       "repo_count": 3
@@ -61,7 +61,7 @@
     {
       "name": "SCSS",
       "bytes": 2940449,
-      "percentage": 1.91,
+      "percentage": 1.88,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 7
@@ -69,7 +69,7 @@
     {
       "name": "PHP",
       "bytes": 2883272,
-      "percentage": 1.87,
+      "percentage": 1.85,
       "color": "#777BB4",
       "category": "Languages",
       "repo_count": 2
@@ -77,15 +77,15 @@
     {
       "name": "Blade",
       "bytes": 1689000,
-      "percentage": 1.1,
+      "percentage": 1.08,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 1
     },
     {
       "name": "Makefile",
-      "bytes": 1286092,
-      "percentage": 0.84,
+      "bytes": 1302431,
+      "percentage": 0.83,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 6
@@ -93,15 +93,15 @@
     {
       "name": "Jupyter Notebook",
       "bytes": 1055739,
-      "percentage": 0.69,
+      "percentage": 0.68,
       "color": "#DA5B0B",
       "category": "Languages",
       "repo_count": 1
     },
     {
       "name": "Open Policy Agent",
-      "bytes": 1002432,
-      "percentage": 0.65,
+      "bytes": 1025458,
+      "percentage": 0.66,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 1
@@ -109,30 +109,30 @@
     {
       "name": "Java",
       "bytes": 916876,
-      "percentage": 0.6,
+      "percentage": 0.59,
       "color": "#ED8B00",
       "category": "Languages",
       "repo_count": 3
     },
     {
       "name": "PLpgSQL",
-      "bytes": 775920,
-      "percentage": 0.5,
+      "bytes": 795068,
+      "percentage": 0.51,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 5
     },
     {
       "name": "Shell",
-      "bytes": 749524,
-      "percentage": 0.49,
+      "bytes": 786558,
+      "percentage": 0.5,
       "color": "#89E051",
       "category": "Languages",
       "repo_count": 37
     },
     {
       "name": "CSS",
-      "bytes": 695335,
+      "bytes": 696866,
       "percentage": 0.45,
       "color": "#6E7681",
       "category": "Languages",
@@ -172,11 +172,19 @@
     },
     {
       "name": "HCL",
-      "bytes": 152987,
+      "bytes": 153077,
       "percentage": 0.1,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 5
+    },
+    {
+      "name": "Go Template",
+      "bytes": 150747,
+      "percentage": 0.1,
+      "color": "#6E7681",
+      "category": "Languages",
+      "repo_count": 1
     },
     {
       "name": "CMake",
@@ -193,14 +201,6 @@
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 47
-    },
-    {
-      "name": "Go Template",
-      "bytes": 69043,
-      "percentage": 0.04,
-      "color": "#6E7681",
-      "category": "Languages",
-      "repo_count": 1
     },
     {
       "name": "GLSL",
@@ -400,41 +400,13 @@
     "Vercel"
   ],
   "commit_stats": {
-    "total_commits": 4325,
-    "total_prs": 528,
-    "total_issues": 145,
+    "total_commits": 4467,
+    "total_prs": 556,
+    "total_issues": 249,
     "contrib_years": [],
     "error": null,
-    "calendar_total": 5065,
+    "calendar_total": 5339,
     "contribution_days": [
-      {
-        "date": "2025-08-24",
-        "count": 0
-      },
-      {
-        "date": "2025-08-25",
-        "count": 0
-      },
-      {
-        "date": "2025-08-26",
-        "count": 0
-      },
-      {
-        "date": "2025-08-27",
-        "count": 0
-      },
-      {
-        "date": "2025-08-28",
-        "count": 0
-      },
-      {
-        "date": "2025-08-29",
-        "count": 0
-      },
-      {
-        "date": "2025-08-30",
-        "count": 0
-      },
       {
         "date": "2025-08-31",
         "count": 0
@@ -921,7 +893,7 @@
       },
       {
         "date": "2025-12-30",
-        "count": 6
+        "count": 9
       },
       {
         "date": "2025-12-31",
@@ -993,7 +965,7 @@
       },
       {
         "date": "2026-01-17",
-        "count": 4
+        "count": 8
       },
       {
         "date": "2026-01-18",
@@ -1501,7 +1473,7 @@
       },
       {
         "date": "2026-05-24",
-        "count": 7
+        "count": 10
       },
       {
         "date": "2026-05-25",
@@ -1693,7 +1665,7 @@
       },
       {
         "date": "2026-07-11",
-        "count": 3
+        "count": 5
       },
       {
         "date": "2026-07-12",
@@ -1793,11 +1765,11 @@
       },
       {
         "date": "2026-08-05",
-        "count": 114
+        "count": 124
       },
       {
         "date": "2026-08-06",
-        "count": 26
+        "count": 30
       },
       {
         "date": "2026-08-07",
@@ -1821,7 +1793,7 @@
       },
       {
         "date": "2026-08-12",
-        "count": 2
+        "count": 3
       },
       {
         "date": "2026-08-13",
@@ -1865,6 +1837,34 @@
       },
       {
         "date": "2026-08-23",
+        "count": 0
+      },
+      {
+        "date": "2026-08-24",
+        "count": 0
+      },
+      {
+        "date": "2026-08-25",
+        "count": 6
+      },
+      {
+        "date": "2026-08-26",
+        "count": 169
+      },
+      {
+        "date": "2026-08-27",
+        "count": 76
+      },
+      {
+        "date": "2026-08-28",
+        "count": 0
+      },
+      {
+        "date": "2026-08-29",
+        "count": 0
+      },
+      {
+        "date": "2026-08-30",
         "count": 0
       }
     ]

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T00:44:02.590082+00:00",
+  "generated_at": "2026-08-30T02:17:45.729068+00:00",
   "aggregated": {
     "React": 67,
     "Next.js": 27,
@@ -15,35 +15,35 @@
     "SQLAlchemy": 5,
     "Flask": 4,
     "Celery": 4,
-    "Protocol Buffers": 3,
     "Tokio": 3,
-    "Pydantic": 3,
+    "Protocol Buffers": 3,
     "FastAPI": 3,
-    "Grafana": 3,
+    "Pydantic": 3,
     "Prometheus": 3,
+    "Grafana": 3,
     "Axum": 2,
     "ClickHouse": 2,
     "Kafka": 2,
+    "TimescaleDB": 2,
     "NumPy": 2,
     "MinIO": 2,
     "Vue.js": 2,
     "AWS (LocalStack)": 1,
+    "Azure (Azurite)": 1,
     "Redpanda": 1,
     "Qdrant": 1,
-    "Azure (Azurite)": 1,
     "MeiliSearch": 1,
-    "TimescaleDB": 1,
+    "Keycloak": 1,
     "Docker Registry": 1,
     "Cassandra": 1,
-    "Keycloak": 1,
     "GraphQL": 1,
     "OpenTelemetry": 1,
     "Pandas": 1,
     "HuggingFace": 1,
-    "OpenSearch": 1,
     "NestJS": 1,
-    "MySQL": 1,
+    "OpenSearch": 1,
     "Nginx": 1,
+    "MySQL": 1,
     "MariaDB": 1
   },
   "per_repo": [
@@ -83,11 +83,11 @@
         "Redis",
         "Redpanda",
         "Terraform",
+        "TimescaleDB",
         "Tokio",
         "gRPC"
       ],
       "infra": [
-        "AWS",
         "AWS (LocalStack)",
         "Azure (Azurite)",
         "ClickHouse",
@@ -101,7 +101,8 @@
         "Qdrant",
         "Redis",
         "Redpanda",
-        "Terraform"
+        "Terraform",
+        "TimescaleDB"
       ],
       "compose_images": [
         "adef/aegis",
@@ -117,6 +118,15 @@
         "adef/synapse",
         "apache/kafka",
         "clickhouse/clickhouse-server",
+        "ghcr.io/acornya-inc/adef-aegis",
+        "ghcr.io/acornya-inc/adef-atlas",
+        "ghcr.io/acornya-inc/adef-chronicle",
+        "ghcr.io/acornya-inc/adef-cortex",
+        "ghcr.io/acornya-inc/adef-forge",
+        "ghcr.io/acornya-inc/adef-herald",
+        "ghcr.io/acornya-inc/adef-meridian",
+        "ghcr.io/acornya-inc/adef-nexus",
+        "ghcr.io/acornya-inc/adef-sentinel",
         "localstack/localstack",
         "mcr.microsoft.com/azure-storage/azurite",
         "openpolicyagent/opa",
@@ -125,7 +135,8 @@
         "redis",
         "redpandadata/redpanda",
         "temporalio/auto-setup",
-        "temporalio/ui"
+        "temporalio/ui",
+        "timescale/timescaledb"
       ]
     },
     {
@@ -150,7 +161,6 @@
       "infra": [
         "Docker",
         "GitHub Actions",
-        "Grafana",
         "Kubernetes",
         "MeiliSearch",
         "MinIO",
