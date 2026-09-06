@@ -27,11 +27,11 @@
 <rect y="60" width="860" height="28" fill="#0d1117"/>
 
 <text x="28" y="46" class="title">🛠️  Tech Stack — @onirudda-islam</text>
-<text x="28" y="66" class="subtitle">Dynamically scanned across all repositories · Updated 2026-08-30</text>
+<text x="28" y="66" class="subtitle">Dynamically scanned across all repositories · Updated 2026-09-06</text>
 <text x="28" y="108" class="section-label">LANGUAGES</text>
 <g clip-path="url(#bar-clip)">
 <rect x="28" y="120" width="265" height="12" fill="#F7DF1E"><title>JavaScript: 33.0%</title></rect>
-<rect x="293" y="120" width="179" height="12" fill="#3776AB"><title>Python: 22.3%</title></rect>
+<rect x="293" y="120" width="179" height="12" fill="#3776AB"><title>Python: 22.2%</title></rect>
 <rect x="472" y="120" width="80" height="12" fill="#0175C2"><title>Dart: 9.9%</title></rect>
 <rect x="552" y="120" width="69" height="12" fill="#3178C6"><title>TypeScript: 8.6%</title></rect>
 <rect x="621" y="120" width="68" height="12" fill="#00ADD8"><title>Go: 8.4%</title></rect>
@@ -409,52 +409,46 @@
   <text x="114" y="503" class="tag-text">Redis</text>
 </g>
 <g>
-  <rect x="160" y="486" width="79" height="26" rx="5"
-        fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <rect x="166" y="495" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="180" y="503" class="tag-text">Redpanda</text>
-</g>
-<g>
-  <rect x="247" y="486" width="94" height="26" rx="5"
+  <rect x="160" y="486" width="94" height="26" rx="5"
         fill="#D71F0022" stroke="#D71F0066" stroke-width="1"/>
-  <rect x="253" y="495" width="8" height="8" rx="2" fill="#D71F00"/>
-  <text x="267" y="503" class="tag-text">SQLAlchemy</text>
+  <rect x="166" y="495" width="8" height="8" rx="2" fill="#D71F00"/>
+  <text x="180" y="503" class="tag-text">SQLAlchemy</text>
 </g>
 <g>
-  <rect x="349" y="486" width="79" height="26" rx="5"
+  <rect x="262" y="486" width="79" height="26" rx="5"
+        fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
+  <rect x="268" y="495" width="8" height="8" rx="2" fill="#6E7681"/>
+  <text x="282" y="503" class="tag-text">Solidity</text>
+</g>
+<g>
+  <rect x="349" y="486" width="86" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
   <rect x="355" y="495" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="369" y="503" class="tag-text">Solidity</text>
+  <text x="369" y="503" class="tag-text">Terraform</text>
 </g>
 <g>
-  <rect x="436" y="486" width="86" height="26" rx="5"
+  <rect x="443" y="486" width="101" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <rect x="442" y="495" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="456" y="503" class="tag-text">Terraform</text>
+  <rect x="449" y="495" width="8" height="8" rx="2" fill="#6E7681"/>
+  <text x="463" y="503" class="tag-text">TimescaleDB</text>
 </g>
 <g>
-  <rect x="530" y="486" width="101" height="26" rx="5"
-        fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <rect x="536" y="495" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="550" y="503" class="tag-text">TimescaleDB</text>
-</g>
-<g>
-  <rect x="639" y="486" width="58" height="26" rx="5"
+  <rect x="552" y="486" width="58" height="26" rx="5"
         fill="#CE422B22" stroke="#CE422B66" stroke-width="1"/>
-  <rect x="645" y="495" width="8" height="8" rx="2" fill="#CE422B"/>
-  <text x="659" y="503" class="tag-text">Tokio</text>
+  <rect x="558" y="495" width="8" height="8" rx="2" fill="#CE422B"/>
+  <text x="572" y="503" class="tag-text">Tokio</text>
 </g>
 <g>
-  <rect x="705" y="486" width="65" height="26" rx="5"
+  <rect x="618" y="486" width="65" height="26" rx="5"
         fill="#4FC08D22" stroke="#4FC08D66" stroke-width="1"/>
-  <rect x="711" y="495" width="8" height="8" rx="2" fill="#4FC08D"/>
-  <text x="725" y="503" class="tag-text">Vue.js</text>
+  <rect x="624" y="495" width="8" height="8" rx="2" fill="#4FC08D"/>
+  <text x="638" y="503" class="tag-text">Vue.js</text>
 </g>
 <g>
-  <rect x="778" y="486" width="50" height="26" rx="5"
+  <rect x="691" y="486" width="50" height="26" rx="5"
         fill="#244C5A22" stroke="#244C5A66" stroke-width="1"/>
-  <rect x="784" y="495" width="8" height="8" rx="2" fill="#244C5A"/>
-  <text x="798" y="503" class="tag-text">gRPC</text>
+  <rect x="697" y="495" width="8" height="8" rx="2" fill="#244C5A"/>
+  <text x="711" y="503" class="tag-text">gRPC</text>
 </g>
 <line x1="28" y1="544" x2="832" y2="544" stroke="#30363d" stroke-width="1"/>
 <text x="28" y="580" class="section-label">INFRASTRUCTURE &amp; DEVOPS</text>
@@ -648,31 +642,25 @@
   <rect x="516" y="694" width="79" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
   <rect x="522" y="703" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="536" y="711" class="tag-text">Redpanda</text>
+  <text x="536" y="711" class="tag-text">Solidity</text>
 </g>
 <g>
-  <rect x="603" y="694" width="79" height="26" rx="5"
-        fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <rect x="609" y="703" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="623" y="711" class="tag-text">Solidity</text>
-</g>
-<g>
-  <rect x="690" y="694" width="86" height="26" rx="5"
+  <rect x="603" y="694" width="86" height="26" rx="5"
         fill="#7B42BC22" stroke="#7B42BC66" stroke-width="1"/>
-  <rect x="696" y="703" width="8" height="8" rx="2" fill="#7B42BC"/>
-  <text x="710" y="711" class="tag-text">Terraform</text>
+  <rect x="609" y="703" width="8" height="8" rx="2" fill="#7B42BC"/>
+  <text x="623" y="711" class="tag-text">Terraform</text>
 </g>
 <g>
-  <rect x="28" y="728" width="101" height="26" rx="5"
+  <rect x="697" y="694" width="101" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <rect x="34" y="737" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="48" y="745" class="tag-text">TimescaleDB</text>
+  <rect x="703" y="703" width="8" height="8" rx="2" fill="#6E7681"/>
+  <text x="717" y="711" class="tag-text">TimescaleDB</text>
 </g>
 <g>
-  <rect x="137" y="728" width="65" height="26" rx="5"
+  <rect x="28" y="728" width="65" height="26" rx="5"
         fill="#00000022" stroke="#00000066" stroke-width="1"/>
-  <rect x="143" y="737" width="8" height="8" rx="2" fill="#000000"/>
-  <text x="157" y="745" class="tag-text">Vercel</text>
+  <rect x="34" y="737" width="8" height="8" rx="2" fill="#000000"/>
+  <text x="48" y="745" class="tag-text">Vercel</text>
 </g>
 <text x="430" y="786" text-anchor="middle" class="subtitle">github.com/onirudda-islam/stats · auto-generated · do not edit</text>
 </svg>

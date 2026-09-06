@@ -1,40 +1,39 @@
 {
-  "generated_at": "2026-08-30T02:17:45.729068+00:00",
+  "generated_at": "2026-09-06T01:48:31.869560+00:00",
   "aggregated": {
     "React": 67,
     "Next.js": 27,
     "Express": 24,
+    "Redis": 16,
     "Django": 16,
     "Solidity": 16,
-    "Redis": 15,
-    "PostgreSQL": 13,
+    "PostgreSQL": 14,
     "Prisma": 8,
     "MongoDB": 5,
-    "gRPC": 5,
     "Terraform": 5,
     "SQLAlchemy": 5,
+    "gRPC": 4,
     "Flask": 4,
     "Celery": 4,
-    "Tokio": 3,
     "Protocol Buffers": 3,
-    "FastAPI": 3,
+    "Tokio": 3,
     "Pydantic": 3,
+    "FastAPI": 3,
     "Prometheus": 3,
     "Grafana": 3,
     "Axum": 2,
+    "TimescaleDB": 2,
     "ClickHouse": 2,
     "Kafka": 2,
-    "TimescaleDB": 2,
     "NumPy": 2,
     "MinIO": 2,
     "Vue.js": 2,
-    "AWS (LocalStack)": 1,
-    "Azure (Azurite)": 1,
-    "Redpanda": 1,
     "Qdrant": 1,
+    "Azure (Azurite)": 1,
+    "AWS (LocalStack)": 1,
     "MeiliSearch": 1,
-    "Keycloak": 1,
     "Docker Registry": 1,
+    "Keycloak": 1,
     "Cassandra": 1,
     "GraphQL": 1,
     "OpenTelemetry": 1,
@@ -42,8 +41,8 @@
     "HuggingFace": 1,
     "NestJS": 1,
     "OpenSearch": 1,
-    "Nginx": 1,
     "MySQL": 1,
+    "Nginx": 1,
     "MariaDB": 1
   },
   "per_repo": [
@@ -81,13 +80,12 @@
         "Qdrant",
         "React",
         "Redis",
-        "Redpanda",
         "Terraform",
         "TimescaleDB",
-        "Tokio",
-        "gRPC"
+        "Tokio"
       ],
       "infra": [
+        "AWS",
         "AWS (LocalStack)",
         "Azure (Azurite)",
         "ClickHouse",
@@ -100,22 +98,10 @@
         "Protocol Buffers",
         "Qdrant",
         "Redis",
-        "Redpanda",
         "Terraform",
         "TimescaleDB"
       ],
       "compose_images": [
-        "adef/aegis",
-        "adef/atlas",
-        "adef/chronicle",
-        "adef/cortex",
-        "adef/forge",
-        "adef/herald",
-        "adef/meridian",
-        "adef/nexus",
-        "adef/prism",
-        "adef/sentinel",
-        "adef/synapse",
         "apache/kafka",
         "clickhouse/clickhouse-server",
         "ghcr.io/acornya-inc/adef-aegis",
@@ -133,7 +119,6 @@
         "postgres",
         "qdrant/qdrant",
         "redis",
-        "redpandadata/redpanda",
         "temporalio/auto-setup",
         "temporalio/ui",
         "timescale/timescaledb"
@@ -1382,7 +1367,9 @@
         "Docker",
         "GitHub Actions"
       ],
-      "compose_images": []
+      "compose_images": [
+        "node"
+      ]
     },
     {
       "repo": "sadhinpay-socket",
@@ -1399,7 +1386,9 @@
         "Docker",
         "GitHub Actions"
       ],
-      "compose_images": []
+      "compose_images": [
+        "node"
+      ]
     },
     {
       "repo": "sadhinpay_agent",
@@ -1411,7 +1400,9 @@
         "GitHub Actions",
         "Vercel"
       ],
-      "compose_images": []
+      "compose_images": [
+        "node"
+      ]
     },
     {
       "repo": "sadhinpay_backend",
@@ -1419,6 +1410,7 @@
         "Celery",
         "Django",
         "PostgreSQL",
+        "Redis",
         "gRPC"
       ],
       "infra": [
@@ -1430,7 +1422,8 @@
         "Redis"
       ],
       "compose_images": [
-        "postgres"
+        "postgres",
+        "redis"
       ]
     },
     {
@@ -1449,7 +1442,9 @@
         "Docker",
         "GitHub Actions"
       ],
-      "compose_images": []
+      "compose_images": [
+        "node"
+      ]
     },
     {
       "repo": "school-management-admin",
@@ -1460,19 +1455,26 @@
         "Docker",
         "GitHub Actions"
       ],
-      "compose_images": []
+      "compose_images": [
+        "node"
+      ]
     },
     {
       "repo": "school-management-backend",
       "frameworks": [
         "Express",
+        "PostgreSQL",
         "Prisma"
       ],
       "infra": [
         "Docker",
-        "GitHub Actions"
+        "GitHub Actions",
+        "PostgreSQL"
       ],
-      "compose_images": []
+      "compose_images": [
+        "node",
+        "postgres"
+      ]
     },
     {
       "repo": "school-management-web",
@@ -1483,7 +1485,9 @@
       "infra": [
         "Docker"
       ],
-      "compose_images": []
+      "compose_images": [
+        "node"
+      ]
     },
     {
       "repo": "school-mx-st",
@@ -1494,7 +1498,9 @@
         "Docker",
         "GitHub Actions"
       ],
-      "compose_images": []
+      "compose_images": [
+        "node"
+      ]
     },
     {
       "repo": "schooling",
@@ -1505,7 +1511,9 @@
         "Docker",
         "GitHub Actions"
       ],
-      "compose_images": []
+      "compose_images": [
+        "node"
+      ]
     },
     {
       "repo": "schooling-account",
@@ -1528,7 +1536,9 @@
       "infra": [
         "Docker"
       ],
-      "compose_images": []
+      "compose_images": [
+        "node"
+      ]
     },
     {
       "repo": "School_Admission_Campain",
@@ -1540,7 +1550,9 @@
         "Docker",
         "GitHub Actions"
       ],
-      "compose_images": []
+      "compose_images": [
+        "node"
+      ]
     },
     {
       "repo": "school_erp",
@@ -1559,6 +1571,7 @@
         "Redis"
       ],
       "compose_images": [
+        "node",
         "postgres",
         "redis"
       ]

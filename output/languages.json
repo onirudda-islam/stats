@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-08-30T02:13:54.769024+00:00",
-  "total_bytes": 156151953,
+  "generated_at": "2026-09-06T01:45:48.774882+00:00",
+  "total_bytes": 156196247,
   "languages": [
     {
       "name": "JavaScript",
-      "bytes": 51514338,
-      "percentage": 32.99,
+      "bytes": 51514578,
+      "percentage": 32.98,
       "color": "#F7DF1E",
       "category": "Languages",
       "repo_count": 97
     },
     {
       "name": "Python",
-      "bytes": 34752497,
-      "percentage": 22.26,
+      "bytes": 34752096,
+      "percentage": 22.25,
       "color": "#3776AB",
       "category": "Languages",
       "repo_count": 37
     },
     {
       "name": "Dart",
-      "bytes": 15452586,
-      "percentage": 9.9,
+      "bytes": 15452665,
+      "percentage": 9.89,
       "color": "#0175C2",
       "category": "Languages",
       "repo_count": 16
     },
     {
       "name": "TypeScript",
-      "bytes": 13445430,
+      "bytes": 13449249,
       "percentage": 8.61,
       "color": "#3178C6",
       "category": "Languages",
@@ -53,7 +53,7 @@
     {
       "name": "Rust",
       "bytes": 5037201,
-      "percentage": 3.23,
+      "percentage": 3.22,
       "color": "#CE422B",
       "category": "Languages",
       "repo_count": 3
@@ -116,15 +116,15 @@
     },
     {
       "name": "PLpgSQL",
-      "bytes": 795068,
-      "percentage": 0.51,
+      "bytes": 835437,
+      "percentage": 0.53,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 5
     },
     {
       "name": "Shell",
-      "bytes": 786558,
+      "bytes": 786746,
       "percentage": 0.5,
       "color": "#89E051",
       "category": "Languages",
