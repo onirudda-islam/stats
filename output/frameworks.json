@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T01:48:31.869560+00:00",
+  "generated_at": "2026-09-13T01:59:29.226974+00:00",
   "aggregated": {
     "React": 67,
     "Next.js": 27,
@@ -9,38 +9,39 @@
     "Solidity": 16,
     "PostgreSQL": 14,
     "Prisma": 8,
+    "Terraform": 6,
     "MongoDB": 5,
-    "Terraform": 5,
+    "gRPC": 5,
     "SQLAlchemy": 5,
-    "gRPC": 4,
+    "FastAPI": 4,
     "Flask": 4,
     "Celery": 4,
-    "Protocol Buffers": 3,
     "Tokio": 3,
+    "Protocol Buffers": 3,
     "Pydantic": 3,
-    "FastAPI": 3,
     "Prometheus": 3,
     "Grafana": 3,
-    "Axum": 2,
-    "TimescaleDB": 2,
     "ClickHouse": 2,
     "Kafka": 2,
+    "HuggingFace": 2,
+    "Axum": 2,
     "NumPy": 2,
     "MinIO": 2,
     "Vue.js": 2,
-    "Qdrant": 1,
-    "Azure (Azurite)": 1,
     "AWS (LocalStack)": 1,
+    "Azure (Azurite)": 1,
+    "Redpanda": 1,
+    "Qdrant": 1,
+    "TimescaleDB": 1,
     "MeiliSearch": 1,
+    "Cassandra": 1,
     "Docker Registry": 1,
     "Keycloak": 1,
-    "Cassandra": 1,
     "GraphQL": 1,
     "OpenTelemetry": 1,
     "Pandas": 1,
-    "HuggingFace": 1,
-    "NestJS": 1,
     "OpenSearch": 1,
+    "NestJS": 1,
     "MySQL": 1,
     "Nginx": 1,
     "MariaDB": 1
@@ -57,6 +58,7 @@
       ],
       "infra": [
         "Docker",
+        "GitHub Actions",
         "MongoDB",
         "Redis",
         "Terraform"
@@ -73,6 +75,8 @@
         "Axum",
         "Azure (Azurite)",
         "ClickHouse",
+        "FastAPI",
+        "HuggingFace",
         "Kafka",
         "Next.js",
         "PostgreSQL",
@@ -80,9 +84,10 @@
         "Qdrant",
         "React",
         "Redis",
+        "Redpanda",
         "Terraform",
-        "TimescaleDB",
-        "Tokio"
+        "Tokio",
+        "gRPC"
       ],
       "infra": [
         "AWS",
@@ -98,30 +103,32 @@
         "Protocol Buffers",
         "Qdrant",
         "Redis",
-        "Terraform",
-        "TimescaleDB"
+        "Redpanda",
+        "Terraform"
       ],
       "compose_images": [
+        "adef/aegis",
+        "adef/atlas",
+        "adef/chronicle",
+        "adef/cortex",
+        "adef/forge",
+        "adef/herald",
+        "adef/meridian",
+        "adef/nexus",
+        "adef/prism",
+        "adef/sentinel",
+        "adef/synapse",
         "apache/kafka",
         "clickhouse/clickhouse-server",
-        "ghcr.io/acornya-inc/adef-aegis",
-        "ghcr.io/acornya-inc/adef-atlas",
-        "ghcr.io/acornya-inc/adef-chronicle",
-        "ghcr.io/acornya-inc/adef-cortex",
-        "ghcr.io/acornya-inc/adef-forge",
-        "ghcr.io/acornya-inc/adef-herald",
-        "ghcr.io/acornya-inc/adef-meridian",
-        "ghcr.io/acornya-inc/adef-nexus",
-        "ghcr.io/acornya-inc/adef-sentinel",
         "localstack/localstack",
         "mcr.microsoft.com/azure-storage/azurite",
         "openpolicyagent/opa",
         "postgres",
         "qdrant/qdrant",
         "redis",
+        "redpandadata/redpanda",
         "temporalio/auto-setup",
-        "temporalio/ui",
-        "timescale/timescaledb"
+        "temporalio/ui"
       ]
     },
     {
@@ -163,6 +170,18 @@
         "redis",
         "timescale/timescaledb"
       ]
+    },
+    {
+      "repo": "testing",
+      "frameworks": [
+        "Terraform"
+      ],
+      "infra": [
+        "GitHub Actions",
+        "Kubernetes",
+        "Terraform"
+      ],
+      "compose_images": []
     },
     {
       "repo": "uspwp",
