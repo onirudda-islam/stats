@@ -27,15 +27,15 @@
 <rect y="60" width="860" height="28" fill="#0d1117"/>
 
 <text x="28" y="46" class="title">🛠️  Tech Stack — @onirudda-islam</text>
-<text x="28" y="66" class="subtitle">Dynamically scanned across all repositories · Updated 2026-09-13</text>
+<text x="28" y="66" class="subtitle">Dynamically scanned across all repositories · Updated 2026-09-20</text>
 <text x="28" y="108" class="section-label">LANGUAGES</text>
 <g clip-path="url(#bar-clip)">
-<rect x="28" y="120" width="263" height="12" fill="#F7DF1E"><title>JavaScript: 32.8%</title></rect>
-<rect x="291" y="120" width="178" height="12" fill="#3776AB"><title>Python: 22.1%</title></rect>
-<rect x="469" y="120" width="83" height="12" fill="#0175C2"><title>Dart: 10.3%</title></rect>
-<rect x="552" y="120" width="69" height="12" fill="#3178C6"><title>TypeScript: 8.6%</title></rect>
-<rect x="621" y="120" width="67" height="12" fill="#00ADD8"><title>Go: 8.4%</title></rect>
-<rect x="688" y="120" width="35" height="12" fill="#6E7681"><title>HTML: 4.3%</title></rect>
+<rect x="28" y="120" width="263" height="12" fill="#F7DF1E"><title>JavaScript: 32.7%</title></rect>
+<rect x="291" y="120" width="177" height="12" fill="#3776AB"><title>Python: 22.0%</title></rect>
+<rect x="468" y="120" width="83" height="12" fill="#0175C2"><title>Dart: 10.4%</title></rect>
+<rect x="551" y="120" width="70" height="12" fill="#3178C6"><title>TypeScript: 8.7%</title></rect>
+<rect x="621" y="120" width="67" height="12" fill="#00ADD8"><title>Go: 8.3%</title></rect>
+<rect x="688" y="120" width="35" height="12" fill="#6E7681"><title>HTML: 4.4%</title></rect>
 <rect x="723" y="120" width="26" height="12" fill="#CE422B"><title>Rust: 3.2%</title></rect>
 <rect x="749" y="120" width="15" height="12" fill="#6E7681"><title>SCSS: 1.9%</title></rect>
 <rect x="764" y="120" width="15" height="12" fill="#777BB4"><title>PHP: 1.8%</title></rect>
@@ -128,7 +128,7 @@
   <rect x="680" y="176" width="108" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
   <circle cx="691" cy="189" r="4" fill="#6E7681"/>
-  <text x="700" y="193" class="tag-text">PLpgSQL · 5r</text>
+  <text x="700" y="193" class="tag-text">PLpgSQL · 6r</text>
 </g>
 <g>
   <rect x="28" y="210" width="79" height="26" rx="5"
