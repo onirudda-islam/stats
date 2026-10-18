@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-11T02:43:56.281798+00:00",
-  "total_bytes": 157709499,
+  "generated_at": "2026-10-18T01:58:26.769288+00:00",
+  "total_bytes": 157849927,
   "languages": [
     {
       "name": "JavaScript",
-      "bytes": 51579883,
-      "percentage": 32.71,
+      "bytes": 51579881,
+      "percentage": 32.68,
       "color": "#F7DF1E",
       "category": "Languages",
       "repo_count": 97
@@ -13,7 +13,7 @@
     {
       "name": "Python",
       "bytes": 34755410,
-      "percentage": 22.04,
+      "percentage": 22.02,
       "color": "#3776AB",
       "category": "Languages",
       "repo_count": 37
@@ -21,15 +21,15 @@
     {
       "name": "Dart",
       "bytes": 16357833,
-      "percentage": 10.37,
+      "percentage": 10.36,
       "color": "#0175C2",
       "category": "Languages",
       "repo_count": 16
     },
     {
       "name": "TypeScript",
-      "bytes": 13681104,
-      "percentage": 8.67,
+      "bytes": 13808168,
+      "percentage": 8.75,
       "color": "#3178C6",
       "category": "Languages",
       "repo_count": 19
@@ -44,7 +44,7 @@
     },
     {
       "name": "HTML",
-      "bytes": 6884110,
+      "bytes": 6897131,
       "percentage": 4.37,
       "color": "#6E7681",
       "category": "Languages",
@@ -124,7 +124,7 @@
     },
     {
       "name": "Shell",
-      "bytes": 795293,
+      "bytes": 795638,
       "percentage": 0.5,
       "color": "#89E051",
       "category": "Languages",
@@ -173,7 +173,7 @@
     {
       "name": "C++",
       "bytes": 165708,
-      "percentage": 0.11,
+      "percentage": 0.1,
       "color": "#00599C",
       "category": "Languages",
       "repo_count": 7

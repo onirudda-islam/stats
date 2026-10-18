@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="816" viewBox="0 0 860 816">
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="782" viewBox="0 0 860 782">
 <defs>
   <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0">
     <stop offset="0%" stop-color="#1a1040"/>
@@ -21,13 +21,13 @@
   .pct-text { font-size:10px; fill:#8b949e; }
 </style>
 <!-- Background -->
-<rect width="860" height="816" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+<rect width="860" height="782" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
 <!-- Header gradient band -->
 <rect width="860" height="88" rx="12" fill="url(#hdr)"/>
 <rect y="60" width="860" height="28" fill="#0d1117"/>
 
 <text x="28" y="46" class="title">🛠️  Tech Stack — @onirudda-islam</text>
-<text x="28" y="66" class="subtitle">Dynamically scanned across all repositories · Updated 2026-10-11</text>
+<text x="28" y="66" class="subtitle">Dynamically scanned across all repositories · Updated 2026-10-18</text>
 <text x="28" y="108" class="section-label">LANGUAGES</text>
 <g clip-path="url(#bar-clip)">
 <rect x="28" y="120" width="263" height="12" fill="#F7DF1E"><title>JavaScript: 32.7%</title></rect>
@@ -42,7 +42,7 @@
 <rect x="779" y="120" width="9" height="12" fill="#6E7681"><title>Blade: 1.1%</title></rect>
 <rect x="788" y="120" width="7" height="12" fill="#6E7681"><title>Makefile: 0.8%</title></rect>
 <rect x="795" y="120" width="5" height="12" fill="#DA5B0B"><title>Jupyter Notebook: 0.7%</title></rect>
-<rect x="800" y="120" width="5" height="12" fill="#6E7681"><title>Open Policy Agent: 0.7%</title></rect>
+<rect x="800" y="120" width="5" height="12" fill="#6E7681"><title>Open Policy Agent: 0.6%</title></rect>
 <rect x="805" y="120" width="5" height="12" fill="#ED8B00"><title>Java: 0.6%</title></rect>
 <rect x="810" y="120" width="4" height="12" fill="#6E7681"><title>PLpgSQL: 0.5%</title></rect>
 <rect x="814" y="120" width="4" height="12" fill="#89E051"><title>Shell: 0.5%</title></rect>
@@ -403,12 +403,6 @@
   <text x="696" y="469" class="tag-text">Redis</text>
 </g>
 <g>
-  <rect x="742" y="452" width="79" height="26" rx="5"
-        fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <rect x="748" y="461" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="762" y="469" class="tag-text">Redpanda</text>
-</g>
-<g>
   <rect x="28" y="486" width="94" height="26" rx="5"
         fill="#D71F0022" stroke="#D71F0066" stroke-width="1"/>
   <rect x="34" y="495" width="8" height="8" rx="2" fill="#D71F00"/>
@@ -636,31 +630,25 @@
   <rect x="414" y="694" width="79" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
   <rect x="420" y="703" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="434" y="711" class="tag-text">Redpanda</text>
+  <text x="434" y="711" class="tag-text">Solidity</text>
 </g>
 <g>
-  <rect x="501" y="694" width="79" height="26" rx="5"
-        fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <rect x="507" y="703" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="521" y="711" class="tag-text">Solidity</text>
-</g>
-<g>
-  <rect x="588" y="694" width="86" height="26" rx="5"
+  <rect x="501" y="694" width="86" height="26" rx="5"
         fill="#7B42BC22" stroke="#7B42BC66" stroke-width="1"/>
-  <rect x="594" y="703" width="8" height="8" rx="2" fill="#7B42BC"/>
-  <text x="608" y="711" class="tag-text">Terraform</text>
+  <rect x="507" y="703" width="8" height="8" rx="2" fill="#7B42BC"/>
+  <text x="521" y="711" class="tag-text">Terraform</text>
 </g>
 <g>
-  <rect x="682" y="694" width="101" height="26" rx="5"
+  <rect x="595" y="694" width="101" height="26" rx="5"
         fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <rect x="688" y="703" width="8" height="8" rx="2" fill="#6E7681"/>
-  <text x="702" y="711" class="tag-text">TimescaleDB</text>
+  <rect x="601" y="703" width="8" height="8" rx="2" fill="#6E7681"/>
+  <text x="615" y="711" class="tag-text">TimescaleDB</text>
 </g>
 <g>
-  <rect x="28" y="728" width="65" height="26" rx="5"
+  <rect x="704" y="694" width="65" height="26" rx="5"
         fill="#00000022" stroke="#00000066" stroke-width="1"/>
-  <rect x="34" y="737" width="8" height="8" rx="2" fill="#000000"/>
-  <text x="48" y="745" class="tag-text">Vercel</text>
+  <rect x="710" y="703" width="8" height="8" rx="2" fill="#000000"/>
+  <text x="724" y="711" class="tag-text">Vercel</text>
 </g>
-<text x="430" y="786" text-anchor="middle" class="subtitle">github.com/onirudda-islam/stats · auto-generated · do not edit</text>
+<text x="430" y="752" text-anchor="middle" class="subtitle">github.com/onirudda-islam/stats · auto-generated · do not edit</text>
 </svg>
