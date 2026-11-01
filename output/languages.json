@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-25T02:09:39.685961+00:00",
-  "total_bytes": 158536689,
+  "generated_at": "2026-11-01T03:01:34.710703+00:00",
+  "total_bytes": 158661399,
   "languages": [
     {
       "name": "JavaScript",
-      "bytes": 51619907,
-      "percentage": 32.56,
+      "bytes": 51634436,
+      "percentage": 32.54,
       "color": "#F7DF1E",
       "category": "Languages",
       "repo_count": 97
     },
     {
       "name": "Python",
-      "bytes": 34755410,
+      "bytes": 34781336,
       "percentage": 21.92,
       "color": "#3776AB",
       "category": "Languages",
@@ -20,16 +20,16 @@
     },
     {
       "name": "Dart",
-      "bytes": 16949425,
-      "percentage": 10.69,
+      "bytes": 17002199,
+      "percentage": 10.72,
       "color": "#0175C2",
       "category": "Languages",
       "repo_count": 16
     },
     {
       "name": "TypeScript",
-      "bytes": 13837714,
-      "percentage": 8.73,
+      "bytes": 13869195,
+      "percentage": 8.74,
       "color": "#3178C6",
       "category": "Languages",
       "repo_count": 19
@@ -37,7 +37,7 @@
     {
       "name": "Go",
       "bytes": 13144775,
-      "percentage": 8.29,
+      "percentage": 8.28,
       "color": "#00ADD8",
       "category": "Languages",
       "repo_count": 3
@@ -53,7 +53,7 @@
     {
       "name": "Rust",
       "bytes": 5037201,
-      "percentage": 3.18,
+      "percentage": 3.17,
       "color": "#CE422B",
       "category": "Languages",
       "repo_count": 3
@@ -77,7 +77,7 @@
     {
       "name": "Blade",
       "bytes": 1689000,
-      "percentage": 1.07,
+      "percentage": 1.06,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 1
