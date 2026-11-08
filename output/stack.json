@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T03:05:16.587514+00:00",
+  "generated_at": "2026-11-08T03:13:51.776586+00:00",
   "repo_count": 179,
   "languages": [
     {
@@ -316,7 +316,9 @@
     }
   ],
   "frameworks": [
+    "AWS (LocalStack)",
     "Axum",
+    "Azure (Azurite)",
     "Cassandra",
     "Celery",
     "ClickHouse",
@@ -361,6 +363,8 @@
   ],
   "infra": [
     "AWS",
+    "AWS (LocalStack)",
+    "Azure (Azurite)",
     "CDK",
     "Cassandra",
     "CircleCI",
@@ -403,34 +407,6 @@
     "error": null,
     "calendar_total": 5848,
     "contribution_days": [
-      {
-        "date": "2025-11-02",
-        "count": 0
-      },
-      {
-        "date": "2025-11-03",
-        "count": 0
-      },
-      {
-        "date": "2025-11-04",
-        "count": 0
-      },
-      {
-        "date": "2025-11-05",
-        "count": 0
-      },
-      {
-        "date": "2025-11-06",
-        "count": 0
-      },
-      {
-        "date": "2025-11-07",
-        "count": 0
-      },
-      {
-        "date": "2025-11-08",
-        "count": 0
-      },
       {
         "date": "2025-11-09",
         "count": 0
@@ -1861,6 +1837,34 @@
       },
       {
         "date": "2026-11-01",
+        "count": 0
+      },
+      {
+        "date": "2026-11-02",
+        "count": 0
+      },
+      {
+        "date": "2026-11-03",
+        "count": 0
+      },
+      {
+        "date": "2026-11-04",
+        "count": 0
+      },
+      {
+        "date": "2026-11-05",
+        "count": 0
+      },
+      {
+        "date": "2026-11-06",
+        "count": 0
+      },
+      {
+        "date": "2026-11-07",
+        "count": 0
+      },
+      {
+        "date": "2026-11-08",
         "count": 0
       }
     ]
