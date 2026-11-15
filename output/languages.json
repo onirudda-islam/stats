@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-11-08T03:09:33.336318+00:00",
-  "total_bytes": 158661399,
+  "generated_at": "2026-11-15T03:40:03.639162+00:00",
+  "total_bytes": 161495308,
   "languages": [
     {
       "name": "JavaScript",
-      "bytes": 51634436,
-      "percentage": 32.54,
+      "bytes": 51641551,
+      "percentage": 31.98,
       "color": "#F7DF1E",
       "category": "Languages",
       "repo_count": 97
     },
     {
       "name": "Python",
-      "bytes": 34781336,
-      "percentage": 21.92,
+      "bytes": 35729712,
+      "percentage": 22.12,
       "color": "#3776AB",
       "category": "Languages",
       "repo_count": 37
@@ -21,23 +21,23 @@
     {
       "name": "Dart",
       "bytes": 17002199,
-      "percentage": 10.72,
+      "percentage": 10.53,
       "color": "#0175C2",
       "category": "Languages",
       "repo_count": 16
     },
     {
       "name": "TypeScript",
-      "bytes": 13869195,
-      "percentage": 8.74,
+      "bytes": 14014448,
+      "percentage": 8.68,
       "color": "#3178C6",
       "category": "Languages",
       "repo_count": 19
     },
     {
       "name": "Go",
-      "bytes": 13144775,
-      "percentage": 8.28,
+      "bytes": 13350172,
+      "percentage": 8.27,
       "color": "#00ADD8",
       "category": "Languages",
       "repo_count": 3
@@ -45,15 +45,15 @@
     {
       "name": "HTML",
       "bytes": 6900098,
-      "percentage": 4.35,
+      "percentage": 4.27,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 73
     },
     {
       "name": "Rust",
-      "bytes": 5037201,
-      "percentage": 3.17,
+      "bytes": 6481484,
+      "percentage": 4.01,
       "color": "#CE422B",
       "category": "Languages",
       "repo_count": 3
@@ -61,7 +61,7 @@
     {
       "name": "SCSS",
       "bytes": 2940449,
-      "percentage": 1.85,
+      "percentage": 1.82,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 7
@@ -69,7 +69,7 @@
     {
       "name": "PHP",
       "bytes": 2883272,
-      "percentage": 1.82,
+      "percentage": 1.79,
       "color": "#777BB4",
       "category": "Languages",
       "repo_count": 2
@@ -77,15 +77,15 @@
     {
       "name": "Blade",
       "bytes": 1689000,
-      "percentage": 1.06,
+      "percentage": 1.05,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 1
     },
     {
       "name": "Makefile",
-      "bytes": 1303025,
-      "percentage": 0.82,
+      "bytes": 1307684,
+      "percentage": 0.81,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 7
@@ -93,7 +93,7 @@
     {
       "name": "Jupyter Notebook",
       "bytes": 1055739,
-      "percentage": 0.67,
+      "percentage": 0.65,
       "color": "#DA5B0B",
       "category": "Languages",
       "repo_count": 1
@@ -101,7 +101,7 @@
     {
       "name": "Open Policy Agent",
       "bytes": 1025458,
-      "percentage": 0.65,
+      "percentage": 0.63,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 1
@@ -109,14 +109,14 @@
     {
       "name": "Java",
       "bytes": 916876,
-      "percentage": 0.58,
+      "percentage": 0.57,
       "color": "#ED8B00",
       "category": "Languages",
       "repo_count": 3
     },
     {
       "name": "PLpgSQL",
-      "bytes": 838754,
+      "bytes": 854229,
       "percentage": 0.53,
       "color": "#6E7681",
       "category": "Languages",
@@ -124,8 +124,8 @@
     },
     {
       "name": "Shell",
-      "bytes": 795638,
-      "percentage": 0.5,
+      "bytes": 821765,
+      "percentage": 0.51,
       "color": "#89E051",
       "category": "Languages",
       "repo_count": 38
@@ -133,7 +133,7 @@
     {
       "name": "CSS",
       "bytes": 696866,
-      "percentage": 0.44,
+      "percentage": 0.43,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 76
@@ -163,9 +163,17 @@
       "repo_count": 16
     },
     {
+      "name": "Go Template",
+      "bytes": 172499,
+      "percentage": 0.11,
+      "color": "#6E7681",
+      "category": "Languages",
+      "repo_count": 1
+    },
+    {
       "name": "HCL",
       "bytes": 167858,
-      "percentage": 0.11,
+      "percentage": 0.1,
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 6
@@ -179,12 +187,12 @@
       "repo_count": 7
     },
     {
-      "name": "Go Template",
-      "bytes": 150747,
-      "percentage": 0.1,
+      "name": "Dockerfile",
+      "bytes": 134312,
+      "percentage": 0.08,
       "color": "#6E7681",
       "category": "Languages",
-      "repo_count": 1
+      "repo_count": 47
     },
     {
       "name": "CMake",
@@ -193,14 +201,6 @@
       "color": "#6E7681",
       "category": "Languages",
       "repo_count": 7
-    },
-    {
-      "name": "Dockerfile",
-      "bytes": 118840,
-      "percentage": 0.07,
-      "color": "#6E7681",
-      "category": "Languages",
-      "repo_count": 47
     },
     {
       "name": "Ruby",

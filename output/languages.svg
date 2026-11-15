@@ -27,30 +27,30 @@
 <rect y="60" width="860" height="28" fill="#0d1117"/>
 
 <text x="28" y="46" class="title">🛠️  Tech Stack — @onirudda-islam</text>
-<text x="28" y="66" class="subtitle">Dynamically scanned across all repositories · Updated 2026-11-08</text>
+<text x="28" y="66" class="subtitle">Dynamically scanned across all repositories · Updated 2026-11-15</text>
 <text x="28" y="108" class="section-label">LANGUAGES</text>
 <g clip-path="url(#bar-clip)">
-<rect x="28" y="120" width="262" height="12" fill="#F7DF1E"><title>JavaScript: 32.5%</title></rect>
-<rect x="290" y="120" width="176" height="12" fill="#3776AB"><title>Python: 21.9%</title></rect>
-<rect x="466" y="120" width="86" height="12" fill="#0175C2"><title>Dart: 10.7%</title></rect>
-<rect x="552" y="120" width="70" height="12" fill="#3178C6"><title>TypeScript: 8.7%</title></rect>
-<rect x="622" y="120" width="67" height="12" fill="#00ADD8"><title>Go: 8.3%</title></rect>
-<rect x="689" y="120" width="35" height="12" fill="#6E7681"><title>HTML: 4.3%</title></rect>
-<rect x="724" y="120" width="26" height="12" fill="#CE422B"><title>Rust: 3.2%</title></rect>
-<rect x="750" y="120" width="15" height="12" fill="#6E7681"><title>SCSS: 1.9%</title></rect>
-<rect x="765" y="120" width="15" height="12" fill="#777BB4"><title>PHP: 1.8%</title></rect>
-<rect x="780" y="120" width="9" height="12" fill="#6E7681"><title>Blade: 1.1%</title></rect>
-<rect x="789" y="120" width="7" height="12" fill="#6E7681"><title>Makefile: 0.8%</title></rect>
-<rect x="796" y="120" width="5" height="12" fill="#DA5B0B"><title>Jupyter Notebook: 0.7%</title></rect>
-<rect x="801" y="120" width="5" height="12" fill="#6E7681"><title>Open Policy Agent: 0.6%</title></rect>
-<rect x="806" y="120" width="5" height="12" fill="#ED8B00"><title>Java: 0.6%</title></rect>
-<rect x="811" y="120" width="4" height="12" fill="#6E7681"><title>PLpgSQL: 0.5%</title></rect>
-<rect x="815" y="120" width="4" height="12" fill="#89E051"><title>Shell: 0.5%</title></rect>
-<rect x="819" y="120" width="4" height="12" fill="#6E7681"><title>CSS: 0.4%</title></rect>
-<rect x="823" y="120" width="2" height="12" fill="#6E7681"><title>Vue: 0.3%</title></rect>
-<rect x="825" y="120" width="2" height="12" fill="#7F52FF"><title>Kotlin: 0.3%</title></rect>
-<rect x="827" y="120" width="2" height="12" fill="#363636"><title>Solidity: 0.2%</title></rect>
-<rect x="829" y="120" width="3" height="12" fill="#6E7681"><title>Other: 0.6%</title></rect>
+<rect x="28" y="120" width="257" height="12" fill="#F7DF1E"><title>JavaScript: 32.0%</title></rect>
+<rect x="285" y="120" width="178" height="12" fill="#3776AB"><title>Python: 22.1%</title></rect>
+<rect x="463" y="120" width="85" height="12" fill="#0175C2"><title>Dart: 10.5%</title></rect>
+<rect x="548" y="120" width="70" height="12" fill="#3178C6"><title>TypeScript: 8.7%</title></rect>
+<rect x="618" y="120" width="66" height="12" fill="#00ADD8"><title>Go: 8.3%</title></rect>
+<rect x="684" y="120" width="34" height="12" fill="#6E7681"><title>HTML: 4.3%</title></rect>
+<rect x="718" y="120" width="32" height="12" fill="#CE422B"><title>Rust: 4.0%</title></rect>
+<rect x="750" y="120" width="15" height="12" fill="#6E7681"><title>SCSS: 1.8%</title></rect>
+<rect x="765" y="120" width="14" height="12" fill="#777BB4"><title>PHP: 1.8%</title></rect>
+<rect x="779" y="120" width="8" height="12" fill="#6E7681"><title>Blade: 1.0%</title></rect>
+<rect x="787" y="120" width="7" height="12" fill="#6E7681"><title>Makefile: 0.8%</title></rect>
+<rect x="794" y="120" width="5" height="12" fill="#DA5B0B"><title>Jupyter Notebook: 0.7%</title></rect>
+<rect x="799" y="120" width="5" height="12" fill="#6E7681"><title>Open Policy Agent: 0.6%</title></rect>
+<rect x="804" y="120" width="5" height="12" fill="#ED8B00"><title>Java: 0.6%</title></rect>
+<rect x="809" y="120" width="4" height="12" fill="#6E7681"><title>PLpgSQL: 0.5%</title></rect>
+<rect x="813" y="120" width="4" height="12" fill="#89E051"><title>Shell: 0.5%</title></rect>
+<rect x="817" y="120" width="3" height="12" fill="#6E7681"><title>CSS: 0.4%</title></rect>
+<rect x="820" y="120" width="2" height="12" fill="#6E7681"><title>Vue: 0.3%</title></rect>
+<rect x="822" y="120" width="2" height="12" fill="#7F52FF"><title>Kotlin: 0.2%</title></rect>
+<rect x="824" y="120" width="2" height="12" fill="#363636"><title>Solidity: 0.2%</title></rect>
+<rect x="826" y="120" width="6" height="12" fill="#6E7681"><title>Other: 0.6%</title></rect>
 </g>
 <g>
   <rect x="28" y="142" width="137" height="26" rx="5"
@@ -149,16 +149,16 @@
   <text x="251" y="227" class="tag-text">Solidity · 16r</text>
 </g>
 <g>
-  <rect x="361" y="210" width="79" height="26" rx="5"
-        fill="#00599C22" stroke="#00599C66" stroke-width="1"/>
-  <circle cx="372" cy="223" r="4" fill="#00599C"/>
-  <text x="381" y="227" class="tag-text">C++ · 7r</text>
+  <rect x="361" y="210" width="137" height="26" rx="5"
+        fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
+  <circle cx="372" cy="223" r="4" fill="#6E7681"/>
+  <text x="381" y="227" class="tag-text">Go Template · 1r</text>
 </g>
 <g>
-  <rect x="448" y="210" width="137" height="26" rx="5"
-        fill="#6E768122" stroke="#6E768166" stroke-width="1"/>
-  <circle cx="459" cy="223" r="4" fill="#6E7681"/>
-  <text x="468" y="227" class="tag-text">Go Template · 1r</text>
+  <rect x="506" y="210" width="79" height="26" rx="5"
+        fill="#00599C22" stroke="#00599C66" stroke-width="1"/>
+  <circle cx="517" cy="223" r="4" fill="#00599C"/>
+  <text x="526" y="227" class="tag-text">C++ · 7r</text>
 </g>
 <g>
   <rect x="593" y="210" width="94" height="26" rx="5"
